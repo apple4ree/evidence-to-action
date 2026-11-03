@@ -1,0 +1,395 @@
+{
+  "measurement": "One prediction invocation is one fresh child session. Tokens include runtime context and file-read roundtrips. Alias is observed, not an immutable model snapshot.",
+  "snapshot_model_version": null,
+  "monetary_cost": null,
+  "phases": {
+    "dev": {
+      "logged_attempts": 24,
+      "technical_failures": 0,
+      "retries": 0,
+      "unique_session_totals": {
+        "sessions": 24,
+        "token_observed_sessions": 24,
+        "tokens": {
+          "input_tokens": 1065327,
+          "cached_input_tokens": 969472,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 13614,
+          "reasoning_output_tokens": 35,
+          "total_tokens": 1078941
+        },
+        "session_seconds_sum": 375.06,
+        "session_seconds_median": 14.794,
+        "cases_observed": 6,
+        "per_case_active_session_seconds_mean": 62.51,
+        "per_case_active_session_seconds_median": 60.781,
+        "model_aliases": [
+          "gpt-6-astra"
+        ],
+        "reasoning_efforts": [
+          "medium"
+        ]
+      },
+      "by_stage": {
+        "direct": {
+          "sessions": 6,
+          "token_observed_sessions": 6,
+          "tokens": {
+            "input_tokens": 264617,
+            "cached_input_tokens": 241536,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1907,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 266524
+          },
+          "session_seconds_sum": 77.408,
+          "session_seconds_median": 13.315999999999999,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 12.901333333333334,
+          "per_case_active_session_seconds_median": 13.315999999999999,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "revise": {
+          "sessions": 6,
+          "token_observed_sessions": 6,
+          "tokens": {
+            "input_tokens": 266089,
+            "cached_input_tokens": 241536,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1947,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 268036
+          },
+          "session_seconds_sum": 71.208,
+          "session_seconds_median": 11.8505,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 11.868,
+          "per_case_active_session_seconds_median": 11.8505,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "extract": {
+          "sessions": 6,
+          "token_observed_sessions": 6,
+          "tokens": {
+            "input_tokens": 264720,
+            "cached_input_tokens": 241536,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4313,
+            "reasoning_output_tokens": 35,
+            "total_tokens": 269033
+          },
+          "session_seconds_sum": 107.602,
+          "session_seconds_median": 18.064,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 17.933666666666667,
+          "per_case_active_session_seconds_median": 18.064,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "relate": {
+          "sessions": 6,
+          "token_observed_sessions": 6,
+          "tokens": {
+            "input_tokens": 269901,
+            "cached_input_tokens": 244864,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5447,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 275348
+          },
+          "session_seconds_sum": 118.842,
+          "session_seconds_median": 19.34,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 19.807000000000002,
+          "per_case_active_session_seconds_median": 19.34,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        }
+      },
+      "effective_method_totals": {
+        "D1": {
+          "sessions": 6,
+          "token_observed_sessions": 6,
+          "tokens": {
+            "input_tokens": 264617,
+            "cached_input_tokens": 241536,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1907,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 266524
+          },
+          "session_seconds_sum": 77.408,
+          "session_seconds_median": 13.315999999999999,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 12.901333333333334,
+          "per_case_active_session_seconds_median": 13.315999999999999,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "D2": {
+          "sessions": 12,
+          "token_observed_sessions": 12,
+          "tokens": {
+            "input_tokens": 530706,
+            "cached_input_tokens": 483072,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3854,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 534560
+          },
+          "session_seconds_sum": 148.61599999999999,
+          "session_seconds_median": 12.264,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 24.769333333333332,
+          "per_case_active_session_seconds_median": 24.628,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "P2": {
+          "sessions": 12,
+          "token_observed_sessions": 12,
+          "tokens": {
+            "input_tokens": 534621,
+            "cached_input_tokens": 486400,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 9760,
+            "reasoning_output_tokens": 35,
+            "total_tokens": 544381
+          },
+          "session_seconds_sum": 226.444,
+          "session_seconds_median": 19.038,
+          "cases_observed": 6,
+          "per_case_active_session_seconds_mean": 37.74066666666667,
+          "per_case_active_session_seconds_median": 37.332,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        }
+      },
+      "method_totals_note": "D2 includes reused D1 sessions; do not add effective method totals to derive total cost."
+    },
+    "test": {
+      "logged_attempts": 288,
+      "technical_failures": 0,
+      "retries": 0,
+      "unique_session_totals": {
+        "sessions": 288,
+        "token_observed_sessions": 288,
+        "tokens": {
+          "input_tokens": 12811261,
+          "cached_input_tokens": 11630080,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 160189,
+          "reasoning_output_tokens": 2341,
+          "total_tokens": 12971450
+        },
+        "session_seconds_sum": 4107.431,
+        "session_seconds_median": 13.3815,
+        "cases_observed": 72,
+        "per_case_active_session_seconds_mean": 57.04765277777778,
+        "per_case_active_session_seconds_median": 56.432,
+        "model_aliases": [
+          "gpt-6-astra"
+        ],
+        "reasoning_efforts": [
+          "medium"
+        ]
+      },
+      "by_stage": {
+        "direct": {
+          "sessions": 72,
+          "token_observed_sessions": 72,
+          "tokens": {
+            "input_tokens": 3183432,
+            "cached_input_tokens": 2901632,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 21014,
+            "reasoning_output_tokens": 48,
+            "total_tokens": 3204446
+          },
+          "session_seconds_sum": 765.772,
+          "session_seconds_median": 10.395,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 10.635722222222222,
+          "per_case_active_session_seconds_median": 10.395,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "revise": {
+          "sessions": 72,
+          "token_observed_sessions": 72,
+          "tokens": {
+            "input_tokens": 3198664,
+            "cached_input_tokens": 2911744,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 21238,
+            "reasoning_output_tokens": 17,
+            "total_tokens": 3219902
+          },
+          "session_seconds_sum": 742.39,
+          "session_seconds_median": 10.350999999999999,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 10.310972222222222,
+          "per_case_active_session_seconds_median": 10.350999999999999,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "extract": {
+          "sessions": 72,
+          "token_observed_sessions": 72,
+          "tokens": {
+            "input_tokens": 3184713,
+            "cached_input_tokens": 2906624,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 51684,
+            "reasoning_output_tokens": 2227,
+            "total_tokens": 3236397
+          },
+          "session_seconds_sum": 1277.9,
+          "session_seconds_median": 17.186500000000002,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 17.74861111111111,
+          "per_case_active_session_seconds_median": 17.186500000000002,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "relate": {
+          "sessions": 72,
+          "token_observed_sessions": 72,
+          "tokens": {
+            "input_tokens": 3244452,
+            "cached_input_tokens": 2910080,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 66253,
+            "reasoning_output_tokens": 49,
+            "total_tokens": 3310705
+          },
+          "session_seconds_sum": 1321.369,
+          "session_seconds_median": 18.246499999999997,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 18.35234722222222,
+          "per_case_active_session_seconds_median": 18.246499999999997,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        }
+      },
+      "effective_method_totals": {
+        "D1": {
+          "sessions": 72,
+          "token_observed_sessions": 72,
+          "tokens": {
+            "input_tokens": 3183432,
+            "cached_input_tokens": 2901632,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 21014,
+            "reasoning_output_tokens": 48,
+            "total_tokens": 3204446
+          },
+          "session_seconds_sum": 765.772,
+          "session_seconds_median": 10.395,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 10.635722222222222,
+          "per_case_active_session_seconds_median": 10.395,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "D2": {
+          "sessions": 144,
+          "token_observed_sessions": 144,
+          "tokens": {
+            "input_tokens": 6382096,
+            "cached_input_tokens": 5813376,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 42252,
+            "reasoning_output_tokens": 65,
+            "total_tokens": 6424348
+          },
+          "session_seconds_sum": 1508.162,
+          "session_seconds_median": 10.3775,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 20.946694444444443,
+          "per_case_active_session_seconds_median": 21.1375,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        },
+        "P2": {
+          "sessions": 144,
+          "token_observed_sessions": 144,
+          "tokens": {
+            "input_tokens": 6429165,
+            "cached_input_tokens": 5816704,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 117937,
+            "reasoning_output_tokens": 2276,
+            "total_tokens": 6547102
+          },
+          "session_seconds_sum": 2599.269,
+          "session_seconds_median": 17.798000000000002,
+          "cases_observed": 72,
+          "per_case_active_session_seconds_mean": 36.10095833333333,
+          "per_case_active_session_seconds_median": 35.582,
+          "model_aliases": [
+            "gpt-6-astra"
+          ],
+          "reasoning_efforts": [
+            "medium"
+          ]
+        }
+      },
+      "method_totals_note": "D2 includes reused D1 sessions; do not add effective method totals to derive total cost."
+    }
+  }
+}

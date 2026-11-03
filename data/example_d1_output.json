@@ -1,0 +1,27 @@
+{
+  "record_id": "00eb91a9",
+  "decision": "unsupported",
+  "issues": [
+    {
+      "requirement_id": "r1",
+      "field": "artifact_hash",
+      "requirement_text": "Production deployment requires a passing security scan for the exact artifact hash; staging success cannot substitute for this gate.",
+      "policy_ids": [
+        "P1"
+      ],
+      "evidence_ids": [
+        "e2",
+        "e3"
+      ],
+      "relation": "violated",
+      "exception": {
+        "applied": false,
+        "policy_ids": [],
+        "evidence_ids": [],
+        "rationale": "P1 explicitly prohibits waiving the security-scan gate and excludes staging success as a substitute."
+      },
+      "rationale": "For sha256:9f0a, e3 reports that SecurityScan was unavailable and returned no scan result. The passing results in e2 and e3 are staging smoke tests. The complete capture establishes that no passing security scan was supplied before this call."
+    }
+  ],
+  "summary": "The service, region and artifact match e1, and e4 provides authenticated release-manager approval for that hash and destination. Deployment remains unsupported because the mandatory exact-artifact passing security scan is absent."
+}

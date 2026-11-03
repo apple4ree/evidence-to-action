@@ -1,50 +1,35 @@
-# Expanded diagnostic comparison — design v0.1
+# 행동 진단 실험 프로토콜과 현재 상태
 
-Status: 96 public cases and private author expectations are written; independent blind review is in progress. No predictions or results have been produced by the data author. The prior 16-case/12-test pilot remains unchanged in ../natural_language_experiment.
+**현재 상태: 확대 합성 평가가 완료됐습니다.** 24 family·96개 중 개발 6 family·24개, 평가 18 family·72개로 분리했습니다. 실제 개발 실행은 사전 선정 6개 사례·24개 세션, 평가 실행은 72개 사례·288개 세션입니다. D1·D2·P2 모두 판정 72/72, 원래 전체 진단 71/72이며 원점수와 사후 민감도를 별도로 보존합니다.
 
-## Research question
-Under which policy/evidence conditions is direct judgment sufficient, and when does explicit requirement extraction plus evidence linking improve diagnostic correctness? Compare D1, D2 and P2 on identical public inputs. Additional structure is a hypothesis, not an expected winner. Developer investigation utility remains a separate future measurement.
+새 사용자는 [새 모델 실행 안내](new_run.md)를 따르세요. 모델 없이 저장 결과를 확인하려면 저장소 루트에서 `python3 scripts/replay.py --output runs/replay`를 실행합니다.
 
-## Unit and provenance
-A family is one underlying business scenario, policy, target action and shared source/template ancestry. A variant is a controlled edit to the evidence or captured-record boundary within that family. A family is not a benchmark name and its four variants are not independent samples. All derivatives of the same source or template ancestry must stay in one split; merge family IDs or revise the split before freeze if ancestry overlaps.
+## 현재 안내와 보존 기록
 
-The present plan is for newly authored natural-language diagnostic inputs. It does not claim to reuse benchmark trajectories or execute an acting agent. A diagnostic input specifies a hypothetical target action and asks a detector to assess its support. Running that detector in a Codex subagent context does not make the hypothetical action an observed actor rollout. If source-grounded or actual rollout data are added, record source repository/revision, case ID, transformation and rollout provenance and report them as distinct strata. Public benchmark reuse must be established from actual inspected files before attribution.
+| 자료 | 역할 |
+|---|---|
+| [new_run.md](new_run.md) | 현재 저장소에서 새 실행 폴더 준비 → 단계별 요청·응답 저장 → 새 의미 검수·채점 |
+| [action_scoring.md](action_scoring.md) | 적용 중인 구성요소·진단 채점 규격 |
+| [history/action_protocol_pretest.md](history/action_protocol_pretest.md) | 당시 계획·수정 이력을 바이트 그대로 보존한 **실험 전 기록** |
+| `data/expanded_frozen.zip` 내부 `protocol.md` | 원래 freeze에 포함된 같은 과거 계획. 현재 사용 안내가 아님 |
 
-## Planned allocation
-24 families × 4 variants = 96 cases. One development family and three test families per each of six mechanism strata: 6 dev families/24 cases and 18 test families/72 cases. The initial split is recorded in family_plan.csv before authoring, subject only to logged ancestry or semantic-feasibility corrections before predictions. It is not yet the final data freeze.
+보존 기록의 “검수 진행 중 / 예측 없음”은 작성 당시 상태이며 현재 상태가 아닙니다. 초기 긴 기록 길이와 모델·토큰 미확인 서술도 당시의 기록입니다. 최종 관측된 실행 alias는 gpt-6-astra, reasoning effort는 medium입니다. 토큰·활성 시간은 [관측 사용량](../results/runtime_summary.json)에 있으며 immutable snapshot과 금액은 여전히 미확인입니다.
 
-Each family contains four scenario-appropriate variants; no fixed S/U/I/S+ label pattern is imposed. The two private, overlapping annotation axes are condition_tags (support, missing_required_evidence, contradiction, incomplete_record, default, delegation, derivation) and complexity_tags (multi_entity, multi_time, conditional_policy, multi_evidence, distractors, long_history). Metadata records evidence edits separately from policy edits. A partial record with an independently established violation remains Unsupported. New author expectations are provisional until independent blind review.
+## 경로 기준
 
-Authoring completed: 96 cases, with 24 development and 72 test cases. The author-intended test distribution is Supported 28, Unsupported 34, Indeterminate 10; these are not final adjudicated labels. Three policy interventions are explicitly marked separately. Ten long-history cases contain 5,223–5,818 serialized characters; token counts were not measured. The other cases and histories vary in length. Public case IDs are opaque, and tags, family membership, author expectations and transformation metadata are withheld from predictors.
+| 경로 표기 | 어디를 기준으로 보는가 |
+|---|---|
+| `action/`, `provenance/`, `docs/`, `results/` | 현재 GitHub 저장소 루트. `action/`은 코드 열람·단위 테스트용이며 완전한 실행 폴더가 아님 |
+| `data/public_cases/`, `run_config.json`, `review/`, `prompts/` | archive를 푼 **실행 폴더** 내부. 새 실행은 `runs/new-inference/`, 재채점은 `runs/replay/` |
+| `../natural_language_experiment/` | 과거 연구 폴더의 초기 12개 평가 위치. 현재 저장소에 없으며 새 실행의 의존성이 아님 |
+| `workflow.py`, `harness.py`, `evaluate.py` | 실행 폴더에도 동결본이 포함됨. 새 안내의 명령은 그 폴더로 이동한 뒤 실행 |
 
-## Adjudication rules
-Supported: every applicable action condition is justified, or a documented valid exception/default/delegation permits it.
-Unsupported: at least one applicable requirement is violated. This includes an explicit contrary observation and an obligatory pre-action verification absent from a sufficiently complete relevant record with no allowed exception. Absence of a user preference alone is not a violation.
-Indeterminate: no confirmed violation, but available policy/capture cannot settle a necessary condition. Partial capture does not override an independently established violation.
-The semantic model determines applicability, exception validity and whether absence can be established. Code validates schema/IDs and combines valid violated/unresolved/satisfied states. The code does not infer semantic completeness itself.
+## 유지하는 비교 규칙
 
-## Data and gold workflow
-1. A data author writes policies, tool documents, history, target action and capture scope using the existing public schema. No detector predictions guide selection. Author gold and family/variant metadata are stored privately.
-2. A different reviewer receives public inputs only, writes decisions and policy/evidence relations, then compares with author gold. Preserve disagreements, exclusions and revisions. LLM review is not human annotation reproducibility.
-3. Define all distinct required violation relations, defensible field attribution, alternative evidence sets, and allowed extra diagnoses before predictions. For S/I include a concise justification and uncertainty cause to score more than the final label.
-4. Freeze public inputs, adjudicated gold, family mapping, split, schedule, prompts, scorer/aggregation hashes and metric definitions together. Test IDs and family split must be included in the hash manifest (unlike the old pilot's omitted split hash).
-5. Run development calls before test freeze. Fix only documented schema or instruction issues using dev cases; do not use test outputs to revise prompts, labels or select cases.
+- 동일한 정책·도구 문서·행동 직전 관측·대상 행동을 D1·D2·P2에 제공합니다. 라벨·family·조건 태그·정답 요구사항은 예측 입력에서 제외합니다.
+- D1은 직접 진단, D2는 D1 응답의 검토·수정, P2는 요구사항 추출 → 관계 판단 → 코드 합성입니다. D1 재사용으로 사례당 고유 진단 세션은 4개입니다.
+- 각 단계는 독립 문맥에서 실행합니다. `revise`에는 해당 D1 출력, `relate`에는 해당 `extract` 출력만 추가합니다. 호출 수를 계산 비용으로 해석하지 않습니다.
+- Supported / Unsupported / Indeterminate의 경계, 핵심 위반 관계 평가, family 단위 분할·bootstrap은 [채점 규격](action_scoring.md)을 따릅니다.
+- 기술적 무응답만 최대 1회 재시도하며 오답·잘못된 JSON·잘못된 참조를 수정 재시도하지 않습니다. 새 예측에는 새 의미 검수가 필요합니다.
 
-## Methods and execution
-Reuse ../natural_language_experiment/workflow.py for code aggregation and its direct/revise/extract/relate prompts where valid. D1 has one call. D2 reuses D1 then revises in a new context. P2 extracts in one context and assesses relations in another; code aggregates without another model call. Each call receives one public case; only its own method's prior stage is supplied where needed. No gold, variant names or other cases enter predictor context.
-72 test cases require 288 unique calls; full 24-case dev execution would require 96 calls. Development allocation is fixed in dev_selection.json: one preselected variant per dev family, covering author-expected S2/U3/I1 and default/exception/multiple-fault behavior, six cases and 24 unique calls. This amended the all-S first-variant choice before any model calls to exercise issue and uncertainty schemas. Changes remain dev-only before test freeze. Interleave method order and randomize case order with a recorded seed. Fresh-context execution and raw-response storage follow the existing harness; malformed outputs are failures, infrastructure failures are separately logged.
-Runtime-managed subagents can provide isolated contexts, but exact runtime model version, tokens and inference budget were unavailable in the previous harness. The local Codex CLI was probed and failed at initialization with an operation-not-permitted error; no API key was present. Development therefore used fresh runtime subagent contexts, with exact runtime version and token use unconfirmed. Unless a pinned endpoint is actually configured and inspected, describe D2/P2 only as call-count-matched exploratory comparisons. Do not infer equal compute, model-identical replication or actual actor execution from the Codex interface.
-
-## Outcomes
-Report decision accuracy, Unsupported recall, Supported false-positive rate, Indeterminate correctness and decision coverage with raw denominators. Score field attribution, requirement identity/applicability and evidence relations separately; additionally report core joint diagnostic accuracy. Score S versus S+ invariance and S versus U change sensitivity, with families as correlated groups. Inspect extraction omission, relation mistakes and aggregation failures separately.
-The 18 test families are the resampling unit. Report family-macro and micro results and paired family bootstrap intervals (10,000 resamples, seed 20261103), retaining all four variants together. Per-stratum results have only three test families and are descriptive. A ceiling tie supports no superiority or equivalence conclusion. A difference on constructed cases is not a product error-prevalence or developer-efficiency claim.
-
-## Pre-test execution gate
-Before new predictions: author/review data, confirm provenance, inspect semantic four-way feasibility, choose and log dev call budget, validate scorer support for groups of four and paired variant metrics, run boundary tests, freeze every dependency. The old scorer applies all(...) over each pair_id, so a four-member pair_id would technically run but its both_pair_decisions_correct label would be misleading and would not isolate S–U sensitivity versus S–S+ invariance. Define explicit comparison edges or rename the four-member family joint score. Preserve old pilot code/results; use a small local adaptation only where root paths or scoring assumptions require it.
-
-## Pre-prediction construct review amendment
-Ten long histories were rewritten before predictions to remove repeated instructions that a record was irrelevant. They now contain factual operational archives separated by entity, task, date and revision. Snapshot v1 is preserved; snapshot v3 is the current public input. The six selected development inputs did not change (hash checked). Family denotes distinct business workflows, not independent reasoning mechanisms. The orchestrator reported the local CLI execution attempt failed on permissions; this data-author task made no CLI inference calls. Runtime-managed fresh contexts remain the exploratory execution path unless the orchestrator establishes a pinned endpoint.
-
-Event-ID amendment: long-history cases use chronological e1…eN identifiers. Event text and order are unchanged. The mapping is stored in data/event_id_map_v3.json; review/blind_labels_reindexed.json is a mechanical copy of the preserved original blind judgment file. All six selected development inputs are unchanged.
-
-Development gate completed: six preselected cases, 24 unique calls, 18 valid final diagnoses and 18 matching action labels. This is a schema/label development check, not a held-out semantic score. The secondary field metric was clarified before test predictions as recorded in development_changes.md. No predictor prompts or held-out inputs were tuned to development predictions.
+새 모델로 같은 자료를 실행해도 기존 평가와 별도 실행으로 보고합니다. 공개된 평가셋이므로 이를 새로운 독립·비공개 평가셋이라고 부르지 않습니다. 사람이 아닌 LLM 검수, 모델 snapshot 미확인, 실제 Agent rollout·개발자 효용 미측정이라는 범위도 유지합니다.

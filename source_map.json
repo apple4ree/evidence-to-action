@@ -96,8 +96,9 @@
   },
   "docs/action_protocol.md": {
     "source": "expanded_natural_language_experiment/protocol.md",
-    "sha256": "ae799533ba32d23260c4c5a41e0d0e27404e83a0a08005466c35165643ad3888",
-    "modified": false
+    "sha256": "c6edcc038e0ae7e247e24a3077a31ce121f43c262c5ab298f908ef5be51a471b",
+    "modified": "Replaced current entry page with completed status and repository/archive path map; original bytes preserved in docs/history and frozen archive.",
+    "source_sha256": "ae799533ba32d23260c4c5a41e0d0e27404e83a0a08005466c35165643ad3888"
   },
   "docs/provenance_scoring.md": {
     "source": "provenance_reuse_exploration/comparison_delivery_v2/scoring_spec.md",
@@ -132,5 +133,20 @@
   "scripts/generate.py": {
     "source": "expanded_natural_language_experiment/data/private_authoring/build_author_cases.py",
     "modified": "Output CLI + refuse existing directory; generation logic unchanged"
+  },
+  "docs/history/action_protocol_pretest.md": {
+    "source": "expanded_natural_language_experiment/protocol.md",
+    "sha256": "ae799533ba32d23260c4c5a41e0d0e27404e83a0a08005466c35165643ad3888",
+    "modified": false
+  },
+  "data/example_d1_output.json": {
+    "source": "expanded_natural_language_experiment/raw/test_00eb91a9_direct.json",
+    "sha256": "a3a9d5fbcf33c0abd9c994b936b2c5be8fab6732e9d0b57cc276ab0cddef74f9",
+    "modified": false
+  },
+  "results/runtime_summary.json": {
+    "source": "expanded_natural_language_experiment/analysis/runtime_summary.json",
+    "sha256": "41688ec6729680da4aeb009b639a2741f557294b843c6e6beea01ca9d7d7a528",
+    "modified": false
   }
 }
