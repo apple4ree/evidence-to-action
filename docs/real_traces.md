@@ -33,7 +33,7 @@ python3 real_traces/evaluate.py
 
 ## 2.1 채점 범위 사후 보정
 
-공개 질문 밖의 두 의미 요소를 제외한 재채점은 `python3 real_traces/rescore_scope.py`로 실행합니다. 원점수를 재현하고 원본 hash를 확인한 뒤 별도 `real_traces/corrections/scope_v2/results/`에 저장합니다. 판정 라벨과 사람 검토 불일치는 유지합니다. [변경 기준과 검토 기록](../real_traces/corrections/scope_v2/README.md)
+공개 질문 밖의 두 의미 요소를 제외한 재채점은 `python3 real_traces/rescore_scope.py`로 실행합니다. 원점수를 재현하고 원본 hash를 확인한 뒤 별도 `real_traces/corrections/scope_v2/results/`에 저장합니다. 판정 라벨과 Gemini 검토 불일치는 유지합니다. [변경 기준과 검토 기록](../real_traces/corrections/scope_v2/README.md)
 
 ## 3. 새 모델 추론
 
@@ -70,7 +70,7 @@ python3 runs/real_trace_new/harness.py prepare AHN01 relate
 
 각 원본의 전체 actor payload가 공개된 것은 아니다. 이번 과제는 제공된 공개 기록 안의 지정한 행동/주장 관계를 평가한다. 입력 파일의 전체 텍스트 전달 여부와 의미적 주의/이해 여부도 다르다. 공개 runtime은 개인정보성 로컬 경로와 세션 식별자를 뺀 계측 부분집합이며, 원래 감사 기록은 연구 작업공간에 보존했다.
 
-단일 사람 검토 15건을 수집했으며 고정 라벨과 12/15건 일치했다. 세 불일치는 미조정 상태다. 고정 정답과 의미 채점은 유지하며, 복수 사람 간 재현성은 후속 검증이다. [검토 원본과 분석](../real_traces/human_review/README.md). 현재 비교는 원문을 읽어 선정한 탐색 자료다.
+Gemini 판정 15건을 수집했으며 고정 라벨과 12/15건 일치했다. 세 불일치는 미조정 상태다. 고정 정답과 의미 채점은 유지하며, 복수 사람 간 재현성은 후속 검증이다. [검토 원본과 분석](../real_traces/human_review/README.md). 현재 비교는 원문을 읽어 선정한 탐색 자료다.
 
 ## 5. 사람 주석 참여
 
