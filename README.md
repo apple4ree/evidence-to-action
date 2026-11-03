@@ -111,4 +111,6 @@ python3 real_traces/rescore_scope.py
 
 ## 연구 이력
 
+[커밋별 변경 이유와 결과 영향](docs/history/commits.md)에서 구현, 공개 실행 평가, 채점 보정, Gemini 출처 정정의 흐름을 확인할 수 있습니다.
+
 이전 합성 벤치마크와 전체 전달 경로 복원 실험은 [과거 실험 안내](docs/history/README.md)에 분리했습니다. 기존 코드, 원점수와 실행 기록의 경로는 유지하며 현재 결과와 합산하지 않습니다. [커밋 이력](https://github.com/apple4ree/evidence-to-action/commits/main/)은 실제 저장소 변경을 기록합니다.
