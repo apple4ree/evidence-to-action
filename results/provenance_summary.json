@@ -1,0 +1,1756 @@
+{
+  "scope": "No pooled performance. Main exploration uses corrected delivery v2; heldout normal-target check uses v1. Original delivery-incomplete exploration preserved separately.",
+  "exploration_v2": {
+    "scope": "Exploration and separate-source normal-target check, not population performance. Core semantic links, not exhaustive provenance recall.",
+    "phases": {
+      "exploration": {
+        "D1-L": {
+          "cases": 2,
+          "confusion_matrix": {
+            "supported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "unsupported": {
+              "supported": 0,
+              "unsupported": 2,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "indeterminate": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            }
+          },
+          "decision_accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "joint_accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unsupported_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "supported_fpr": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "indeterminate_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unnecessary_abstention": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "decision_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "first_source_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "transformation_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "reuse_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "scope_links_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "uncertainty_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "rationale_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "false_extra_candidates": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "D2-L": {
+          "cases": 2,
+          "confusion_matrix": {
+            "supported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "unsupported": {
+              "supported": 0,
+              "unsupported": 2,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "indeterminate": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            }
+          },
+          "decision_accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "joint_accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unsupported_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "supported_fpr": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "indeterminate_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unnecessary_abstention": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "decision_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "first_source_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "transformation_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "reuse_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "scope_links_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "uncertainty_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "rationale_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "false_extra_candidates": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        },
+        "P2-L": {
+          "cases": 2,
+          "confusion_matrix": {
+            "supported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "unsupported": {
+              "supported": 0,
+              "unsupported": 2,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "indeterminate": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            }
+          },
+          "decision_accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "joint_accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "unsupported_recall": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "supported_fpr": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "indeterminate_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unnecessary_abstention": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "decision_coverage": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "first_source_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "transformation_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "reuse_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "scope_links_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "uncertainty_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "rationale_correct": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "false_extra_candidates": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          }
+        }
+      },
+      "heldout": {
+        "D1-L": {
+          "cases": 0,
+          "confusion_matrix": {
+            "supported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "unsupported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "indeterminate": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            }
+          },
+          "decision_accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "joint_accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unsupported_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_fpr": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "indeterminate_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unnecessary_abstention": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "decision_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "first_source_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "transformation_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "reuse_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "scope_links_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "uncertainty_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "rationale_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_extra_candidates": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "D2-L": {
+          "cases": 0,
+          "confusion_matrix": {
+            "supported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "unsupported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "indeterminate": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            }
+          },
+          "decision_accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "joint_accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unsupported_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_fpr": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "indeterminate_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unnecessary_abstention": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "decision_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "first_source_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "transformation_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "reuse_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "scope_links_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "uncertainty_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "rationale_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_extra_candidates": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        },
+        "P2-L": {
+          "cases": 0,
+          "confusion_matrix": {
+            "supported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "unsupported": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            },
+            "indeterminate": {
+              "supported": 0,
+              "unsupported": 0,
+              "indeterminate": 0,
+              "invalid": 0
+            }
+          },
+          "decision_accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "joint_accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unsupported_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "supported_fpr": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "indeterminate_recall": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "unnecessary_abstention": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "decision_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "first_source_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "transformation_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "reuse_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "scope_links_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "uncertainty_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "rationale_correct": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_extra_candidates": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          }
+        }
+      }
+    },
+    "rows": [
+      {
+        "candidate_id": "C86769e4710",
+        "record_id": "a7d3",
+        "method": "D2-L",
+        "phase": "exploration",
+        "gold": "unsupported",
+        "prediction": "unsupported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "Fresh v2 review: L505 and L537–L538 establish the password source; L420 establishes a login-token requirement. L598 explicitly distinguishes password from token, L668 proposes a tentative experiment, and L693/L707 deliver the unqualified token designation. L712 adopts it and L713 uses the exact value. Describing L707→L712 as preservation is valid at the immediate assertion level because the candidate separately identifies the unsupported source conversion and loss of qualification. L437/L447 support pagination; L678 is only a messaging-signature error. Receiver knowledge and API acceptance are correctly left unknown."
+      },
+      {
+        "candidate_id": "C521ad9fbf3",
+        "record_id": "a7d3",
+        "method": "P2-L",
+        "phase": "exploration",
+        "gold": "unsupported",
+        "prediction": "unsupported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "Fresh v2 review: L505/L537/L538 are the credential source, and L582 delivers it as a password. L598 acknowledges the type distinction before L668 proposes substitution; L693 and L707 convert that speculative proposal into an asserted token. The exact value reaches L713, so the entity-preservation link is accurate despite its unsupported token designation. The rationale identifies the core conversion without inferring a verification duty or receiver knowledge of Supervisor reasoning. API outcome and hidden contexts remain unknown."
+      },
+      {
+        "candidate_id": "C8a3b7972e7",
+        "record_id": "a7d3",
+        "method": "D1-L",
+        "phase": "exploration",
+        "gold": "unsupported",
+        "prediction": "unsupported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "Fresh v2 review: password provenance at L505/L537/L538 and the requirement at L420 support the source-type mismatch. L598 is an explicit correction, L668 proposes an unvalidated trial, and L693/L707 omit the tentative status. L712 asserts token possession and L713 uses it. The source-type judgment on adoption is valid as carrying forward the unsupported designation; it is not presented as proof the receiver knew the contradiction. No API outcome is claimed, and the TypeError is correctly separated from authentication evidence."
+      },
+      {
+        "candidate_id": "C1a66c5c586",
+        "record_id": "b9e4",
+        "method": "D2-L",
+        "phase": "exploration",
+        "gold": "unsupported",
+        "prediction": "unsupported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "Fresh v2 review: L274 defines the tag filter used at L707. L720/L725 present its result as Bucket List notes without tag qualification; L736→L741 explicitly expands the empty result to titles and tags. L299/L308/L309 establish default page zero and a five-result bound, whereas L762 becomes all notes at L775/L780 and L791. The candidate accurately acknowledges that L796 says current list rather than asserting global absence. Its unsupported finding concerns using that incomplete search to switch L4 modification into L797/L811 creation, implemented at L817/L819/L820. This is an evidential task substitution, not an inferred hidden-policy violation. Actual note existence and execution outcome remain unknown."
+      },
+      {
+        "candidate_id": "C048d7af7dc",
+        "record_id": "b9e4",
+        "method": "P2-L",
+        "phase": "exploration",
+        "gold": "unsupported",
+        "prediction": "unsupported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "Fresh v2 review: L707/L725 supply the empty tag-only result broadened at L741; L762 supplies the bounded default query whose output is called all notes at L775/L780, delivered L791. Selecting these query/output source bundles rather than listing every documentation line is adequate core localization. L796 restricts absence to current list, but then uses it as a creation premise; the link description preserves that restriction. L4→L797 changes the requested note modification to new-note creation, delivered L811 and performed at L817/L819/L820. The candidate now identifies this visible substitution directly while distinguishing unknown fallback policy, receiver context, actual existence, and target outcome. All scope links and the unsupported rationale are supported."
+      },
+      {
+        "candidate_id": "C7b56457631",
+        "record_id": "b9e4",
+        "method": "D1-L",
+        "phase": "exploration",
+        "gold": "unsupported",
+        "prediction": "unsupported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "Fresh v2 review: L274/L707 and the empty L725 output support a tag-only scope, while L741 adds titles. L299/L308/L309 establish bounded pagination, so the L762→L780 all-notes claim lacks exhaustion evidence. L791 delivers that assertion; L4 requested modifying a referenced note, but L797/L811 directs creating one and L817/L819/L820 implements it. The preserved final link correctly refers to obedience to the immediate directive while retaining the earlier unsupported task substitution. The rationale does not require hidden receiver knowledge, actual note existence, or a demonstrated API outcome."
+      }
+    ],
+    "comparisons": {
+      "exploration:D1-L:P2-L": {
+        "decision_correct": {
+          "a_only": [],
+          "b_only": []
+        },
+        "joint_correct": {
+          "a_only": [],
+          "b_only": []
+        }
+      },
+      "exploration:D1-L:D2-L": {
+        "decision_correct": {
+          "a_only": [],
+          "b_only": []
+        },
+        "joint_correct": {
+          "a_only": [],
+          "b_only": []
+        }
+      },
+      "heldout:D1-L:P2-L": {
+        "decision_correct": {
+          "a_only": [],
+          "b_only": []
+        },
+        "joint_correct": {
+          "a_only": [],
+          "b_only": []
+        }
+      },
+      "heldout:D1-L:D2-L": {
+        "decision_correct": {
+          "a_only": [],
+          "b_only": []
+        },
+        "joint_correct": {
+          "a_only": [],
+          "b_only": []
+        }
+      }
+    },
+    "correct_label_wrong_diagnosis": []
+  },
+  "heldout_v1": {
+    "metrics": {
+      "D1-L": {
+        "cases": 3,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 3,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          },
+          "unsupported": {
+            "supported": 0,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          },
+          "indeterminate": {
+            "supported": 0,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          }
+        },
+        "decision_accuracy": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "joint_accuracy": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "unsupported_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_fpr": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "indeterminate_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unnecessary_abstention": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "decision_coverage": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "first_source_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "transformation_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "reuse_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "scope_links_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "uncertainty_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "rationale_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "false_extra_candidates": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        }
+      },
+      "D2-L": {
+        "cases": 3,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 3,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          },
+          "unsupported": {
+            "supported": 0,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          },
+          "indeterminate": {
+            "supported": 0,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          }
+        },
+        "decision_accuracy": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "joint_accuracy": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "unsupported_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_fpr": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "indeterminate_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unnecessary_abstention": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "decision_coverage": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "first_source_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "transformation_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "reuse_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "scope_links_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "uncertainty_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "rationale_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "false_extra_candidates": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        }
+      },
+      "P2-L": {
+        "cases": 3,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 3,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          },
+          "unsupported": {
+            "supported": 0,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          },
+          "indeterminate": {
+            "supported": 0,
+            "unsupported": 0,
+            "indeterminate": 0,
+            "invalid": 0
+          }
+        },
+        "decision_accuracy": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "joint_accuracy": {
+          "numerator": 2,
+          "denominator": 3,
+          "value": 0.6666666666666666
+        },
+        "unsupported_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "supported_fpr": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "indeterminate_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "unnecessary_abstention": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "decision_coverage": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "first_source_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "transformation_correct": {
+          "numerator": 2,
+          "denominator": 3,
+          "value": 0.6666666666666666
+        },
+        "reuse_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "scope_links_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "uncertainty_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "rationale_correct": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "false_extra_candidates": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        }
+      }
+    },
+    "rows": [
+      {
+        "candidate_id": "C8cb77fc212",
+        "record_id": "c2f1",
+        "method": "D2-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] establishes user constraints; history[8] supplies only a partial IMDb ranking (The Tenant 2h 6m), and history[16] supplies generic Vudu results without title-specific availability. history[17] acknowledges no qualifying available film identified and proposes further inquiry, delivered at history[18]. Candidate correctly separates the legitimate target inquiry from earlier shortlist/runtime and ledger overclaims, retaining uncertainty about full ranking and later selection."
+      },
+      {
+        "candidate_id": "C7cc0adb819",
+        "record_id": "c2f1",
+        "method": "D1-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] establishes user constraints; history[8] supplies only a partial IMDb ranking (The Tenant 2h 6m), and history[16] supplies generic Vudu results without title-specific availability. history[17] acknowledges no qualifying available film identified and proposes further inquiry, delivered at history[18]. Candidate correctly separates the legitimate target inquiry from earlier shortlist/runtime and ledger overclaims, retaining uncertainty about full ranking and later selection."
+      },
+      {
+        "candidate_id": "Cceecc1587c",
+        "record_id": "c2f1",
+        "method": "P2-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": false,
+        "first_source_correct": true,
+        "transformation_correct": false,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] and delivered directives history[3], history[6], history[14] are valid upstream sources for continuing the research objective; history[18] is the correct reuse target. Its empty transformation_events nevertheless omits the observed history[17] synthesis: unsuccessful availability investigation is summarized as no qualifying film identified and transformed into the precise next-action directive. This is a localization omission, not a wrong supported decision. The rationale correctly distinguishes the excessive Tenant runtime and inconclusive search from support for further inquiry, and does not claim an answer or availability is known."
+      },
+      {
+        "candidate_id": "Ca0f6a6b285",
+        "record_id": "d6a2",
+        "method": "D2-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] supplies the paper-link premise. Crucially, history[8] DOES contain JSON-LD datePublished 2023-06-06T22:00:03+00:00 with linked Person Carolyn Collins Petersen, and meta_tags author/publication time for Universe Today, supporting the candidate metadata-match statement despite contrary gold prose. history[20] reaches 27% down without locating the paper. history[21] proposes keywords and history[22] delivers them as search suggestions, not observed quotations. The advancing viewport versus unresolved link permits the candidate interpretation of progress; it does not undermine support for the inquiry. All selected core source/transformation/reuse roles are supported."
+      },
+      {
+        "candidate_id": "C5ef8040999",
+        "record_id": "d6a2",
+        "method": "D1-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] supplies the paper-link premise. Crucially, history[8] DOES contain JSON-LD datePublished 2023-06-06T22:00:03+00:00 with linked Person Carolyn Collins Petersen, and meta_tags author/publication time for Universe Today, supporting the candidate metadata-match statement despite contrary gold prose. history[20] reaches 27% down without locating the paper. history[21] proposes keywords and history[22] delivers them as search suggestions, not observed quotations. The advancing viewport versus unresolved link permits the candidate interpretation of progress; it does not undermine support for the inquiry. All selected core source/transformation/reuse roles are supported."
+      },
+      {
+        "candidate_id": "C91081e6765",
+        "record_id": "d6a2",
+        "method": "P2-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] supplies the paper-link premise. Crucially, history[8] DOES contain JSON-LD datePublished 2023-06-06T22:00:03+00:00 with linked Person Carolyn Collins Petersen, and meta_tags author/publication time for Universe Today, supporting the candidate metadata-match statement despite contrary gold prose. history[20] reaches 27% down without locating the paper. history[21] proposes keywords and history[22] delivers them as search suggestions, not observed quotations. The advancing viewport versus unresolved link permits the candidate interpretation of progress; it does not undermine support for the inquiry. All selected core source/transformation/reuse roles are supported."
+      },
+      {
+        "candidate_id": "C4a3c667263",
+        "record_id": "e8c5",
+        "method": "P2-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] supplies June 2014 and the two-author quoted-word objective; history[12] visibly identifies Emily Midkiff, the complete Dragons are Tricksy title and Fafnir on a remote PDF. history[19] reports only /workspace/76.pdf missing. history[20] proposes locating the correct document and history[21] delivers that recovery request. Candidate correctly avoids equating browser display with a local download or one missing path with universal absence; date verification and successful extraction remain unresolved. Earlier downloaded-copy language at history[16]/[17] is correctly separated from this target."
+      },
+      {
+        "candidate_id": "C9e0044f313",
+        "record_id": "e8c5",
+        "method": "D1-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] supplies June 2014 and the two-author quoted-word objective; history[12] visibly identifies Emily Midkiff, the complete Dragons are Tricksy title and Fafnir on a remote PDF. history[19] reports only /workspace/76.pdf missing. history[20] proposes locating the correct document and history[21] delivers that recovery request. Candidate correctly avoids equating browser display with a local download or one missing path with universal absence; date verification and successful extraction remain unresolved. Earlier downloaded-copy language at history[16]/[17] is correctly separated from this target."
+      },
+      {
+        "candidate_id": "C3151b9ed3d",
+        "record_id": "e8c5",
+        "method": "D2-L",
+        "phase": "heldout",
+        "gold": "supported",
+        "prediction": "supported",
+        "valid": true,
+        "decision_correct": true,
+        "joint_correct": true,
+        "first_source_correct": true,
+        "transformation_correct": true,
+        "reuse_correct": true,
+        "scope_links_correct": true,
+        "uncertainty_correct": true,
+        "rationale_correct": true,
+        "unsupported_extra_claims": 0,
+        "rationale": "history[0] supplies June 2014 and the two-author quoted-word objective; history[12] visibly identifies Emily Midkiff, the complete Dragons are Tricksy title and Fafnir on a remote PDF. history[19] reports only /workspace/76.pdf missing. history[20] proposes locating the correct document and history[21] delivers that recovery request. Candidate correctly avoids equating browser display with a local download or one missing path with universal absence; date verification and successful extraction remain unresolved. Earlier downloaded-copy language at history[16]/[17] is correctly separated from this target."
+      }
+    ],
+    "comparisons": {
+      "heldout:D1-L:P2-L": {
+        "decision_correct": {
+          "a_only": [],
+          "b_only": []
+        },
+        "joint_correct": {
+          "a_only": [
+            "c2f1"
+          ],
+          "b_only": []
+        }
+      },
+      "heldout:D1-L:D2-L": {
+        "decision_correct": {
+          "a_only": [],
+          "b_only": []
+        },
+        "joint_correct": {
+          "a_only": [],
+          "b_only": []
+        }
+      }
+    }
+  },
+  "original_exploration_v1": {
+    "D1-L": {
+      "cases": 2,
+      "confusion_matrix": {
+        "supported": {
+          "supported": 0,
+          "unsupported": 0,
+          "indeterminate": 0,
+          "invalid": 0
+        },
+        "unsupported": {
+          "supported": 0,
+          "unsupported": 2,
+          "indeterminate": 0,
+          "invalid": 0
+        },
+        "indeterminate": {
+          "supported": 0,
+          "unsupported": 0,
+          "indeterminate": 0,
+          "invalid": 0
+        }
+      },
+      "decision_accuracy": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "joint_accuracy": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "unsupported_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "supported_fpr": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "indeterminate_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "decision_coverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "first_source_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "transformation_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "reuse_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "scope_links_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "uncertainty_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "rationale_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "false_extra_candidates": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      }
+    },
+    "D2-L": {
+      "cases": 2,
+      "confusion_matrix": {
+        "supported": {
+          "supported": 0,
+          "unsupported": 0,
+          "indeterminate": 0,
+          "invalid": 0
+        },
+        "unsupported": {
+          "supported": 0,
+          "unsupported": 2,
+          "indeterminate": 0,
+          "invalid": 0
+        },
+        "indeterminate": {
+          "supported": 0,
+          "unsupported": 0,
+          "indeterminate": 0,
+          "invalid": 0
+        }
+      },
+      "decision_accuracy": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "joint_accuracy": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "unsupported_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "supported_fpr": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "indeterminate_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "decision_coverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "first_source_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "transformation_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "reuse_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "scope_links_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "uncertainty_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "rationale_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "false_extra_candidates": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      }
+    },
+    "P2-L": {
+      "cases": 2,
+      "confusion_matrix": {
+        "supported": {
+          "supported": 0,
+          "unsupported": 0,
+          "indeterminate": 0,
+          "invalid": 0
+        },
+        "unsupported": {
+          "supported": 0,
+          "unsupported": 2,
+          "indeterminate": 0,
+          "invalid": 0
+        },
+        "indeterminate": {
+          "supported": 0,
+          "unsupported": 0,
+          "indeterminate": 0,
+          "invalid": 0
+        }
+      },
+      "decision_accuracy": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "joint_accuracy": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "unsupported_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "supported_fpr": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "indeterminate_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unnecessary_abstention": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "decision_coverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "first_source_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "transformation_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "reuse_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "scope_links_correct": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "uncertainty_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "rationale_correct": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "false_extra_candidates": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      }
+    }
+  },
+  "runtime": {
+    "comparison": {
+      "unique": {
+        "sessions": 20,
+        "input_tokens": 1638520,
+        "output_tokens": 19018,
+        "cached_input_tokens": 1350016,
+        "total_tokens": 1657538,
+        "native_model_responses": 56,
+        "native_seconds_sum": 579.9540000000001,
+        "model_aliases": [
+          "gpt-6-astra"
+        ],
+        "reasoning_efforts": [
+          "medium"
+        ],
+        "cases": 5,
+        "mean_seconds_per_case": 115.99080000000001
+      },
+      "phases": {
+        "heldout": {
+          "unique": {
+            "sessions": 12,
+            "input_tokens": 627829,
+            "output_tokens": 8272,
+            "cached_input_tokens": 488064,
+            "total_tokens": 636101,
+            "native_model_responses": 24,
+            "native_seconds_sum": 282.047,
+            "model_aliases": [
+              "gpt-6-astra"
+            ],
+            "reasoning_efforts": [
+              "medium"
+            ],
+            "cases": 3,
+            "mean_seconds_per_case": 94.01566666666668
+          },
+          "methods": {
+            "D1-L": {
+              "sessions": 3,
+              "input_tokens": 156197,
+              "output_tokens": 1563,
+              "cached_input_tokens": 123264,
+              "total_tokens": 157760,
+              "native_model_responses": 6,
+              "native_seconds_sum": 64.028,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 3,
+              "mean_seconds_per_case": 21.34266666666667
+            },
+            "D2-L": {
+              "sessions": 6,
+              "input_tokens": 313808,
+              "output_tokens": 3142,
+              "cached_input_tokens": 243200,
+              "total_tokens": 316950,
+              "native_model_responses": 12,
+              "native_seconds_sum": 119.76,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 3,
+              "mean_seconds_per_case": 39.92
+            },
+            "P2-L": {
+              "sessions": 6,
+              "input_tokens": 314021,
+              "output_tokens": 5130,
+              "cached_input_tokens": 244864,
+              "total_tokens": 319151,
+              "native_model_responses": 12,
+              "native_seconds_sum": 162.287,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 3,
+              "mean_seconds_per_case": 54.095666666666666
+            }
+          }
+        },
+        "exploration": {
+          "unique": {
+            "sessions": 8,
+            "input_tokens": 1010691,
+            "output_tokens": 10746,
+            "cached_input_tokens": 861952,
+            "total_tokens": 1021437,
+            "native_model_responses": 32,
+            "native_seconds_sum": 297.90700000000004,
+            "model_aliases": [
+              "gpt-6-astra"
+            ],
+            "reasoning_efforts": [
+              "medium"
+            ],
+            "cases": 2,
+            "mean_seconds_per_case": 148.95350000000002
+          },
+          "methods": {
+            "D1-L": {
+              "sessions": 2,
+              "input_tokens": 255290,
+              "output_tokens": 2168,
+              "cached_input_tokens": 217472,
+              "total_tokens": 257458,
+              "native_model_responses": 8,
+              "native_seconds_sum": 63.861,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 2,
+              "mean_seconds_per_case": 31.9305
+            },
+            "D2-L": {
+              "sessions": 4,
+              "input_tokens": 510268,
+              "output_tokens": 4304,
+              "cached_input_tokens": 436352,
+              "total_tokens": 514572,
+              "native_model_responses": 16,
+              "native_seconds_sum": 119.35,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 2,
+              "mean_seconds_per_case": 59.675
+            },
+            "P2-L": {
+              "sessions": 4,
+              "input_tokens": 500423,
+              "output_tokens": 6442,
+              "cached_input_tokens": 425600,
+              "total_tokens": 506865,
+              "native_model_responses": 16,
+              "native_seconds_sum": 178.55700000000002,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 2,
+              "mean_seconds_per_case": 89.27850000000001
+            }
+          }
+        }
+      },
+      "input_delivery_audit": "completion_audit.json",
+      "model_snapshot": null,
+      "monetary_cost": null
+    },
+    "comparison_delivery_v2": {
+      "unique": {
+        "sessions": 8,
+        "input_tokens": 1294972,
+        "output_tokens": 9675,
+        "cached_input_tokens": 1051264,
+        "total_tokens": 1304647,
+        "native_model_responses": 34,
+        "native_seconds_sum": 286.32,
+        "model_aliases": [
+          "gpt-6-astra"
+        ],
+        "reasoning_efforts": [
+          "medium"
+        ],
+        "cases": 2,
+        "mean_seconds_per_case": 143.16
+      },
+      "phases": {
+        "exploration": {
+          "unique": {
+            "sessions": 8,
+            "input_tokens": 1294972,
+            "output_tokens": 9675,
+            "cached_input_tokens": 1051264,
+            "total_tokens": 1304647,
+            "native_model_responses": 34,
+            "native_seconds_sum": 286.32,
+            "model_aliases": [
+              "gpt-6-astra"
+            ],
+            "reasoning_efforts": [
+              "medium"
+            ],
+            "cases": 2,
+            "mean_seconds_per_case": 143.16
+          },
+          "methods": {
+            "D1-L": {
+              "sessions": 2,
+              "input_tokens": 249132,
+              "output_tokens": 1784,
+              "cached_input_tokens": 193664,
+              "total_tokens": 250916,
+              "native_model_responses": 7,
+              "native_seconds_sum": 56.456,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 2,
+              "mean_seconds_per_case": 28.228
+            },
+            "D2-L": {
+              "sessions": 4,
+              "input_tokens": 710531,
+              "output_tokens": 3561,
+              "cached_input_tokens": 577280,
+              "total_tokens": 714092,
+              "native_model_responses": 18,
+              "native_seconds_sum": 117.828,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 2,
+              "mean_seconds_per_case": 58.914
+            },
+            "P2-L": {
+              "sessions": 4,
+              "input_tokens": 584441,
+              "output_tokens": 6114,
+              "cached_input_tokens": 473984,
+              "total_tokens": 590555,
+              "native_model_responses": 16,
+              "native_seconds_sum": 168.492,
+              "model_aliases": [
+                "gpt-6-astra"
+              ],
+              "reasoning_efforts": [
+                "medium"
+              ],
+              "cases": 2,
+              "mean_seconds_per_case": 84.246
+            }
+          }
+        }
+      },
+      "input_delivery_audit": "completion_audit.json",
+      "model_snapshot": null,
+      "monetary_cost": null
+    }
+  }
+}

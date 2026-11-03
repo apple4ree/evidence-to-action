@@ -1,0 +1,5 @@
+{
+  "sha256": "21946a764fb96cb230d6d00163bedeab9beaeefa29092759daa32d7c5466a939",
+  "files": 798,
+  "scope": "Frozen synthetic inputs, authoring/review artifacts, prompts, code and saved diagnostic outputs. No native runtime conversation logs."
+}

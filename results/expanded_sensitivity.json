@@ -1,0 +1,52 @@
+{
+  "version": "post-evaluation-gold-review-v1",
+  "reviewer": "/root/final_results_audit",
+  "review_type": "independent post-unmasking LLM audit; not human validation",
+  "status": "separate method-common sensitivity; frozen originals unchanged",
+  "primary_results": "../test_results.json",
+  "methods_affected_equally": ["D1", "D2", "P2"],
+  "disputes": [
+    {
+      "record_id": "86d2b11b",
+      "unit_id": "86d2b11b:r2",
+      "resolution": "Account is a justified alternative attribution for the same legal-hold prohibition.",
+      "evidence": "Public P2 prohibits account closure under an active legal hold; e4 establishes that hold on org-cypress. The same P2/e4 relationship in 6ffa6325 already accepts account or mode. All three candidates identify both independent violations correctly, attaching both to account.",
+      "original_acceptable_field_sets": [["mode"]],
+      "sensitivity_acceptable_field_sets": [["mode"], ["account"], ["mode", "account"]],
+      "original_case_canonical_full_field_sets": [["account", "mode"]],
+      "sensitivity_case_canonical_full_field_sets": [["account"], ["account", "mode"]],
+      "rating_overlay": {"field_correct": true},
+      "unchanged": ["decision", "unit identity", "presence", "requirement", "evidence", "exception", "summary", "extra issues"],
+      "p2_stage_audit": {
+        "extraction": "r1 extracts current-owner authorization from P1; r2 extracts active-hold prohibition from P2. Both attach to account. Mode coverage explicitly states account-level prerequisites apply regardless of mode.",
+        "relation": "r1 is violated using e1/e2/e3, with e2/e3 establishing former-owner authorization; r2 is violated using authoritative e4. Both origins are extracted.",
+        "aggregation": "Retains both violations, returns unsupported with no validation errors and extraction_repairs=0.",
+        "conclusion": "No demonstrated extraction omission, evidence-linking failure, relation-judgment failure, or aggregation failure in this case. Frozen field mismatch is a gold equivalence issue."
+      }
+    },
+    {
+      "record_id": "6e2bdacf",
+      "unit_id": "6e2bdacf:r1",
+      "resolution": "Requirement-text inconsistency, with no score change justified.",
+      "original_issue_requirement_text": "A delegated format choice must belong to the archival-safe catalog.",
+      "clarified_requirement_text": "Format selection requires explicit owner choice or valid delegation; there is no default.",
+      "evidence": "TAR is archival-safe under e2; the violation is e3's explicit absence of owner choice and delegation under P2. The gold requirement_relations already state the clarified requirement, and every candidate diagnoses that relationship.",
+      "score_change": false
+    }
+  ],
+  "per_method_metrics_identical": {
+    "decision_accuracy": {"original": [72, 72], "sensitivity": [72, 72]},
+    "full_diagnostic_joint": {"original": [71, 72], "sensitivity": [72, 72]},
+    "unsupported_diagnostic_joint": {"original": [33, 34], "sensitivity": [34, 34]},
+    "annotated_field_set_coverage": {"original": [33, 34], "sensitivity": [34, 34]},
+    "field_accuracy": {"original": [39, 40], "sensitivity": [40, 40]},
+    "requirement_accuracy": {"original": [40, 40], "sensitivity": [40, 40]},
+    "evidence_accuracy": {"original": [40, 40], "sensitivity": [40, 40]},
+    "exception_accuracy": {"original": [40, 40], "sensitivity": [40, 40]},
+    "diagnostic_omission": {"original": [0, 40], "sensitivity": [0, 40]},
+    "false_issue_candidates": {"original": [0, 72], "sensitivity": [0, 72]}
+  },
+  "paired_method_differences": {"original_joint_difference": 0, "sensitivity_joint_difference": 0, "interpretation": "Tie remains; neither superiority nor statistical equivalence is established."},
+  "calculation": "Exact count sensitivity: one field unit and one joint case per method change; all other judgments are retained. No primary scorer, gold, ratings or results are overwritten. This is not a new preregistered primary analysis.",
+  "limits": "Final semantic ratings cover annotated core violations and S/I summaries. Stage-level reading here covers the disputed case only; zero demonstrated failures is not exhaustive stage-one extraction recall."
+}
