@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-11-03T10:25:25.936460+00:00",
+  "scoring_spec_pre_prediction": true,
+  "aggregation_code_written_during_execution": true,
+  "files": {
+    "evaluate.py": "d28ba3c48d6db08a5951f8d951cc095df005544a8e0a2ed21003d8bed76b96b8"
+  },
+  "note": "Aggregation implements frozen scoring definitions; not part of initial freeze. No gold or prompt modifications."
+}

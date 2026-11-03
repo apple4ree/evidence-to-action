@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R06_revise",
+  "case_id": "MAST-R06",
+  "stage": "revise",
+  "prepared_at": "2026-11-03T10:26:22.265083+00:00",
+  "request_sha256": "634b1302058d84ec4d6d32cd8f8f28e39264cf5c19fd157843a8642791a16008",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

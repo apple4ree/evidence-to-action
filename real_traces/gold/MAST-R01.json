@@ -1,0 +1,111 @@
+{
+  "case_id": "MAST-R01",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "unsupported",
+  "focal_relation": "Assess the basis for selecting the most-recommended artist in the completion answer.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+  "source": {
+    "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+    "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+    "sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d"
+  },
+  "public_input_sha256_before_focal_scope": "bbde09d258bf03d0e0106a33612fcc7cd29b5d086d71ca3f9d190e6219306950",
+  "semantic_components": [
+    {
+      "id": "selection",
+      "criterion": "Identifies first-list-position being substituted for recommendation frequency.",
+      "evidence_groups": [
+        [
+          "target"
+        ],
+        [
+          "handoff"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "source_loss",
+      "criterion": "Explains that unique-name set/list or unranked handoff does not establish frequency/rank.",
+      "evidence_groups": [
+        [
+          "set",
+          "handoff"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "scope",
+      "criterion": "Distinguishes absent ranking support from proof of the actual global winning artist.",
+      "evidence_groups": [
+        [
+          "target",
+          "handoff"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "set",
+      "locator": "/input/prior_record",
+      "quote": "        # I have obtained the recommended songs and their associated artists. Now, I will extract the unique artist names from the recommendations.\n        recommended_artists = set()\n        \n        for song in recommendations:\n            for artist in song['artists']:\n                recommended_artists.add(artist['name'])\n        \n        # Convert the set to a list and print the recommended artists\n        recommended_artists_list = list(recommended_artists)\n        print(recommended_artists_list)",
+      "original_locator": "L896-L905"
+    },
+    {
+      "id": "handoff",
+      "locator": "/input/prior_record",
+      "quote": "    Reply from Spotify Agent to Supervisor\n        The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele.\n        \n        \n        \nExiting Spotify Agent message loop\nResponse from send_message API\n    The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele.\n    \n    \n\nMessage to Supervisor Agent\n    The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele.",
+      "original_locator": "L921-L933"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "I'll assume the first artist in the list is the most recommended.",
+      "original_locator": "{'line_start': 938, 'line_end': 942}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "unsupported",
+    "issues": [
+      {
+        "field": "answer / ranking selection",
+        "requirement": "A most-recommended selection must preserve ranking or frequency information rather than substitute arbitrary list position.",
+        "evidence": [
+          {
+            "locator": "/input/prior_record",
+            "quote": "        # I have obtained the recommended songs and their associated artists. Now, I will extract the unique artist names from the recommendations.\n        recommended_artists = set()\n        \n        for song in recommendations:\n            for artist in song['artists']:\n                recommended_artists.add(artist['name'])\n        \n        # Convert the set to a list and print the recommended artists\n        recommended_artists_list = list(recommended_artists)\n        print(recommended_artists_list)"
+          },
+          {
+            "locator": "/input/prior_record",
+            "quote": "    Reply from Spotify Agent to Supervisor\n        The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele.\n        \n        \n        \nExiting Spotify Agent message loop\nResponse from send_message API\n    The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele.\n    \n    \n\nMessage to Supervisor Agent\n    The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele."
+          }
+        ],
+        "relation": "violated",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The supervisor explicitly admits missing frequency and selects the first name. The upstream unique-name transformation removes multiplicity, so the choice is unsupported by the delivered list."
+      }
+    ],
+    "rationale": "The supervisor explicitly admits missing frequency and selects the first name. The upstream unique-name transformation removes multiplicity, so the choice is unsupported by the delivered list.",
+    "limitations": "Raw counts/set transformation are evaluator-visible Spotify records. Do not claim Supervisor saw them. The true global winner is not gold."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Raw counts/set transformation are evaluator-visible Spotify records. Do not claim Supervisor saw them. The true global winner is not gold.",
+  "adjudication": {
+    "author_label": "Unsupported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/whowhen_reviews_mast.json",
+        "decision": "unsupported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "125cc498d8193d7e20890593a9f3f14fec6154312541c53dfd2ea3f7d98a8ef6",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

@@ -1,0 +1,46 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "field": "completion answer: most recommended artist",
+      "requirement": "Explicit task requirement: identify the artist most recommended to the user on Spotify.",
+      "source": [
+        {
+          "locator": "/input/prior_record",
+          "quote": "Name the artist most recommended to me on Spotify."
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "r2",
+      "field": "justification for selecting Lucas Grey",
+      "requirement": "Generic support relation: selecting Lucas Grey as most recommended must be justified by the published recommendation and handoff evidence. Treating the first artist in the returned list as most recommended requires evidence that the list order conveys that ranking.",
+      "source": [
+        {
+          "locator": "/input/target_action",
+          "quote": "Since the response doesn't specify the frequency, I'll assume the first artist in the list is the most recommended."
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "recommended_artists = set()"
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "recommended_artists_list = list(recommended_artists)"
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele."
+        }
+      ],
+      "exceptions": []
+    }
+  ],
+  "capture_limits": [
+    "The published record contains cross-actor evidence; the Spotify agent's detailed recommendation results cannot automatically be treated as information received by the Supervisor.",
+    "Original per-actor serialized context and hidden policies are not verified.",
+    "The shown recommendation request fetches only page_index=0 with page_limit=5; completeness of the user's recommendations is not established.",
+    "No explicit mandatory lookup policy or exception authorizing a first-listed-artist assumption is provided."
+  ]
+}

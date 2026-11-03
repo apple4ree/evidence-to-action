@@ -1,0 +1,13 @@
+{
+  "call_id": "WW-new-4-14_relate",
+  "case_id": "WW-new-4-14",
+  "stage": "relate",
+  "prepared_at": "2026-11-03T10:26:22.277063+00:00",
+  "request_sha256": "828b3ee4d6262f0f5e7a9bc15ddd81986a8a20a3f00ef1669825b2f004acf455",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

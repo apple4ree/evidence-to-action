@@ -1,0 +1,66 @@
+{
+  "decision": "Unsupported",
+  "issues": [
+    {
+      "field": "complete_task.answer",
+      "requirement": "The selected artist must be justified as most recommended by the published recommendation and handoff records.",
+      "evidence": [
+        {
+          "locator": "/input/prior_record",
+          "quote": "Name the artist most recommended to me on Spotify."
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "recommended_artists = set()"
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "recommended_artists_list = list(recommended_artists)"
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "Message to Supervisor Agent\n    The recommended artists are: Lucas Grey, Felix Blackwood, Lucas Diaz, Ava Morgan, Orion Steele."
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "Since the response doesn't specify the frequency, I'll assume the first artist in the list is the most recommended."
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "most_recommended_artist = \"Lucas Grey\""
+        }
+      ],
+      "relation": "violated",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The Supervisor converts membership in a deduplicated artist list into a frequency ranking. The published extraction uses a set and then a list, with no frequency calculation or ranking conveyed in the handoff. Its first position therefore does not justify selecting Lucas Grey as most recommended. This is an explicit unsupported inference in the target action, rather than an inferred omission of a hidden mandatory check. The extraction is cross-actor evaluator evidence; the record does not establish that the Supervisor received that code or the underlying songs."
+    },
+    {
+      "field": "most-recommended artist across all recommendations",
+      "requirement": "A conclusion about the overall most recommended artist requires evidence establishing the relevant recommendation coverage and comparison.",
+      "evidence": [
+        {
+          "locator": "/input/prior_record",
+          "quote": "# Fetch the first page of recommendations"
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "recommendations = apis.spotify.show_recommendations(access_token=access_token, page_index=0, page_limit=5)"
+        }
+      ],
+      "relation": "unresolved",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The published retrieval covers the first five recommendations without establishing that these exhaust the recommendation set. The overall winning artist cannot be determined from this record. That uncertainty does not repair the invalid inference from the handoff's first position."
+    }
+  ],
+  "rationale": "The completion's stated justification conflicts with the handoff's documented construction: a list of unique artists is treated as a frequency ranking. The focal justification is unsupported, although the actual most recommended artist across all recommendations remains unresolved.",
+  "limitations": [
+    "The record does not establish complete recommendation coverage.",
+    "Original per-actor serialized context and hidden policies are not verified; the cross-actor record is not assumed to have been visible in full to the Supervisor."
+  ]
+}

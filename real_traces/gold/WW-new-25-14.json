@@ -1,0 +1,93 @@
+{
+  "case_id": "WW-new-25-14",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "unsupported",
+  "focal_relation": "Assess preservation of the requested revision-counting time boundary in the delegated instruction.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+  "source": {
+    "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+    "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+    "sha256": "6552252eb5b7eb38a25cf01f7a4501d3f961b7ae64a6ce084b278c0453ba2309"
+  },
+  "public_input_sha256_before_focal_scope": "da7f78826243248ac434493533dfa90f04e2883ed9b5452d25dc739f288dc159",
+  "semantic_components": [
+    {
+      "id": "original_boundary",
+      "criterion": "Identifies user month-based cutoff.",
+      "evidence_groups": [
+        [
+          "user"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "changed_boundary",
+      "criterion": "Explains target day-based cutoff admits a different interval and changes task scope.",
+      "evidence_groups": [
+        [
+          "user"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "user",
+      "locator": "/input/history/0/content",
+      "quote": "before the month listed as the game's release date",
+      "original_locator": "/history/0/content"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "before the game's release date, which is April 20, 2018",
+      "original_locator": "{'json_pointer': '/history/14/content'}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "unsupported",
+    "issues": [
+      {
+        "field": "instruction counting boundary",
+        "requirement": "Preserve before-release-month boundary, not before-release-day.",
+        "evidence": [
+          {
+            "locator": "/input/history/0/content",
+            "quote": "before the month listed as the game's release date"
+          }
+        ],
+        "relation": "violated",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The instruction changes before the release month to before the release date."
+      }
+    ],
+    "rationale": "The instruction changes before the release month to before the release date.",
+    "limitations": "Do not grade actual release date, game-year ambiguity, or true revision count. No external facts needed."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Do not grade actual release date, game-year ambiguity, or true revision count. No external facts needed.",
+  "adjudication": {
+    "author_label": "Unsupported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/agenthallu_reviews_whowhen.json",
+        "decision": "Unsupported"
+      },
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/mast_reviews_whowhen.json",
+        "decision": "unsupported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "20960f26604a7b65adb7db282d83efbc669a0c46b5f953b8919e63ac2ba8cab6",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

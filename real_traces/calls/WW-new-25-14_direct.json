@@ -1,0 +1,13 @@
+{
+  "call_id": "WW-new-25-14_direct",
+  "case_id": "WW-new-25-14",
+  "stage": "direct",
+  "prepared_at": "2026-11-03T09:58:19.111144+00:00",
+  "request_sha256": "75b46f7901052ecc5362c6ba6e30e8a1076904e7a4ce586ea5074b5f620eee4a",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

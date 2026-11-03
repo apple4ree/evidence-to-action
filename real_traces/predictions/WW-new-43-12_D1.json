@@ -1,0 +1,58 @@
+{
+  "decision": "Unsupported",
+  "issues": [
+    {
+      "field": "Assertion that the extracted observations verify the complete station count",
+      "requirement": "The extraction must cover the relevant interval to support attributing a verified count between South Station and Windsor Gardens to those observations.",
+      "evidence": [
+        {
+          "locator": "/input/history/8/content",
+          "quote": "The viewport shows 40% of the webpage, and is positioned at the top of the page."
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "This is all visible text and labels from the provided image of the website page."
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "South Station is not shown in the extracted portion"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "Verification of the stops and count is complete"
+        }
+      ],
+      "relation": "violated",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The recorded extraction explicitly covers only a partial viewport, and the target acknowledges that South Station is absent. Six listed stations in that partial view do not establish that the entire requested interval contains exactly six stations. The assertion of completed verification therefore exceeds the stated observation scope."
+    },
+    {
+      "field": "Verification for May 2023",
+      "requirement": "Attributing verification of the requested count to the extraction requires evidence that the observations apply to May 2023.",
+      "evidence": [
+        {
+          "locator": "/input/history/0/content",
+          "quote": "As of May 2023"
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "Schedule for:\nToday (Calendar icon)"
+        }
+      ],
+      "relation": "unresolved",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The extracted page is labeled Today, and the record does not establish that its displayed schedule applies to May 2023."
+    }
+  ],
+  "rationale": "The target attributes a verified complete count to an explicitly partial extraction that omits one endpoint. That established support-attribution failure warrants Unsupported regardless of the unresolved historical applicability.",
+  "limitations": [
+    "The external true station count is not established or evaluated.",
+    "The original full actor payload and system prompt are not verified; this diagnosis concerns the target's attribution to the recorded extraction."
+  ]
+}

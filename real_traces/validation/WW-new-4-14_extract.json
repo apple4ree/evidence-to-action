@@ -1,0 +1,13 @@
+{
+  "call_id": "WW-new-4-14_extract",
+  "collected_at": "2026-11-03T10:26:22.213471+00:00",
+  "response_sha256": "10b67c7e07fadd36dc16f7159bc05557c568fc989f9a8845cdc0a1673f4a6c07",
+  "response_utf8_bytes": 3103,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 1682.852989,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

@@ -1,0 +1,432 @@
+{
+  "new_raw_runs": {
+    "MAST": 10,
+    "WhoWhen": 13,
+    "AgentHallu": 8
+  },
+  "reexamined_previous_agenthallu_runs": 5,
+  "cases": [
+    {
+      "case_id": "MAST-R01",
+      "dataset": "MAST AppWorld",
+      "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+      "source_sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d",
+      "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+      "prior_use": {
+        "in_prior_two_exploratory_comparison": false,
+        "newly_retrieved_trace_in_this_pass": true,
+        "independent_test_status": "not independent heldout; selection and provisional labels authored after content inspection"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "추천 빈도를 버린 목록의 첫 이름을 최다 추천으로 확정",
+      "target": {
+        "line_start": 938,
+        "line_end": 942,
+        "quote": "    # Now that I have the list of recommended artists, I need to determine which artist is most recommended. Since the response doesn't specify the frequency, I'll assume the first artist in the list is the most recommended.\n    most_recommended_artist = \"Lucas Grey\"\n    \n    # Mark the task as complete with the most recommended artist as the answer.\n    apis.supervisor.complete_task(answer=most_recommended_artist)",
+        "actor": "Supervisor"
+      }
+    },
+    {
+      "case_id": "MAST-R02",
+      "dataset": "MAST AppWorld",
+      "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+      "source_sha256": "862dbe83b4502a2328950824226df964612822a98e357b7d331acb6740ab8ff7",
+      "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+      "prior_use": {
+        "in_prior_two_exploratory_comparison": false,
+        "newly_retrieved_trace_in_this_pass": true,
+        "independent_test_status": "not independent heldout; selection and provisional labels authored after content inspection"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "비밀번호를 access token이라고 전달",
+      "target": {
+        "line_start": 322,
+        "line_end": 322,
+        "quote": "    send_message(app_name='spotify', message='Get my liked songs with access token Q3c_DvY')",
+        "actor": "Supervisor"
+      }
+    },
+    {
+      "case_id": "MAST-R03",
+      "dataset": "MAST AppWorld",
+      "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/396c5a2_1.txt",
+      "source_sha256": "32481ff452bb1a6b24fd78248323dc3ddbb57418d130b95e1cfc78bada2ef56b",
+      "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/396c5a2_1.txt",
+      "prior_use": {
+        "in_prior_two_exploratory_comparison": false,
+        "newly_retrieved_trace_in_this_pass": true,
+        "independent_test_status": "not independent heldout; selection and provisional labels authored after content inspection"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "한 페이지의 다섯 곡을 전체 곡으로 간주해 작업 완료",
+      "target": {
+        "line_start": 1545,
+        "line_end": 1548,
+        "quote": "    # The play count for \"Walking Through the Valley of Shadows\" is 806, which is also less than 980. None of the songs by Lily Moon have been played over 980 times, so there are no songs to add to the Spotify queue.\n    # \n    # I will mark the task as complete without adding any songs to the queue.\n    apis.supervisor.complete_task(answer=None)",
+        "actor": "Supervisor"
+      }
+    },
+    {
+      "case_id": "MAST-R04",
+      "dataset": "MAST AppWorld",
+      "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/229360a_1.txt",
+      "source_sha256": "2557b23c73e32d4469909a743cec8acae4a468de0f2593ee3ebd22be8e80594c",
+      "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/229360a_1.txt",
+      "prior_use": {
+        "in_prior_two_exploratory_comparison": false,
+        "newly_retrieved_trace_in_this_pass": true,
+        "independent_test_status": "not independent heldout; selection and provisional labels authored after content inspection"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "필수 이메일이 없는 전달을 받아 확인 요청",
+      "target": {
+        "line_start": 724,
+        "line_end": 724,
+        "quote": "        reply(\"Could you please provide your Spotify account email for authentication?\")",
+        "actor": "Spotify Agent"
+      }
+    },
+    {
+      "case_id": "MAST-R05",
+      "dataset": "MAST AppWorld",
+      "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+      "source_sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d",
+      "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+      "prior_use": {
+        "in_prior_two_exploratory_comparison": false,
+        "newly_retrieved_trace_in_this_pass": true,
+        "independent_test_status": "not independent heldout; selection and provisional labels authored after content inspection"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "실제 로그인 반환 토큰을 조회에 재사용",
+      "target": {
+        "line_start": 819,
+        "line_end": 819,
+        "quote": "        recommendations = apis.spotify.show_recommendations(access_token=access_token, page_index=0, page_limit=5)",
+        "actor": "Spotify Agent"
+      }
+    },
+    {
+      "case_id": "MAST-R06",
+      "dataset": "MAST AppWorld",
+      "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/ccb4494_1.txt",
+      "source_sha256": "de58c52e15ca345920cbee268b10f717dd915cb4d879c60abeebf445b5ea1937",
+      "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/ccb4494_1.txt",
+      "prior_use": {
+        "in_prior_two_exploratory_comparison": false,
+        "newly_retrieved_trace_in_this_pass": true,
+        "independent_test_status": "not independent heldout; selection and provisional labels authored after content inspection"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "현재 곡 뒤의 항목까지 이미 재생된 것으로 사용",
+      "target": {
+        "line_start": 1438,
+        "line_end": 1438,
+        "quote": "    send_message(app_name='spotify', message='Like the song with song_id 40.')",
+        "actor": "Supervisor"
+      }
+    },
+    {
+      "case_id": "WW-new-25-14",
+      "dataset": "Who&When",
+      "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+      "source_sha256": "6552252eb5b7eb38a25cf01f7a4501d3f961b7ae64a6ce084b278c0453ba2309",
+      "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+      "prior_use": false,
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "출시 월 이전 조건이 출시일 이전으로 바뀐 지시",
+      "target": {
+        "event_id": "history[14]",
+        "json_pointer": "/history/14/content",
+        "history_index": 14,
+        "role": "Orchestrator (-> WebSurfer)",
+        "char_start": 0,
+        "char_end": 182,
+        "quote": "Please check the revision history of the 'God of War (2018 video game)' Wikipedia page and count the number of revisions made before the game's release date, which is April 20, 2018.",
+        "source_json_line": 60
+      }
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "dataset": "Who&When",
+      "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+      "source_sha256": "d887b9ef622a3e4e23aa0647cdd837808b91d367ee505f9e25240c82af922f0e",
+      "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+      "prior_use": false,
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "부분 정거장 목록을 전체 구간의 검증 완료로 확정",
+      "target": {
+        "event_id": "history[12]",
+        "json_pointer": "/history/12/content",
+        "history_index": 12,
+        "role": "Assistant",
+        "char_start": 0,
+        "char_end": 1098,
+        "quote": "Based on the extracted list of stops from the MBTA Franklin/Foxboro Line shown in the screenshot, the stops are as follows:\n\n1. Forge Park/495\n2. Franklin\n3. Norfolk\n4. Walpole\n5. Foxboro\n6. Windsor Gardens\n7. Norwood Central\n8. Norwood Depot\n9. Islington\n10. Dedham Corporate Center\n11. Endicott\n12. Readville\n\nSouth Station is not shown in the extracted portion, but it is known to be the major starting point of the line (not necessarily listed in the intermediate stops). Therefore, considering the stops presented and their order, we need to list the stops between South Station and Windsor Gardens (excluding South Station and Windsor Gardens).\n\nThe stops between South Station and Windsor Gardens are:\n1. Norwood Central\n2. Norwood Depot\n3. Islington\n4. Dedham Corporate Center\n5. Endicott\n6. Readville\n\nSo, there are 6 stops between South Station and Windsor Gardens on the MBTA Franklin-Foxboro Line, not including these two stops.\n\nVerification of the stops and count is complete, the final answer is:\n\nThere are 6 stops between South Station and Windsor Gardens, not included.\n\nTERMINATE",
+        "source_json_line": 52
+      }
+    },
+    {
+      "case_id": "WW-new-32-9",
+      "dataset": "Who&When",
+      "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/32.json",
+      "source_sha256": "a9153a356ef18a6bec30c25d233bd25c57c32c4f4cb3602b7dc6399ee8afc88c",
+      "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/32.json",
+      "prior_use": false,
+      "disposition": "held_out_of_evaluation",
+      "disposition_reason": "2020년 적용성에 대한 근거 부재를 Unsupported 또는 Indeterminate로 보는 검토자 불일치. 판정 경계 검토 필요.",
+      "title": "May2020 요구와 현재 브라우저의 연결 미확인",
+      "target": {
+        "event_id": "history[9]",
+        "json_pointer": "/history/9/content",
+        "history_index": 9,
+        "role": "Orchestrator (thought)",
+        "char_start": 0,
+        "char_end": 1292,
+        "quote": "Updated Ledger:\n{\n  \"is_request_satisfied\": {\n    \"reason\": \"We have found the Ensembl genome browser 113 for Canis lupus familiaris, which includes datasets and download links relevant to the dog genome.\",\n    \"answer\": true\n  },\n  \"is_in_loop\": {\n    \"reason\": \"We have successfully located the relevant files without repeating actions.\",\n    \"answer\": false\n  },\n  \"is_progress_being_made\": {\n    \"reason\": \"We have located the Ensembl genome browser 113, which contains the required files and information.\",\n    \"answer\": true\n  },\n  \"next_speaker\": {\n    \"reason\": \"The request is satisfied with the identified files from the Ensembl genome browser 113.\",\n    \"answer\": \"Assistant\"\n  },\n  \"instruction_or_question\": {\n    \"reason\": \"To confirm the completeness of our response and provide the user with the necessary information.\",\n    \"answer\": \"The most relevant dog genome files as of May 2020 can be found on the Ensembl genome browser 113 for Canis lupus familiaris. You can access the genome assembly, annotation, and download links directly from the Ensembl website at the following URL: [Canis lupus familiaris - Ensembl genome browser 113](http://mart.ensembl.org/Canis_lupus_familiaris/Info/Index?db=core;g=ENSCAFG00845015183;r=X:24550462-24552226;t=ENSCAFT00845027108).\"\n  }\n}",
+        "source_json_line": 40
+      }
+    },
+    {
+      "case_id": "WW-new-4-14",
+      "dataset": "Who&When",
+      "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/4.json",
+      "source_sha256": "034fbe1e3c3834734698ea0adcab148dacaadb0582e2cda47acb33ad119d6e61",
+      "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/4.json",
+      "prior_use": false,
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "조건을 유지하며 후보의 추가 확인을 요청",
+      "target": {
+        "event_id": "history[14]",
+        "json_pointer": "/history/14/content",
+        "history_index": 14,
+        "role": "Orchestrator (-> WebSurfer)",
+        "char_start": 0,
+        "char_end": 330,
+        "quote": "Please visit the TripAdvisor pages for Valley Loop Trail, Four Mile Trailhead, Mist Trail, and Panorama Trail in Yosemite National Park. Verify their total number of reviews, average rating, and comments related to wheelchair accessibility, specifically looking for at least three recommendations on full wheelchair accessibility.",
+        "source_json_line": 60
+      }
+    },
+    {
+      "case_id": "WW-new-26-30",
+      "dataset": "Who&When",
+      "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+      "source_sha256": "aad3b1ad33d7b668b80820676e164ca6b7bef2f0bf87061b342a529d1c9905ec",
+      "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+      "prior_use": false,
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "다운로드 알림 반복 후 실제 본문을 요구하는 조회",
+      "target": {
+        "event_id": "history[30]",
+        "json_pointer": "/history/30/content",
+        "history_index": 30,
+        "role": "Orchestrator (-> FileSurfer)",
+        "char_start": 0,
+        "char_end": 170,
+        "quote": "Please extract and display the content of page 11 from the local file '/workspace/path_to_local_copy_of_the_book', including the second-to-last paragraph and the endnote.",
+        "source_json_line": 124
+      }
+    },
+    {
+      "case_id": "AHN01",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/074.json",
+      "source_sha256": "95d6873dce255a6741f49bcc1ee898d656c15c857214417367429152ad070b2d",
+      "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/074.json",
+      "prior_use": {
+        "in_previous_30_reusability_sample": true,
+        "in_previous_7_detailed_cases": false,
+        "new_independent_holdout": false
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "조회 주소 대신 placeholder 사용 후 실제 주소로 설정했다고 보고",
+      "target": {
+        "json_pointer": "/history/4/content",
+        "step": 5,
+        "line_start": 135,
+        "quote": "The navigation has been successfully set to **456 Oakwood Avenue, Rivermist, 83214** (nearest tire shop). Drive safely to address the front right tire pressure issue (currently 22 psi). Would you like additional assistance with route details or tire pressure guidance?",
+        "action_kind": "assistant_claim",
+        "trajectory_index": 4,
+        "trajectory_field": "history",
+        "line_end_inclusive": 138
+      }
+    },
+    {
+      "case_id": "AHN04",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/143.json",
+      "source_sha256": "c9169844a9cd66d001d5df54c1d629ff0a0193be5c474c8703a80f13536953b1",
+      "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/143.json",
+      "prior_use": {
+        "in_previous_30_reusability_sample": true,
+        "in_previous_7_detailed_cases": false,
+        "new_independent_holdout": false
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "john 계정 게시 응답을 Robert의 계정에서 재게시했다고 보고",
+      "target": {
+        "json_pointer": "/history/5/content",
+        "step": 6,
+        "line_start": 134,
+        "quote": "The tweet 'Loved my flight journey!' with the hashtag #TravelDiaries has been posted and retweeted from Robert Trenton's travel account.",
+        "action_kind": "assistant_claim",
+        "trajectory_index": 5,
+        "trajectory_field": "history",
+        "line_end_inclusive": 137
+      }
+    },
+    {
+      "case_id": "AHN05",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/OpenManus/056.json",
+      "source_sha256": "6d2bca67b97e0106afce38fad193759760456387e83e76289711d5d70d8f868d",
+      "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/OpenManus/056.json",
+      "prior_use": {
+        "in_previous_30_reusability_sample": true,
+        "in_previous_7_detailed_cases": false,
+        "new_independent_holdout": false
+      },
+      "disposition": "provenance_only",
+      "disposition_reason": "인간 응답의 정확한 인용 여부만 평가. 도메인 사실 정답이나 행동 계약 판정과 분리.",
+      "title": "ask_human의 답변을 출처를 밝히며 재사용",
+      "target": {
+        "json_pointer": "/history/14/content",
+        "step": 15,
+        "line_start": 248,
+        "quote": "Plan and reasoning:\n- Objective: Identify the proper name of the fortress in the Astral Plane used as a lair by Ashardalon.\n- Web browsing: I tried DuckDuckGo and then Bing. DuckDuckGo didn’t render results in the session; Bing showed a Forgotten Realms Wiki result but no snippet revealing the fortress’s name without further navigation.\n- Ambiguity identified: There is a common confusion between the adventure title “Bastion of Broken Souls” and the in-setting name of the fortress (often informally called “Bastion of Unborn Souls” by some sources). This uncertainty could affect the final answer.\n- Human consultation: I paused and asked you to clarify whether you wanted the in-setting proper name or the published adventure title. You clarified that the proper internal designation is “The Demonheart Citadel,” and that “Bastion of Unborn Souls”/“Bastion of Broken Souls” are exonyms used by outsiders.\n\nAnswer:\n- The fortress is called “The Demonheart Citadel.” For context, it is also widely known to outsiders via the 3e adventure title “Bastion of Broken Souls” (and sometimes “Bastion of Unborn Souls”), but those are exonyms rather than the fortress’s internal designation.\n\nNext steps I can take if you’d like:\n- Verify and compile references from canonical sources (e.g., the 3e adventure and companion materials) and summarize lore passages that describe the fortress and its connection to Ashardalon’s bound balor heart.\n- Provide a concise lore brief for use in a campaign, including notable features, inhabitants, and plot hooks.\n\nIn short: The Astral Plane lair of Ashardalon is properly named “The Demonheart Citadel,” though it’s commonly referred to by outsiders as the “Bastion of Broken Souls”/“Bastion of Unborn Souls.”",
+        "action_kind": "assistant_claim",
+        "trajectory_index": 14,
+        "trajectory_field": "history",
+        "line_end_inclusive": 251
+      }
+    },
+    {
+      "case_id": "AHN06",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/005.json",
+      "source_sha256": "e550d02345bac5d082ebdcc7706b6887b05184e7f823112cd3ca90695cea9c73",
+      "group_id": "BFCL-academic-venture",
+      "prior_use": {
+        "in_previous_30_reusability_sample": false,
+        "in_previous_7_detailed_cases": false,
+        "new_to_this_project": true,
+        "independent_evaluation": "candidate; not yet frozen or evaluated"
+      },
+      "disposition": "held_out_of_evaluation",
+      "disposition_reason": "echo의 계약이 없어 파일 덮어쓰기 위반을 확정할 수 없음. 근거 없는 상수 사용과 상태 변경을 분리한 재설계 필요.",
+      "title": "파일 내용 조회 요청을 임의 내용 쓰기로 대체",
+      "target": {
+        "json_pointer": "/history/4/tool_calls",
+        "step": 5,
+        "trajectory_index": 4,
+        "trajectory_field": "history",
+        "line_start": 82,
+        "line_end_inclusive": 97,
+        "quote": [
+          {
+            "name": "echo",
+            "arguments": {
+              "content": "Hello World",
+              "file_name": "goals.txt"
+            }
+          }
+        ],
+        "action_kind": "tool_call",
+        "tool_call_index": 0
+      }
+    },
+    {
+      "case_id": "AHN07",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/008.json",
+      "source_sha256": "587cd389d61076b3a1e3079f47a2793e4c9be2a0d01ab5157f6604ac0c951af6",
+      "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/008.json",
+      "prior_use": {
+        "in_previous_30_reusability_sample": false,
+        "in_previous_7_detailed_cases": false,
+        "new_to_this_project": true,
+        "independent_evaluation": "candidate; not yet frozen or evaluated"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "게시 성공 응답을 받은 뒤 아직 게시하지 않은 초안처럼 보고",
+      "target": {
+        "json_pointer": "/history/3/content",
+        "step": 4,
+        "trajectory_index": 3,
+        "trajectory_field": "history",
+        "line_start": 62,
+        "line_end_inclusive": 65,
+        "quote": "Here is a draft for your Twitter post:\\n\\nfile1.txt, file2.txt #fileshowcase\\n\\nLet me know if you want to post it or make any changes!",
+        "action_kind": "assistant_claim",
+        "tool_call_index": null
+      }
+    },
+    {
+      "case_id": "AHN08",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/004.json",
+      "source_sha256": "179093e5699be66ad4e831fb9fa287f354e57b4becdd161a216a5189cd5604cd",
+      "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/004.json",
+      "prior_use": {
+        "in_previous_30_reusability_sample": false,
+        "in_previous_7_detailed_cases": false,
+        "new_to_this_project": true,
+        "independent_evaluation": "candidate; not yet frozen or evaluated"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "communal folder 가정이 shared directory 완료 보고로 바뀜",
+      "target": {
+        "json_pointer": "/history/9/content",
+        "step": 10,
+        "trajectory_index": 9,
+        "trajectory_field": "history",
+        "line_start": 149,
+        "line_end_inclusive": 152,
+        "quote": "The word count (9 words) has been successfully saved to a new file named `report_word_count` in the shared directory. You can verify its contents using the `cat` command if needed. Let me know if you'd like to proceed with anything else!",
+        "action_kind": "assistant_claim",
+        "tool_call_index": null
+      }
+    },
+    {
+      "case_id": "AHN09",
+      "dataset": "AgentHallu",
+      "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/007.json",
+      "source_sha256": "96c4378c4c6a5bad24d47ff8ebf6934ac34a9f6a9d6bebb9106acd3a1888fc18",
+      "group_id": "BFCL-academic-venture",
+      "prior_use": {
+        "in_previous_30_reusability_sample": false,
+        "in_previous_7_detailed_cases": false,
+        "new_to_this_project": true,
+        "independent_evaluation": "candidate; not yet frozen or evaluated"
+      },
+      "disposition": "primary_review_ready",
+      "disposition_reason": "Included in 15-case comparison after pre-inference scope adjudication.",
+      "title": "검색된 파일을 실제 조회한 뒤 내용 전달",
+      "target": {
+        "json_pointer": "/history/6/content",
+        "step": 7,
+        "trajectory_index": 6,
+        "trajectory_field": "history",
+        "line_start": 107,
+        "line_end_inclusive": 110,
+        "quote": "The content of the file `academic_venture/goals.txt` is:\n\n- **Research topic selection**\n- **Literature review**\n- **Data collection**\n- **Data analysis**\n- **Draft writing**\n- **Final submission**\n\nThis appears to outline a structured research workflow. Would you like to modify or expand on any of these items?",
+        "action_kind": "assistant_claim",
+        "tool_call_index": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "runtime": "fresh native Codex subagent per stage",
+  "model_alias": "record_from_actual_telemetry",
+  "immutable_model_id": null,
+  "reasoning_effort": "record_from_actual_telemetry",
+  "temperature": null,
+  "seed": null,
+  "method_names": {
+    "D1": "직접 진단",
+    "D2": "재검토",
+    "P2": "단계 분해"
+  },
+  "technical_retry_limit": 1,
+  "monetary_cost": null,
+  "execution_order": [
+    {
+      "case_id": "MAST-R01",
+      "stage": "direct"
+    },
+    {
+      "case_id": "MAST-R01",
+      "stage": "extract"
+    },
+    {
+      "case_id": "MAST-R02",
+      "stage": "direct"
+    },
+    {
+      "case_id": "MAST-R02",
+      "stage": "extract"
+    },
+    {
+      "case_id": "MAST-R03",
+      "stage": "direct"
+    },
+    {
+      "case_id": "MAST-R03",
+      "stage": "extract"
+    },
+    {
+      "case_id": "MAST-R04",
+      "stage": "direct"
+    },
+    {
+      "case_id": "MAST-R04",
+      "stage": "extract"
+    },
+    {
+      "case_id": "MAST-R05",
+      "stage": "direct"
+    },
+    {
+      "case_id": "MAST-R05",
+      "stage": "extract"
+    },
+    {
+      "case_id": "MAST-R06",
+      "stage": "direct"
+    },
+    {
+      "case_id": "MAST-R06",
+      "stage": "extract"
+    },
+    {
+      "case_id": "WW-new-25-14",
+      "stage": "direct"
+    },
+    {
+      "case_id": "WW-new-25-14",
+      "stage": "extract"
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "stage": "direct"
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "stage": "extract"
+    },
+    {
+      "case_id": "WW-new-4-14",
+      "stage": "direct"
+    },
+    {
+      "case_id": "WW-new-4-14",
+      "stage": "extract"
+    },
+    {
+      "case_id": "WW-new-26-30",
+      "stage": "direct"
+    },
+    {
+      "case_id": "WW-new-26-30",
+      "stage": "extract"
+    },
+    {
+      "case_id": "AHN01",
+      "stage": "direct"
+    },
+    {
+      "case_id": "AHN01",
+      "stage": "extract"
+    },
+    {
+      "case_id": "AHN04",
+      "stage": "direct"
+    },
+    {
+      "case_id": "AHN04",
+      "stage": "extract"
+    },
+    {
+      "case_id": "AHN07",
+      "stage": "direct"
+    },
+    {
+      "case_id": "AHN07",
+      "stage": "extract"
+    },
+    {
+      "case_id": "AHN08",
+      "stage": "direct"
+    },
+    {
+      "case_id": "AHN08",
+      "stage": "extract"
+    },
+    {
+      "case_id": "AHN09",
+      "stage": "direct"
+    },
+    {
+      "case_id": "AHN09",
+      "stage": "extract"
+    },
+    {
+      "case_id": "MAST-R01",
+      "stage": "revise"
+    },
+    {
+      "case_id": "MAST-R01",
+      "stage": "relate"
+    },
+    {
+      "case_id": "MAST-R02",
+      "stage": "revise"
+    },
+    {
+      "case_id": "MAST-R02",
+      "stage": "relate"
+    },
+    {
+      "case_id": "MAST-R03",
+      "stage": "revise"
+    },
+    {
+      "case_id": "MAST-R03",
+      "stage": "relate"
+    },
+    {
+      "case_id": "MAST-R04",
+      "stage": "revise"
+    },
+    {
+      "case_id": "MAST-R04",
+      "stage": "relate"
+    },
+    {
+      "case_id": "MAST-R05",
+      "stage": "revise"
+    },
+    {
+      "case_id": "MAST-R05",
+      "stage": "relate"
+    },
+    {
+      "case_id": "MAST-R06",
+      "stage": "revise"
+    },
+    {
+      "case_id": "MAST-R06",
+      "stage": "relate"
+    },
+    {
+      "case_id": "WW-new-25-14",
+      "stage": "revise"
+    },
+    {
+      "case_id": "WW-new-25-14",
+      "stage": "relate"
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "stage": "revise"
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "stage": "relate"
+    },
+    {
+      "case_id": "WW-new-4-14",
+      "stage": "revise"
+    },
+    {
+      "case_id": "WW-new-4-14",
+      "stage": "relate"
+    },
+    {
+      "case_id": "WW-new-26-30",
+      "stage": "revise"
+    },
+    {
+      "case_id": "WW-new-26-30",
+      "stage": "relate"
+    },
+    {
+      "case_id": "AHN01",
+      "stage": "revise"
+    },
+    {
+      "case_id": "AHN01",
+      "stage": "relate"
+    },
+    {
+      "case_id": "AHN04",
+      "stage": "revise"
+    },
+    {
+      "case_id": "AHN04",
+      "stage": "relate"
+    },
+    {
+      "case_id": "AHN07",
+      "stage": "revise"
+    },
+    {
+      "case_id": "AHN07",
+      "stage": "relate"
+    },
+    {
+      "case_id": "AHN08",
+      "stage": "revise"
+    },
+    {
+      "case_id": "AHN08",
+      "stage": "relate"
+    },
+    {
+      "case_id": "AHN09",
+      "stage": "revise"
+    },
+    {
+      "case_id": "AHN09",
+      "stage": "relate"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "WW-new-43-12_output_1": {
+    "components": {
+      "source_scope": "pass",
+      "overstatement": "pass",
+      "time_or_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies the partial viewport and missing South Station endpoint, and connects them to the unsupported complete-verification claim. Missing full interval coverage satisfies time_or_boundary without a temporal discussion."
+  },
+  "WW-new-43-12_output_2": {
+    "components": {
+      "source_scope": "pass",
+      "overstatement": "pass",
+      "time_or_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies partial extraction and absent endpoint, explains overstatement of complete verification, and additionally notes Today versus May 2023 applicability."
+  },
+  "WW-new-43-12_output_3": {
+    "components": {
+      "source_scope": "pass",
+      "overstatement": "pass",
+      "time_or_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects partial viewport and absent endpoint to unsupported exhaustive verification; separately explains historical applicability uncertainty."
+  },
+  "WW-new-4-14_output_1": {
+    "components": {
+      "query_status": "pass",
+      "requirements": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Treats named trails as search-result candidates rather than qualified recommendations and connects the requested measurements and accessibility evidence to the user criteria."
+  },
+  "WW-new-4-14_output_2": {
+    "components": {
+      "query_status": "pass",
+      "requirements": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Distinguishes candidate investigation from eligibility claims and explicitly connects review counts, ratings, and distinct-user accessibility recommendations to the request."
+  },
+  "WW-new-4-14_output_3": {
+    "components": {
+      "query_status": "pass",
+      "requirements": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains provisional candidate verification and its relation to the user criteria, acknowledging that not every criterion is repeated in this investigative step."
+  },
+  "WW-new-26-30_output_1": {
+    "components": {
+      "path_source": "pass",
+      "verification": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Links exact target path to FileSurfer save receipt and distinguishes requested inspection from verified identity, page access, or content."
+  },
+  "WW-new-26-30_output_2": {
+    "components": {
+      "path_source": "pass",
+      "verification": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Links the reported save path to requested extraction and requested passage, explicitly distinguishing investigation from verified identity or a found date."
+  },
+  "WW-new-26-30_output_3": {
+    "components": {
+      "path_source": "pass",
+      "verification": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects save receipt to target path and treats extraction as an attempt rather than a claim that document identification or extraction succeeded."
+  },
+  "AHN01_output_1": {
+    "components": {
+      "observed_destination": "pass",
+      "substitution": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies the literal navigation placeholder and separates the real-address lookup from the unsupported configured-destination claim."
+  },
+  "AHN01_output_2": {
+    "components": {
+      "observed_destination": "pass",
+      "substitution": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains that navigation call and response retain the placeholder while the separate lookup alone supplies the reported address."
+  },
+  "AHN01_output_3": {
+    "components": {
+      "observed_destination": "pass",
+      "substitution": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Contrasts placeholder navigation evidence with the real-address report and explains that lookup identity does not establish transfer into navigation."
+  },
+  "AHN04_output_1": {
+    "components": {
+      "observed_identity": "pass",
+      "unresolved_mapping": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies john in the post, successful retweet without acting-account identity, and unresolved mapping to Robert rather than a demonstrated conflict."
+  },
+  "AHN04_output_2": {
+    "components": {
+      "observed_identity": "pass",
+      "unresolved_mapping": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Distinguishes execution success from account ownership attribution; john may correspond to the travel account but the record neither establishes nor contradicts this."
+  },
+  "AHN04_output_3": {
+    "components": {
+      "observed_identity": "pass",
+      "unresolved_mapping": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies observed john and unidentified retweet account and explicitly avoids treating a differing username as proof of a wrong account."
+  },
+  "AHN07_output_1": {
+    "components": {
+      "executed_post": "pass",
+      "state_mismatch": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Uses post_tweet and returned ID/content to establish recorded posting, and contrasts it with draft/future-post wording."
+  },
+  "AHN07_output_2": {
+    "components": {
+      "executed_post": "pass",
+      "state_mismatch": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies executed post and returned tweet object and explains that the subsequent offer conveys pending posting; does not conflate this with authorization."
+  },
+  "AHN07_output_3": {
+    "components": {
+      "executed_post": "pass",
+      "state_mismatch": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects post_tweet and returned object to completed execution and explains why matching wording cannot justify the implied unposted state."
+  },
+  "AHN08_output_1": {
+    "components": {
+      "location_gap": "pass",
+      "uncertainty": "pass",
+      "normal_value": "fail"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly identifies assumed directory mapping and absence of evidence for either correct or wrong location. Fails normal_value: quoting the target containing 9 does not recognize its origin in the wc output; no explanation or evidence connects the value to that output."
+  },
+  "AHN08_output_2": {
+    "components": {
+      "location_gap": "pass",
+      "uncertainty": "pass",
+      "normal_value": "fail"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly diagnoses unresolved current/shared-directory mapping without alleging a wrong location. Fails normal_value: does not recognize or connect 9 to the recorded word-count result."
+  },
+  "AHN08_output_3": {
+    "components": {
+      "location_gap": "pass",
+      "uncertainty": "pass",
+      "normal_value": "fail"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly explains that the destination is assumed and neither confirmed nor contradicted. Fails normal_value: omits the origin and supported reuse of 9 from the word-count output."
+  },
+  "AHN09_output_1": {
+    "components": {
+      "file_link": "fail",
+      "content_preservation": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly compares returned text with the formatted report. Fails file_link: does not identify goals.txt, academic_venture, or the located-file/current-directory chain connecting the file to the read/report."
+  },
+  "AHN09_output_2": {
+    "components": {
+      "file_link": "fail",
+      "content_preservation": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly explains that bullets preserve the returned words rather than invent content. Fails file_link: no linkage of located goals.txt in academic_venture to the read/report is described or evidenced."
+  },
+  "AHN09_output_3": {
+    "components": {
+      "file_link": "fail",
+      "content_preservation": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly establishes content preservation. Fails file_link: naming academic_venture/goals.txt in the requirement does not explain or evidence how the located file and directory are connected to the read/report."
+  }
+}

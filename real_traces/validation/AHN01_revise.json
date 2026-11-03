@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN01_revise",
+  "collected_at": "2026-11-03T10:36:04.876236+00:00",
+  "response_sha256": "3cd854cef948e299635ae95c7d6e44d5dfd420cf9e42197e596f752f3b65ae64",
+  "response_utf8_bytes": 1996,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 582.5942,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

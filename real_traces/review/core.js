@@ -1,0 +1,9 @@
+(function(root){
+const LABELS=['','supported','unsupported','indeterminate','review_pending'];
+function emptyAnswer(){return {decision:'',requirement:'',requirement_source:'',issue_field:'',evidence_source:'',reason:'',notes:'',familiar:false}}
+function validAnswer(a){return a&&typeof a==='object'&&LABELS.includes(a.decision)&&['requirement','requirement_source','issue_field','evidence_source','reason','notes'].every(k=>typeof a[k]==='string')&&typeof a.familiar==='boolean'&&typeof a.complete==='boolean'&&typeof a.updated_at==='string'}
+function validateState(s,packet,ids){if(!s||s.packet!==packet||typeof s.answers!=='object'||!s.answers||Array.isArray(s.answers)||!Array.isArray(s.revisions))throw Error('다른 검토 묶음이거나 답변 형식이 올바르지 않습니다.');if(Object.entries(s.answers).some(([id,a])=>!ids.includes(id)||!validAnswer(a)))throw Error('사례 ID 또는 답변 필드가 올바르지 않습니다.');if(s.revisions.some(r=>!r||!ids.includes(r.case_id)||!['submitted','before_edit'].includes(r.kind)||!validAnswer(r.answer)||typeof r.at!=='string'))throw Error('수정 이력 형식이 올바르지 않습니다.');return s}
+function completionError(a){if(!a.decision||!a.reason.trim())return '판정과 판단 이유를 작성해주세요.';if(a.decision!=='review_pending'&&(!a.requirement.trim()||!a.requirement_source.trim()||!a.evidence_source.trim()))return '요구사항, 원문 출처, 관측 근거를 작성해주세요. 근거가 없거나 정책이 부족하면 그 사실과 확인한 범위를 적어주세요.';return ''}
+function storeAnswer(state,id,answer,complete,time){const old=state.answers[id];if(old?.complete)state.revisions.push({case_id:id,kind:'before_edit',answer:JSON.parse(JSON.stringify(old)),at:time});const saved={...answer,complete,updated_at:time};state.answers[id]=saved;if(complete)state.revisions.push({case_id:id,kind:'submitted',answer:JSON.parse(JSON.stringify(saved)),at:time});return saved}
+const api={emptyAnswer,validateState,completionError,storeAnswer};if(typeof module!=='undefined')module.exports=api;else root.ReviewCore=api;
+})(typeof globalThis==='undefined'?this:globalThis);

@@ -1,0 +1,13 @@
+{
+  "call_id": "WW-new-26-30_revise",
+  "collected_at": "2026-11-03T10:32:40.184650+00:00",
+  "response_sha256": "06ca562a5508207ad26dbd828965815ab2184e26040f2cf6214e8efcd0e56cd7",
+  "response_utf8_bytes": 1644,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 377.906077,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

@@ -1,0 +1,109 @@
+{
+  "case_id": "MAST-R05",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "supported",
+  "focal_relation": "Assess the origin of the access token used in the recommendation lookup.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+  "source": {
+    "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+    "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+    "sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d"
+  },
+  "public_input_sha256_before_focal_scope": "797d1cdce539bddb74e6aa6273d8274ba2cae04c9ba241db9f7228a6104a2283",
+  "semantic_components": [
+    {
+      "id": "issued_source",
+      "criterion": "Identifies successful login response as the token source.",
+      "evidence_groups": [
+        [
+          "login"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "reuse",
+      "criterion": "Connects the returned token to assignment and target request.",
+      "evidence_groups": [
+        [
+          "assignment"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "contract",
+      "locator": "/input/prior_record",
+      "quote": "          {\n           \"name\": \"access_token\",\n           \"type\": \"string\",\n           \"required\": true,\n           \"description\": \"Access token obtained from spotify app login.\",\n           \"default\": null,\n           \"constraints\": []",
+      "original_locator": "L416-L422"
+    },
+    {
+      "id": "login",
+      "locator": "/input/prior_record",
+      "quote": "        # Now that I have both the email and password, I can use the `login` API to obtain the access token.\n        print(apis.spotify.login(username=\"kyl_moor@gmail.com\", password=\"L_4-}up\"))\n        \n        \n        \n    Message to Spotify Agent\n        {\n         \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcG90aWZ5K2t5bF9tb29yQGdtYWlsLmNvbSIsImV4cCI6MTY4NDQxMjA5OH0.E7o1UgsZuWJ6IRk-QXL3hHW41tEucW9WI06abedxH1Y\",\n         \"token_type\": \"Bearer\"\n        }",
+      "original_locator": "L800-L809"
+    },
+    {
+      "id": "assignment",
+      "locator": "/input/prior_record",
+      "quote": "    Response from Spotify Agent\n        # I have obtained the access token. Now, I will use the `show_recommendations` API to get the recommended songs and extract the artist information.\n        access_token = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcG90aWZ5K2t5bF9tb29yQGdtYWlsLmNvbSIsImV4cCI6MTY4NDQxMjA5OH0.E7o1UgsZuWJ6IRk-QXL3hHW41tEucW9WI06abedxH1Y\"\n        \n        # Fetch the first page of recommendations",
+      "original_locator": "L814-L818"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "apis.spotify.show_recommendations(access_token=access_token, page_index=0, page_limit=5)",
+      "original_locator": "{'line_start': 819, 'line_end': 819}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "supported",
+    "issues": [
+      {
+        "field": "access_token",
+        "requirement": "Use the token issued by the app login.",
+        "evidence": [
+          {
+            "locator": "/input/prior_record",
+            "quote": "          {\n           \"name\": \"access_token\",\n           \"type\": \"string\",\n           \"required\": true,\n           \"description\": \"Access token obtained from spotify app login.\",\n           \"default\": null,\n           \"constraints\": []"
+          },
+          {
+            "locator": "/input/prior_record",
+            "quote": "        # Now that I have both the email and password, I can use the `login` API to obtain the access token.\n        print(apis.spotify.login(username=\"kyl_moor@gmail.com\", password=\"L_4-}up\"))\n        \n        \n        \n    Message to Spotify Agent\n        {\n         \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcG90aWZ5K2t5bF9tb29yQGdtYWlsLmNvbSIsImV4cCI6MTY4NDQxMjA5OH0.E7o1UgsZuWJ6IRk-QXL3hHW41tEucW9WI06abedxH1Y\",\n         \"token_type\": \"Bearer\"\n        }"
+          },
+          {
+            "locator": "/input/prior_record",
+            "quote": "    Response from Spotify Agent\n        # I have obtained the access token. Now, I will use the `show_recommendations` API to get the recommended songs and extract the artist information.\n        access_token = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcG90aWZ5K2t5bF9tb29yQGdtYWlsLmNvbSIsImV4cCI6MTY4NDQxMjA5OH0.E7o1UgsZuWJ6IRk-QXL3hHW41tEucW9WI06abedxH1Y\"\n        \n        # Fetch the first page of recommendations"
+          }
+        ],
+        "relation": "satisfied",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The token copied into the request is the value returned by the executed login."
+      }
+    ],
+    "rationale": "The token copied into the request is the value returned by the executed login.",
+    "limitations": "Same source execution as R01; group together. Later ranking failure does not invalidate this local lookup."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Same source execution as R01; group together. Later ranking failure does not invalidate this local lookup.",
+  "adjudication": {
+    "author_label": "Supported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/whowhen_reviews_mast.json",
+        "decision": "supported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "9b8a551740fb342bb3b62e4b12e43dc4c5e115b14cc47c09caa539c2afb4ec6b",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

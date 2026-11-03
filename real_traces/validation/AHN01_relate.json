@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN01_relate",
+  "collected_at": "2026-11-03T10:36:04.872120+00:00",
+  "response_sha256": "e29851ceb1d5824533336331b5b41f8a789189382f62995b1b64a58b2e303582",
+  "response_utf8_bytes": 1879,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 582.588726,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

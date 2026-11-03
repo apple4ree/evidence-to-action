@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN09_relate",
+  "case_id": "AHN09",
+  "stage": "relate",
+  "prepared_at": "2026-11-03T10:26:22.297903+00:00",
+  "request_sha256": "97354abd167abc3997aab8e1e7c42796a2f1ec9d09d6bffc966dea82e4e63404",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

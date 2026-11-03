@@ -1,0 +1,78 @@
+{
+  "decision": "Unsupported",
+  "issues": [
+    {
+      "field": "Completion statement covering all Lily Moon songs",
+      "requirement": "The conclusion that no requested songs qualify must be supported by retrieval covering all Lily Moon songs.",
+      "evidence": [
+        {
+          "locator": "L4",
+          "quote": "Add all the songs from Lily Moon that have been played over 980 times to my Spotify player queue."
+        },
+        {
+          "locator": "L1070-L1074",
+          "quote": "\"description\": \"The index of the page to return.\","
+        },
+        {
+          "locator": "L1080-L1084",
+          "quote": "\"default\": 5,"
+        },
+        {
+          "locator": "L1132",
+          "quote": "print(apis.spotify.search_songs(artist_id=34))"
+        },
+        {
+          "locator": "L1273",
+          "quote": "Songs by Lily Moon: The Echoes of a Silent Heart, Lost in the Wilderness of Love, Whispers of a Forgotten Love, On the Border of Reality, Walking Through the Valley of Shadows"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "None of the songs by Lily Moon have been played over 980 times, so there are no songs to add to the Spotify queue."
+        }
+      ],
+      "relation": "violated",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The recorded search uses default pagination and returns five songs, filling the default page. This establishes results for one page, without establishing exhaustion of the artist's songs. The completion statement extends that limited retrieval to an exhaustive conclusion. Delegating retrieval and receiving the five titles does not expand the scope established by the recorded search."
+    },
+    {
+      "field": "Threshold assessment of the five reported songs",
+      "requirement": "Exclusion of the reported songs must agree with their communicated play counts and the threshold of over 980.",
+      "evidence": [
+        {
+          "locator": "L1364",
+          "quote": "answer=916"
+        },
+        {
+          "locator": "L1408",
+          "quote": "answer=156"
+        },
+        {
+          "locator": "L1452",
+          "quote": "answer=645"
+        },
+        {
+          "locator": "L1496",
+          "quote": "answer=846"
+        },
+        {
+          "locator": "L1540",
+          "quote": "answer=806"
+        }
+      ],
+      "relation": "satisfied",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "All five counts were communicated to the Supervisor and are below 980. Excluding those five songs is justified; concluding that every Lily Moon song is excluded is not justified by those counts."
+    }
+  ],
+  "rationale": "The completion statement exceeds the scope of the recorded paginated retrieval. The finding concerns support for the exhaustive conclusion, not proof that additional qualifying songs actually exist.",
+  "limitations": [
+    "The record does not establish whether additional pages contain songs or whether any additional songs exceed 980 plays.",
+    "Original per-actor serialized context and hidden policies are not verified. The cross-actor record shows pagination information received by the Spotify agent; it does not establish that the Supervisor personally received that documentation."
+  ]
+}

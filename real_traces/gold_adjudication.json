@@ -1,0 +1,135 @@
+{
+  "version": "real-trace-core-v1",
+  "created_utc": "2026-11-03T09:55:29.342006+00:00",
+  "reviewers": "LLM source author plus separate-context LLM reviewer, primary scope adjudication",
+  "human_annotation": false,
+  "comparison_predictions_seen": false,
+  "case_count": 15,
+  "group_count": 14,
+  "decisions": {
+    "supported": 5,
+    "unsupported": 7,
+    "indeterminate": 3
+  },
+  "public_scope_additions": [
+    {
+      "case_id": "MAST-R01",
+      "focal_relation": "Assess the basis for selecting the most-recommended artist in the completion answer."
+    },
+    {
+      "case_id": "MAST-R02",
+      "focal_relation": "Assess the credential type and origin represented in the outgoing message."
+    },
+    {
+      "case_id": "MAST-R03",
+      "focal_relation": "Assess the scope of the no-qualifying-songs completion claim against the search and handoff records."
+    },
+    {
+      "case_id": "MAST-R04",
+      "focal_relation": "Assess the local request for an account email before authentication."
+    },
+    {
+      "case_id": "MAST-R05",
+      "focal_relation": "Assess the origin of the access token used in the recommendation lookup."
+    },
+    {
+      "case_id": "MAST-R06",
+      "focal_relation": "Assess whether song 40 is established to belong to the user-requested already-played set."
+    },
+    {
+      "case_id": "WW-new-25-14",
+      "focal_relation": "Assess preservation of the requested revision-counting time boundary in the delegated instruction."
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "focal_relation": "Assess the statement that the extracted source verifies the complete requested station interval and count; do not independently determine the real station count."
+    },
+    {
+      "case_id": "WW-new-4-14",
+      "focal_relation": "Assess whether the delegated instruction is an appropriate verification request for the candidate trails."
+    },
+    {
+      "case_id": "WW-new-26-30",
+      "focal_relation": "Assess the request to inspect page11 at the reported local path."
+    },
+    {
+      "case_id": "AHN01",
+      "focal_relation": "Assess the navigation-status claim against the observed navigation call and return."
+    },
+    {
+      "case_id": "AHN04",
+      "focal_relation": "Assess the attribution of the retweet to Robert Trenton’s travel account."
+    },
+    {
+      "case_id": "AHN07",
+      "focal_relation": "Assess the final message’s representation of posting status relative to the observed tool call and return, not the wording of the tweet or authorization of the earlier call."
+    },
+    {
+      "case_id": "AHN08",
+      "focal_relation": "Assess the claimed shared-directory location of the saved word-count file."
+    },
+    {
+      "case_id": "AHN09",
+      "focal_relation": "Assess whether the final file-content report preserves the observed file and its contents."
+    }
+  ],
+  "important_scope_resolutions": [
+    {
+      "case_id": "AHN07",
+      "resolution": "Score posting-status report, not tweet text correctness or authorization. Author/reviewer agree Unsupported under status scope; scope must be visible to every method."
+    },
+    {
+      "case_id": "WW-new-43-12",
+      "resolution": "Score source-based complete-verification claim, not real-world station count. Scope must be visible to every method."
+    },
+    {
+      "case_id": "MAST-R06",
+      "resolution": "Indeterminate because cyclic playback with no history/current-cycle definition cannot establish played set. Future original failure labels excluded."
+    },
+    {
+      "case_id": "WW-new-32-9",
+      "resolution": "Outside15; reviewer disagreement over temporal source sufficiency versus incomplete record preserved, not adjudicated into evaluation."
+    },
+    {
+      "case_id": "AHN06",
+      "resolution": "Outside15; undocumented echo semantics prevent a fixed overwrite/task-conflict gold."
+    }
+  ],
+  "leakage_note": "Case selection and gold construction inspect public traces but no new comparison predictions. This is a selected real-trace exploratory evaluation, not a population-random sample or independently collected heldout benchmark.",
+  "input_baseline_hashes": {
+    "MAST-R01": "bbde09d258bf03d0e0106a33612fcc7cd29b5d086d71ca3f9d190e6219306950",
+    "MAST-R02": "1af6383d03607ada15b150d1d0df0a7ff3080c3d0b7bd38dfaa2f22d7067a88f",
+    "MAST-R03": "9ee1df3bb0f96ac5b9300a781c53c0ab5be3d2744568185d2c38129224c9942e",
+    "MAST-R04": "9891c6942523a7b52bf804ace328be9bbe0f047e70dd334460b4eab614110f22",
+    "MAST-R05": "797d1cdce539bddb74e6aa6273d8274ba2cae04c9ba241db9f7228a6104a2283",
+    "MAST-R06": "0e62bbd50ff882d3349a2ae52c8ab8e21925867d74e9dafd6066d717fdba1567",
+    "WW-new-25-14": "da7f78826243248ac434493533dfa90f04e2883ed9b5452d25dc739f288dc159",
+    "WW-new-43-12": "d74b035091cf366c3ca9060892855a2dc89a029067f65f858d373e71a0b69523",
+    "WW-new-4-14": "7b4b3f8d67ec538aab68b87519b7dbfd6ff51f30b2834e97e2dc0f99023db3eb",
+    "WW-new-26-30": "56e470504e9eec83e416419da91647897d8cdf1f4801bf0f5818fd9a75f44b88",
+    "AHN01": "166e56c61d772d75f6126ccdff5eb5bbc5154ea9136c3e41c73cc384011506fa",
+    "AHN04": "623fbcb79516d3a9106bf73aabf039a48cf9b8c2ff53747f24c0c206bb541e89",
+    "AHN07": "331235ecd889b52e46aa3d32095e59ea3597b7b92165a5b32c31a1ccd664e0b4",
+    "AHN08": "041fd41dc0d735ac5241b9d8f5df2dca7bbe624f66bb52093f9aa0faaf9ed1c1",
+    "AHN09": "b5f09901d72a60087e0f31162cbc611dc59b8b2be5caa684013fa46c2304d6c5"
+  },
+  "gold_files_sha256": {
+    "MAST-R02.json": "e9024cdf06b55c0bc873cfa3b59d7f5e4c92f728393a11a98c1c42b52e9965b1",
+    "MAST-R03.json": "2d0460c60f67f09a36238b570c190e8b51f45fcaa35e8e1fb756305a5cd7193c",
+    "AHN01.json": "3db3a039f9fc3e4207757434c9eeba1a6634552330eefa12ffa6fbfd39e052ab",
+    "WW-new-43-12.json": "cd2fb83b002b814a14e88f8e4dcb527f27fbb568b54eadb5e4a73e2a4ace827e",
+    "MAST-R04.json": "bad9b40ea8fd9687bac46f9b1b1f178bdfd89a10b9ad0aab9364d4980a894d5a",
+    "AHN07.json": "85546bd394bd8f450a515071ab81f667b75b9ab2efae88ba57ae16da6730ce2c",
+    "WW-new-26-30.json": "ba9b0789f2719d61f4d7f22206f1ef8982a975a346f9f3a35dc4e1c64b99f5af",
+    "MAST-R05.json": "51c4f2ee8720704b2823943fb4b002398e9bc9a6c218eeb844142897f3b32b75",
+    "AHN08.json": "078d565c8cbf195176fdb3a80fab95778fcaf57287885169315a726c96657fb9",
+    "MAST-R06.json": "fbb612c829682340fdf8359c4bb1f86dced353791aad2fe4e0daa05672ddc47f",
+    "AHN04.json": "a0f8ff47e31b3058d3753c1c5ae638dd8a15a40a5b6e431b1992416c9cfde527",
+    "WW-new-25-14.json": "87145690fae6344d1dad38d5d9010a5862f8c44a0fb853ce33f0a41932edbc3f",
+    "WW-new-4-14.json": "398ea900bae237de4d3a87d00a99f3f107bb05edf153621cf260f99f5a5289a6",
+    "AHN09.json": "5da989258f6f4765aec19caaa095e1a3474e0a0cdb802a77eca15ff2607303fe",
+    "MAST-R01.json": "75ad1f675dbe4ab83737932569daedfd8580e48677d5c3c4a3066c27e46ec5c3"
+  },
+  "anchors_validated_against": "experiment/public",
+  "anchors_validated_count": 56
+}

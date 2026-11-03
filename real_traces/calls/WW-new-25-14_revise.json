@@ -1,0 +1,13 @@
+{
+  "call_id": "WW-new-25-14_revise",
+  "case_id": "WW-new-25-14",
+  "stage": "revise",
+  "prepared_at": "2026-11-03T10:26:22.268655+00:00",
+  "request_sha256": "07221fcb28250b47a014bab165e099c0a70d97d8d3c1c2b4487dfd42008ef1d0",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

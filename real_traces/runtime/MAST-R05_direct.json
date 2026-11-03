@@ -1,0 +1,40 @@
+{
+  "single_task_completion": true,
+  "exact_invocation_verified": false,
+  "child_user_invocation_match": false,
+  "invocation_source": "parent_spawn_tool_call_metadata_only",
+  "prepared_input_delivery": "exact_text_observed",
+  "truncation_output_indices": [],
+  "model_aliases": [
+    "gpt-6-astra"
+  ],
+  "reasoning_efforts": [
+    "medium"
+  ],
+  "immutable_model_id": null,
+  "cost": null,
+  "native_task_duration_ms": 25025,
+  "time_to_first_token_ms": 3907,
+  "session_total_token_usage": {
+    "input_tokens": 52070,
+    "cached_input_tokens": 39424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 803,
+    "reasoning_output_tokens": 171,
+    "total_tokens": 52873
+  },
+  "unique_response_usage_records": 2,
+  "response_usage_sum": {
+    "input_tokens": 52070,
+    "cached_input_tokens": 39424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 803,
+    "reasoning_output_tokens": 171,
+    "total_tokens": 52873
+  },
+  "tool_call_count": 1,
+  "raw_response_sha256": "19df85842d6944b96f3d58bce1bcf9f81d16011b54d49b8954c1b3a550492acd",
+  "note": "Token counters include runtime context and tool roundtrips. Exact text delivery is not proof of semantic attention. Suspicious access scan is a flag, not proof of no leakage. Review all tool calls. Native task is not one HTTP request.",
+  "suspicious_access_call_count": 0,
+  "export_note": "Runtime metrics subset; original local audit preserved in research workspace."
+}

@@ -1,0 +1,33 @@
+{
+  "decision": "Unsupported",
+  "issues": [
+    {
+      "field": "target handoff credential type",
+      "requirement": "The credential characterized as an access token in the handoff must be supported as that credential type by its recorded source.",
+      "evidence": [
+        {
+          "locator": "L208-L209",
+          "quote": "\"account_name\": \"spotify\",\n      \"password\": \"Q3c_DvY\""
+        },
+        {
+          "locator": "L225",
+          "quote": "It seems I retrieved the passwords instead of the access tokens."
+        },
+        {
+          "locator": "L322",
+          "quote": "send_message(app_name='spotify', message='Get my liked songs with access token Q3c_DvY')"
+        }
+      ],
+      "relation": "violated",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The source delivered to the Supervisor explicitly identifies the value as a password, and the Supervisor acknowledges that distinction. The target handoff nevertheless labels that same value an access token. The recorded source therefore conflicts with the credential characterization; no recorded authentication result supports a conversion."
+    }
+  ],
+  "rationale": "The target handoff's characterization of the credential as an access token is unsupported by its explicit recorded source, which identifies it as a password.",
+  "limitations": [
+    "Original per-actor serialized context and hidden policies are not verified. This finding concerns only the credential type supported by the recorded source, not complete tool-contract compliance or whether the credential could work externally."
+  ]
+}

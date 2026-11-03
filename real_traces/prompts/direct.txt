@@ -1,0 +1,1 @@
+Produce the final diagnostic JSON in one pass. Return only the JSON object.

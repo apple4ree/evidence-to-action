@@ -1,0 +1,86 @@
+{
+  "issues": [
+    {
+      "field": "candidate investigation scope",
+      "requirement": "The investigation should serve the user's search for hiking trails to waterfalls in Yosemite National Park; candidates need not already be verified as qualifying results.",
+      "evidence": [
+        {
+          "locator": "/input/history/0/content",
+          "quote": "What popular hiking trails to waterfalls in Yosemite National Park"
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "**Popular hiking trails waterfalls (list on the left):**"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "Please visit the TripAdvisor pages for Valley Loop Trail, Four Mile Trailhead, Mist Trail, and Panorama Trail in Yosemite National Park."
+        },
+        {
+          "locator": "/input/history/13/content",
+          "quote": "Progress is being made as we have identified potential trails and need to verify specific details on TripAdvisor."
+        }
+      ],
+      "relation": "satisfied",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The named trails occur in the search results for the requested topic and are expressly treated as potential trails requiring verification. This provides a basis for investigating them without establishing that they qualify."
+    },
+    {
+      "field": "review count and rating verification",
+      "requirement": "Qualifying results must exceed 1,000 TripAdvisor reviews and average at least 4.5/5; gathering those quantities is relevant to assessing eligibility.",
+      "evidence": [
+        {
+          "locator": "/input/history/0/content",
+          "quote": "more than 1,000 reviews on TripAdvisor"
+        },
+        {
+          "locator": "/input/history/0/content",
+          "quote": "4.5/5 or more on average"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "Verify their total number of reviews, average rating"
+        }
+      ],
+      "relation": "satisfied",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The instruction requests the measurements needed to apply the user's thresholds. It does not assert that the candidates already meet them."
+    },
+    {
+      "field": "wheelchair accessibility verification",
+      "requirement": "Qualifying results require recommendations of full wheelchair accessibility from at least three different people; investigating accessibility comments serves that requirement.",
+      "evidence": [
+        {
+          "locator": "/input/history/0/content",
+          "quote": "recommended to be fully accessible to wheelchairs by at least three different people"
+        },
+        {
+          "locator": "/input/history/3/content",
+          "quote": "identify if at least three different users have recommended it to be fully accessible to wheelchairs"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "comments related to wheelchair accessibility, specifically looking for at least three recommendations on full wheelchair accessibility."
+        }
+      ],
+      "relation": "satisfied",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The target directs collection of relevant accessibility recommendations, and the earlier instruction addressed to WebSurfer explicitly specifies different users. The shortened target wording does not establish a relaxation of that requirement or claim that it has been met."
+    }
+  ],
+  "rationale": "The target is justified as information gathering about search-result candidates. It requests evidence needed to assess the user's constraints and makes no claim that any candidate already qualifies.",
+  "limitations": [
+    "The visible results do not establish that every candidate leads to a waterfall or meets the review, rating, and accessibility criteria.",
+    "The record is a normalized history prefix; full actor payloads, system prompts, and complete actor visibility are not verified."
+  ],
+  "decision": "Supported"
+}

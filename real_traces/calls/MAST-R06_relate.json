@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R06_relate",
+  "case_id": "MAST-R06",
+  "stage": "relate",
+  "prepared_at": "2026-11-03T10:26:22.266773+00:00",
+  "request_sha256": "7445286cfffdaf30277c340889438d61d07c003776f97c8fd9b59cf023935698",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

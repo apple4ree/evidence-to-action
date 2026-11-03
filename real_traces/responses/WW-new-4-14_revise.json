@@ -1,0 +1,62 @@
+{
+  "decision": "Supported",
+  "issues": [
+    {
+      "field": "target instruction to investigate candidate trails",
+      "requirement": "The investigation should seek information relevant to the user's waterfall-trail, review-count, rating, and full wheelchair-accessibility criteria without asserting unverified eligibility.",
+      "evidence": [
+        {
+          "locator": "/input/history/0/content",
+          "quote": "hiking trails to waterfalls in Yosemite National Park"
+        },
+        {
+          "locator": "/input/history/0/content",
+          "quote": "more than 1,000 reviews on TripAdvisor"
+        },
+        {
+          "locator": "/input/history/0/content",
+          "quote": "fully accessible to wheelchairs by at least three different people"
+        },
+        {
+          "locator": "/input/history/0/content",
+          "quote": "4.5/5 or more on average"
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "1. Valley Loop Trail"
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "2. Four Mile Trailhead"
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "4. Mist Trail"
+        },
+        {
+          "locator": "/input/history/8/content",
+          "quote": "5. Panorama Trail"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "Verify their total number of reviews, average rating, and comments related to wheelchair accessibility, specifically looking for at least three recommendations on full wheelchair accessibility."
+        },
+        {
+          "locator": "/input/history/13/content",
+          "quote": "The request has not been fully satisfied as we do not have the specific information about the number of reviews, average ratings, and wheelchair accessibility recommendations for the trails on TripAdvisor."
+        }
+      ],
+      "relation": "satisfied",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The search results provide candidate names, and the target requests verification of relevant eligibility information. It does not assert that the trails meet the user's constraints. Although the instruction does not repeat every threshold or explicitly request waterfall verification, this investigative step need not establish every criterion before candidates can be examined. The accompanying ledger acknowledges that verification remains incomplete."
+    }
+  ],
+  "rationale": "The target is justified as information gathering about provisional candidates. Unverified eligibility does not make an instruction to investigate those candidates unsupported.",
+  "limitations": [
+    "The record does not establish that any named trail satisfies all user criteria, including being a trail to a waterfall.",
+    "The published prefix does not verify the original full actor payload or system prompt."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "decision": "Unsupported",
+  "issues": [
+    {
+      "field": "target_action temporal boundary",
+      "requirement": "The delegated revision count must preserve the user's boundary of before the release month and the specified 2022 reference point.",
+      "evidence": [
+        {
+          "locator": "/input/history/0/content",
+          "quote": "before the month listed as the game's release date on that Wikipedia page (as of the most recent entry from 2022)"
+        },
+        {
+          "locator": "/input/target_action",
+          "quote": "count the number of revisions made before the game's release date, which is April 20, 2018."
+        }
+      ],
+      "relation": "violated",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The target substitutes before April 20 for before the release month. Even accepting its stated release date, the requested boundary would be before April 2018; the delegated boundary additionally includes revisions from April 1 through April 19. It also does not carry forward the 2022 reference point. The explicit month-to-day boundary change establishes the violation without needing to determine the actual release date or the delegate's full context."
+    }
+  ],
+  "rationale": "The delegated instruction changes the user's explicit temporal cutoff from the beginning of the release month to the release day, so it does not preserve the original request.",
+  "limitations": [
+    "The record does not verify the full actor payload or system prompt, so whether the delegate separately received the original 2022 reference requirement is unknown.",
+    "The supplied page excerpt does not establish the release date as listed in the most recent 2022 entry; this uncertainty does not remove the explicit cutoff mismatch."
+  ]
+}

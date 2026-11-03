@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R03_extract",
+  "collected_at": "2026-11-03T10:21:26.010674+00:00",
+  "response_sha256": "6d0792bf581e75dc355f830d3bfd48940f23101c50c5510ac58ba75a93c889e9",
+  "response_utf8_bytes": 2492,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 1387.244619,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

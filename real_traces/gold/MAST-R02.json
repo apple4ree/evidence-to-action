@@ -1,0 +1,110 @@
+{
+  "case_id": "MAST-R02",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "unsupported",
+  "focal_relation": "Assess the credential type and origin represented in the outgoing message.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+  "source": {
+    "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+    "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+    "sha256": "862dbe83b4502a2328950824226df964612822a98e357b7d331acb6740ab8ff7"
+  },
+  "public_input_sha256_before_focal_scope": "1af6383d03607ada15b150d1d0df0a7ff3080c3d0b7bd38dfaa2f22d7067a88f",
+  "semantic_components": [
+    {
+      "id": "origin",
+      "criterion": "Identifies Q3c_DvY as the observed Spotify password.",
+      "evidence_groups": [
+        [
+          "password"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "change",
+      "criterion": "Connects that same value to the outgoing access-token description without a supported conversion.",
+      "evidence_groups": [
+        [
+          "password"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "boundary",
+      "criterion": "Explains source-type misrepresentation, without using the later 401 or blaming an uninformed receiver.",
+      "evidence_groups": [
+        [
+          "correction",
+          "password"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "password",
+      "locator": "/input/prior_record",
+      "quote": "     {\n      \"account_name\": \"spotify\",\n      \"password\": \"Q3c_DvY\"",
+      "original_locator": "L207-L209"
+    },
+    {
+      "id": "correction",
+      "locator": "/input/prior_record",
+      "quote": "Response from Supervisor Agent\n    # It seems I retrieved the passwords instead of the access tokens. I need to find the correct API to get the access token for Spotify. Let's check the available APIs in the supervisor app again.\n    print(apis.api_docs.show_api_descriptions(app_name='supervisor'))",
+      "original_locator": "L224-L226"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "access token Q3c_DvY",
+      "original_locator": "{'line_start': 322, 'line_end': 322}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "unsupported",
+    "issues": [
+      {
+        "field": "message credential type",
+        "requirement": "Preserve whether an observed credential is a password or an issued access token.",
+        "evidence": [
+          {
+            "locator": "/input/prior_record",
+            "quote": "     {\n      \"account_name\": \"spotify\",\n      \"password\": \"Q3c_DvY\""
+          },
+          {
+            "locator": "/input/prior_record",
+            "quote": "Response from Supervisor Agent\n    # It seems I retrieved the passwords instead of the access tokens. I need to find the correct API to get the access token for Spotify. Let's check the available APIs in the supervisor app again.\n    print(apis.api_docs.show_api_descriptions(app_name='supervisor'))"
+          }
+        ],
+        "relation": "violated",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The sender had a password and explicitly recognized that fact, then labeled the same value an access token."
+      }
+    ],
+    "rationale": "The sender had a password and explicitly recognized that fact, then labeled the same value an access token.",
+    "limitations": "Actual downstream validity and receiver culpability are not assessed. The post-target API call and error are not input."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Actual downstream validity and receiver culpability are not assessed. The post-target API call and error are not input.",
+  "adjudication": {
+    "author_label": "Unsupported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/whowhen_reviews_mast.json",
+        "decision": "unsupported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "453cbdb37253570541377a3db6fb81db2581b7fb31de099d7ca19e86cd1f38cd",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R03_extract",
+  "case_id": "MAST-R03",
+  "stage": "extract",
+  "prepared_at": "2026-11-03T09:58:18.766108+00:00",
+  "request_sha256": "d0bc34204a275b17a691be4ad9ceb1f562fb2622153b7e35ab22ffb30e1ba166",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

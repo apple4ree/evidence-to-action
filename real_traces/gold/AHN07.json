@@ -1,0 +1,114 @@
+{
+  "case_id": "AHN07",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "unsupported",
+  "focal_relation": "Assess the final message’s representation of posting status relative to the observed tool call and return, not the wording of the tweet or authorization of the earlier call.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/008.json",
+  "source": {
+    "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/008.json",
+    "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+    "sha256": "587cd389d61076b3a1e3079f47a2793e4c9be2a0d01ab5157f6604ac0c951af6"
+  },
+  "public_input_sha256_before_focal_scope": "331235ecd889b52e46aa3d32095e59ea3597b7b92165a5b32c31a1ccd664e0b4",
+  "semantic_components": [
+    {
+      "id": "executed_post",
+      "criterion": "Identifies post_tweet call and returned post object/id.",
+      "evidence_groups": [
+        [
+          "call"
+        ],
+        [
+          "return"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "state_mismatch",
+      "criterion": "Explains subsequent draft/offer-to-post wording represents the action as pending rather than acknowledging execution.",
+      "evidence_groups": [
+        [
+          "target",
+          "pending"
+        ],
+        [
+          "call",
+          "return"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "call",
+      "locator": "/input/history/2/tool_calls/0/name",
+      "quote": "post_tweet",
+      "original_locator": "/history/2/tool_calls/0/name"
+    },
+    {
+      "id": "return",
+      "locator": "/input/history/2/tool_responses/0",
+      "quote": "\"id\": 1",
+      "original_locator": "/history/2/tool_responses/0"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "Here is a draft for your Twitter post",
+      "original_locator": "{'json_pointer': '/history/3/content'}"
+    },
+    {
+      "id": "pending",
+      "locator": "/input/target_action",
+      "quote": "Let me know if you want to post it",
+      "original_locator": "/target_action"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "unsupported",
+    "issues": [
+      {
+        "field": "final posting status",
+        "requirement": "Preserve observed action status when describing the result.",
+        "evidence": [
+          {
+            "locator": "/input/history/2/tool_calls/0/name",
+            "quote": "post_tweet"
+          },
+          {
+            "locator": "/input/history/2/tool_responses/0",
+            "quote": "\"id\": 1"
+          },
+          {
+            "locator": "/input/target_action",
+            "quote": "Let me know if you want to post it"
+          }
+        ],
+        "relation": "violated",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The record contains a posting call and returned post object, while the final message presents a draft and offers to post later."
+      }
+    ],
+    "rationale": "The record contains a posting call and returned post object, while the final message presents a draft and offers to post later.",
+    "limitations": "This label is restricted to status communication. Tweet text reuse itself is correct. Original full tool schema absent, so preserve the interpretation boundary; no claim about unauthorized posting is scored."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "This label is restricted to status communication. Tweet text reuse itself is correct. Original full tool schema absent, so preserve the interpretation boundary; no claim about unauthorized posting is scored.",
+  "adjudication": {
+    "author_label": "Unsupported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/mast_reviews_agenthallu.json",
+        "decision": "unsupported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "ad1078a6b60d8d10e2cc1aeaac93afeb4499ac2e153b5653ee1d39ebb7c4fda7",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

@@ -1,0 +1,140 @@
+{
+  "case_id": "WW-new-43-12",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "unsupported",
+  "focal_relation": "Assess the statement that the extracted source verifies the complete requested station interval and count; do not independently determine the real station count.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+  "source": {
+    "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+    "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+    "sha256": "d887b9ef622a3e4e23aa0647cdd837808b91d367ee505f9e25240c82af922f0e"
+  },
+  "public_input_sha256_before_focal_scope": "d74b035091cf366c3ca9060892855a2dc89a029067f65f858d373e71a0b69523",
+  "semantic_components": [
+    {
+      "id": "source_scope",
+      "criterion": "Identifies partial observation/end-point absence in the stated source.",
+      "evidence_groups": [
+        [
+          "partial",
+          "target"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "overstatement",
+      "criterion": "Connects limited source to unsupported complete-verification claim, rather than merely asserting the number6 is false.",
+      "evidence_groups": [
+        [
+          "complete"
+        ],
+        [
+          "partial",
+          "target"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "time_or_boundary",
+      "criterion": "Identifies either Today-versus-May2023 applicability gap or missing full interval coverage and explains why source does not establish it.",
+      "evidence_groups": [
+        [
+          "today",
+          "user"
+        ],
+        [
+          "partial",
+          "target"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "user",
+      "locator": "/input/history/0/content",
+      "quote": "As of May 2023",
+      "original_locator": "/history/0/content"
+    },
+    {
+      "id": "partial",
+      "locator": "/input/history/8/content",
+      "quote": "The viewport shows 40% of the webpage",
+      "original_locator": "/history/8/content"
+    },
+    {
+      "id": "today",
+      "locator": "/input/history/8/content",
+      "quote": "Today (Calendar icon)",
+      "original_locator": "/history/8/content"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "South Station is not shown in the extracted portion",
+      "original_locator": "{'json_pointer': '/history/12/content'}"
+    },
+    {
+      "id": "complete",
+      "locator": "/input/target_action",
+      "quote": "Verification of the stops and count is complete",
+      "original_locator": "/target_action"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "unsupported",
+    "issues": [
+      {
+        "field": "answer verification-complete claim",
+        "requirement": "Claims of source-based complete interval verification must match the scope of the cited observation.",
+        "evidence": [
+          {
+            "locator": "/input/history/0/content",
+            "quote": "As of May 2023"
+          },
+          {
+            "locator": "/input/history/8/content",
+            "quote": "The viewport shows 40% of the webpage"
+          },
+          {
+            "locator": "/input/history/8/content",
+            "quote": "Today (Calendar icon)"
+          },
+          {
+            "locator": "/input/target_action",
+            "quote": "Verification of the stops and count is complete"
+          }
+        ],
+        "relation": "violated",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The answer explicitly attributes a complete verified count to an extracted portion that does not include the endpoint; the source is also a Today timetable."
+      }
+    ],
+    "rationale": "The answer explicitly attributes a complete verified count to an extracted portion that does not include the endpoint; the source is also a Today timetable.",
+    "limitations": "Gold is source-attribution claim, not objective count. Exact original Assistant context is not verified. If asking only whether 6 is true, the proper result is unresolved; that is not this focal relation."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Gold is source-attribution claim, not objective count. Exact original Assistant context is not verified. If asking only whether 6 is true, the proper result is unresolved; that is not this focal relation.",
+  "adjudication": {
+    "author_label": "Unsupported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/agenthallu_reviews_whowhen.json",
+        "decision": "Unsupported"
+      },
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/mast_reviews_whowhen.json",
+        "decision": "unsupported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "a87707d52de24f6ba7c3751d3058fb153fed49bdd445ccc5661cc2fab75ec116",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

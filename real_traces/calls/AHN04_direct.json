@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN04_direct",
+  "case_id": "AHN04",
+  "stage": "direct",
+  "prepared_at": "2026-11-03T09:58:19.603365+00:00",
+  "request_sha256": "bb3100bd0b63ed24a6a0663976a61d7d5f8f10722a0609aaf5646cc939cba179",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

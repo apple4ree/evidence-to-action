@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R06_relate",
+  "collected_at": "2026-11-03T10:32:40.216150+00:00",
+  "response_sha256": "dc2164aa89591cc17ab6c60870159173da5e3db077cc5490e38c7414a0f6df76",
+  "response_utf8_bytes": 3562,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 377.949436,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

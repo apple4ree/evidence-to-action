@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN09_revise",
+  "case_id": "AHN09",
+  "stage": "revise",
+  "prepared_at": "2026-11-03T10:26:22.296404+00:00",
+  "request_sha256": "b511cd930078e2e1e3eb34e17bcf01247c98485758c4f075cd6a68a0d9354f01",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

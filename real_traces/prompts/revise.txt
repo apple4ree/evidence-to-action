@@ -1,0 +1,1 @@
+Critically review the previous direct diagnosis against the same original input. Correct its decision, evidence, scope, and relations where needed. The previous output is not ground truth. Return a complete final diagnostic JSON object, not a critique or patch.

@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R04_revise",
+  "collected_at": "2026-11-03T10:32:40.208481+00:00",
+  "response_sha256": "d7b5ccf413c524ad30014ee8233cca4ae66c3f91d121e723e5312bd3555fb50e",
+  "response_utf8_bytes": 1331,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 377.950525,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

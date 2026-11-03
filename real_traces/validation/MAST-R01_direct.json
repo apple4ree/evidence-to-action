@@ -1,0 +1,13 @@
+{
+  "call_id": "MAST-R01_direct",
+  "collected_at": "2026-11-03T10:21:26.017250+00:00",
+  "response_sha256": "632f3dbdf2acfe2eac106baa139d5c46d6b7d40bb962a67b47b53e7686ba1b99",
+  "response_utf8_bytes": 2218,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 1387.493941,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

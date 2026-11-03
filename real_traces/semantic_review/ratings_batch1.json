@@ -1,0 +1,203 @@
+{
+  "MAST-R01_output_1": {
+    "components": {
+      "selection": "pass",
+      "source_loss": "pass",
+      "scope": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explicitly identifies first-position substitution, deduplicated unranked handoff, and unknown overall winner. Cited set/list, handoff, target and page query support these distinctions; no Supervisor access to upstream records is assumed."
+  },
+  "MAST-R01_output_2": {
+    "components": {
+      "selection": "pass",
+      "source_loss": "pass",
+      "scope": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies first-position substitution and loss of multiplicity/rank; valid page-specific Ava/Lucas comparison is distinguished from the unknown global winner. Separates evaluator-visible song records from Supervisor knowledge."
+  },
+  "MAST-R01_output_3": {
+    "components": {
+      "selection": "pass",
+      "source_loss": "pass",
+      "scope": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains set-to-list loss and unsupported first-position selection, with explicit limitation that the global winner is unknown. Its page-frequency observation is accurate; the cited set/list and target suffice for the core diagnosis even without a separate quote for every raw count."
+  },
+  "MAST-R02_output_1": {
+    "components": {
+      "origin": "pass",
+      "change": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects the observed Spotify password Q3c_DvY to the same value relabeled as an access token without recorded conversion. Quotes source, sender acknowledgment and target; diagnoses sender source-type misrepresentation without future error evidence or receiver blame."
+  },
+  "MAST-R02_output_2": {
+    "components": {
+      "origin": "pass",
+      "change": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects the observed Spotify password Q3c_DvY to the same value relabeled as an access token without recorded conversion. Quotes source, sender acknowledgment and target; diagnoses sender source-type misrepresentation without future error evidence or receiver blame."
+  },
+  "MAST-R02_output_3": {
+    "components": {
+      "origin": "pass",
+      "change": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects the observed Spotify password Q3c_DvY to the same value relabeled as an access token without recorded conversion. Quotes source, sender acknowledgment and target; diagnoses sender source-type misrepresentation without future error evidence or receiver blame."
+  },
+  "MAST-R03_output_1": {
+    "components": {
+      "limited_source": "pass",
+      "promotion": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Recognizes default bounded five-song retrieval, connects the handoff to the universal negative, and distinguishes unsupported exhaustiveness from proof of unseen qualifying songs. Valid alternative short pagination quotes and query/target citations support the relation; no Supervisor access to upstream documentation is assumed."
+  },
+  "MAST-R03_output_2": {
+    "components": {
+      "limited_source": "pass",
+      "promotion": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": true,
+    "rationale": "All frozen component descriptions are substantively present: default first-page limit five, its handoff versus universal conclusion, and appropriate epistemic/actor boundaries. However, it calls the established scope-support failure unresolved because no counterexample or mandatory verification rule is known. This contradicts the frozen core relation, whose issue is promotion of limited evidence rather than the real existence of qualifying songs. Quotes correctly support the bounded-coverage facts."
+  },
+  "MAST-R03_output_3": {
+    "components": {
+      "limited_source": "pass",
+      "promotion": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies default first page with limit five, its unproven exhaustiveness and promotion through delegation to a universal negative. Correctly separates valid rejection of five reported songs from overall coverage and avoids assuming hidden qualifying songs or Supervisor receipt of pagination docs."
+  },
+  "MAST-R04_output_1": {
+    "components": {
+      "missing_field": "pass",
+      "normal_query": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects password-only delegation to the login schema requiring username/account email and recognizes the target as justified information gathering. The cited incoming instruction, schema and question establish the local relation without claiming authentication or completion."
+  },
+  "MAST-R04_output_2": {
+    "components": {
+      "missing_field": "pass",
+      "normal_query": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects password-only delegation to the login schema requiring username/account email and recognizes the target as justified information gathering. The cited incoming instruction, schema and question establish the local relation without claiming authentication or completion."
+  },
+  "MAST-R04_output_3": {
+    "components": {
+      "missing_field": "pass",
+      "normal_query": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects password-only delegation to the login schema requiring username/account email and recognizes the target as justified information gathering. The cited incoming instruction, schema and question establish the local relation without claiming authentication or completion."
+  },
+  "MAST-R05_output_1": {
+    "components": {
+      "issued_source": "pass",
+      "reuse": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies the actual login result as the token source and tracks its identical value into assignment and target query. The quoted returned token is a valid source anchor in context; quoting the login invocation separately is unnecessary."
+  },
+  "MAST-R05_output_2": {
+    "components": {
+      "issued_source": "pass",
+      "reuse": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains delivery of the recorded login token to Spotify Agent, identical variable assignment and use in the query. The actual result-token quote supports provenance, even without all reference anchors."
+  },
+  "MAST-R05_output_3": {
+    "components": {
+      "issued_source": "pass",
+      "reuse": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Quotes contract, executed login, actual returned token, matching assignment and target query; accurately explains issued-token provenance without claiming subsequent query success."
+  },
+  "MAST-R06_output_1": {
+    "components": {
+      "position": "pass",
+      "missing_history": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly locates song 40 after the current song and explains why a cyclic snapshot without playback history cannot decide prior eligibility. Identifies unfiltered queue projection in the delegated report, without treating position as proof of never played. Current-song identity is established by the quoted position/current flags in their source context."
+  },
+  "MAST-R06_output_2": {
+    "components": {
+      "position": "pass",
+      "missing_history": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies song 40 after current song 322, explains cyclic-history uncertainty and critiques the unfiltered delegated list. Quotes support all core relations; the mention of a prior diagnosis is extraneous and is not treated as evidence."
+  },
+  "MAST-R06_output_3": {
+    "components": {
+      "position": "pass",
+      "missing_history": "fail",
+      "boundary": "fail"
+    },
+    "evidence_semantically_correct": false,
+    "contradiction": true,
+    "rationale": "Correctly identifies positions and unfiltered projection, but infers an established played-so-far boundary at the current position and declares song 40 outside scope. Merely listing missing earlier-cycle history as a limitation does not explain its consequence for eligibility. Cited cyclic queue evidence cannot support the claimed violation; the core explanation conflicts with frozen unresolved eligibility."
+  },
+  "WW-new-25-14_output_1": {
+    "components": {
+      "original_boundary": "pass",
+      "changed_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly contrasts original before-month cutoff with target before-April-20 cutoff and explains inclusion of part of April. Treats the 2022 source version as unresolved separately; direct user and target quotations support the core mismatch."
+  },
+  "WW-new-25-14_output_2": {
+    "components": {
+      "original_boundary": "pass",
+      "changed_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explicitly identifies month versus day boundary and conditional April 1–19 expansion. Does not need external release-date truth; separately qualifies uncertainty about 2022 context."
+  },
+  "WW-new-25-14_output_3": {
+    "components": {
+      "original_boundary": "pass",
+      "changed_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains month-to-day substitution and conditional inclusion of April 1–19 with valid user/target quotes. Its observation that the instruction omits the 2022 qualification is tempered by the limitation that separate receipt is unknown and does not contradict the core cutoff diagnosis."
+  }
+}

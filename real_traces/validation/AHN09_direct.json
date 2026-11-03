@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN09_direct",
+  "collected_at": "2026-11-03T10:26:22.215486+00:00",
+  "response_sha256": "cdf223cb5dcf70fb65a0d9aa2a5abda4cc8344bdf6f8502acef57a44af722c38",
+  "response_utf8_bytes": 1019,
+  "format_reference_errors": [],
+  "parse_error": null,
+  "interval_seconds": 1682.319753,
+  "interval_definition": "preparation to collection, not pure model latency",
+  "token_usage": null,
+  "model_alias": null,
+  "immutable_model_id": null
+}

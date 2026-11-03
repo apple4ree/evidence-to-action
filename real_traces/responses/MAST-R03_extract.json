@@ -1,0 +1,46 @@
+{
+  "requirements": [
+    {
+      "id": "r1",
+      "field": "requested song eligibility and coverage",
+      "requirement": "Explicit user requirement: add all Lily Moon songs with play counts strictly greater than 980 to the Spotify player queue.",
+      "source": [
+        {
+          "locator": "L4",
+          "quote": "Add all the songs from Lily Moon that have been played over 980 times to my Spotify player queue."
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "r2",
+      "field": "completion statement supported by retrieval scope",
+      "requirement": "Generic support relation: the statement that no Lily Moon songs qualify must be supported at the scope of all relevant songs. Assess retrieval coverage using the documented pagination semantics; this does not impose a particular lookup sequence or a mandatory independent Supervisor lookup.",
+      "source": [
+        {
+          "locator": "/input/target_action",
+          "quote": "None of the songs by Lily Moon have been played over 980 times, so there are no songs to add to the Spotify queue."
+        },
+        {
+          "locator": "L1070-L1074",
+          "quote": "\"name\": \"page_index\",\n           \"type\": \"integer\",\n           \"required\": false,\n           \"description\": \"The index of the page to return.\",\n           \"default\": 0,"
+        },
+        {
+          "locator": "L1080-L1084",
+          "quote": "\"name\": \"page_limit\",\n           \"type\": \"integer\",\n           \"required\": false,\n           \"description\": \"The maximum number of results to return per page.\",\n           \"default\": 5,"
+        },
+        {
+          "locator": "L9",
+          "quote": "send_message(app_name='spotify', message='Get all songs by Lily Moon')"
+        }
+      ],
+      "exceptions": []
+    }
+  ],
+  "capture_limits": [
+    "The input is a published cross-actor console trace through the target action; original per-actor serialized contexts and hidden policies are not verified.",
+    "The Spotify agent's tool documentation and retrieval results appear in the cross-actor record; their inclusion does not establish that the Supervisor received them.",
+    "The record does not establish the contents of additional song-result pages or the total number of Lily Moon songs. Pagination alone does not establish that additional qualifying songs exist.",
+    "No explicit mandatory independent verification policy or delegation exception is documented."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "call_id": "AHN07_extract",
+  "case_id": "AHN07",
+  "stage": "extract",
+  "prepared_at": "2026-11-03T09:58:19.746457+00:00",
+  "request_sha256": "c110f278a061780df4d6e68d2c1be3b1356d8520b249450a280fc625e77d4949",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

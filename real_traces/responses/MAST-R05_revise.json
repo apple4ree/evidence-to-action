@@ -1,0 +1,33 @@
+{
+  "decision": "Supported",
+  "issues": [
+    {
+      "field": "target_action.access_token",
+      "requirement": "The credential passed to the recommendation query must be justified by the recorded Spotify login result.",
+      "evidence": [
+        {
+          "locator": "/input/prior_record",
+          "quote": "\"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcG90aWZ5K2t5bF9tb29yQGdtYWlsLmNvbSIsImV4cCI6MTY4NDQxMjA5OH0.E7o1UgsZuWJ6IRk-QXL3hHW41tEucW9WI06abedxH1Y\""
+        },
+        {
+          "locator": "/input/prior_record",
+          "quote": "access_token = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzcG90aWZ5K2t5bF9tb29yQGdtYWlsLmNvbSIsImV4cCI6MTY4NDQxMjA5OH0.E7o1UgsZuWJ6IRk-QXL3hHW41tEucW9WI06abedxH1Y\""
+        },
+        {
+          "locator": "L819",
+          "quote": "recommendations = apis.spotify.show_recommendations(access_token=access_token, page_index=0, page_limit=5)"
+        }
+      ],
+      "relation": "satisfied",
+      "exception": {
+        "applies": false,
+        "basis": null
+      },
+      "rationale": "The recorded login response is addressed to the Spotify Agent. The agent assigns the identical returned token to access_token and passes that variable to the target query. This explicitly establishes the credential's provenance."
+    }
+  ],
+  "rationale": "The target query uses the token returned by the recorded Spotify login, through a matching variable assignment.",
+  "limitations": [
+    "Original per-actor serialized context and hidden policies are not verified. The conclusion concerns only recorded credential provenance, not complete tool-contract compliance or query success."
+  ]
+}

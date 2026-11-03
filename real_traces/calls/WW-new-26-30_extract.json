@@ -1,0 +1,13 @@
+{
+  "call_id": "WW-new-26-30_extract",
+  "case_id": "WW-new-26-30",
+  "stage": "extract",
+  "prepared_at": "2026-11-03T09:58:19.461669+00:00",
+  "request_sha256": "250f7c3692ce0205dee8769342fb22b23ddd8d45fb0955975256c7c4549ada7a",
+  "model_alias": null,
+  "immutable_model_id": null,
+  "reasoning_effort": null,
+  "api_cost": null,
+  "token_usage": null,
+  "status": "prepared"
+}

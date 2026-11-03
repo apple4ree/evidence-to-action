@@ -1,0 +1,117 @@
+{
+  "case_id": "WW-new-26-30",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "supported",
+  "focal_relation": "Assess the request to inspect page11 at the reported local path.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+  "source": {
+    "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+    "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+    "sha256": "aad3b1ad33d7b668b80820676e164ca6b7bef2f0bf87061b342a529d1c9905ec"
+  },
+  "public_input_sha256_before_focal_scope": "56e470504e9eec83e416419da91647897d8cdf1f4801bf0f5818fd9a75f44b88",
+  "semantic_components": [
+    {
+      "id": "path_source",
+      "criterion": "Connects target path to the visible FileSurfer save receipt.",
+      "evidence_groups": [
+        [
+          "receipt"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "verification",
+      "criterion": "Distinguishes asking for content from claiming a date or successful identity verification.",
+      "evidence_groups": [
+        [
+          "pending",
+          "task"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "task",
+      "locator": "/input/history/0/content",
+      "quote": "second-to-last paragraph of page 11",
+      "original_locator": "/history/0/content"
+    },
+    {
+      "id": "receipt",
+      "locator": "/input/history/28/content",
+      "quote": "Saved file to '/workspace/path_to_local_copy_of_the_book'",
+      "original_locator": "/history/28/content"
+    },
+    {
+      "id": "pending",
+      "locator": "/input/history/29/content",
+      "quote": "the specific date in November is still not identified",
+      "original_locator": "/history/29/content"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "Please extract and display the content of page 11 from the local file '/workspace/path_to_local_copy_of_the_book'",
+      "original_locator": "{'json_pointer': '/history/30/content'}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "supported",
+    "issues": [
+      {
+        "field": "file-content verification request",
+        "requirement": "Inspect the requested page/endnote before supplying its date.",
+        "evidence": [
+          {
+            "locator": "/input/history/0/content",
+            "quote": "second-to-last paragraph of page 11"
+          },
+          {
+            "locator": "/input/history/28/content",
+            "quote": "Saved file to '/workspace/path_to_local_copy_of_the_book'"
+          },
+          {
+            "locator": "/input/history/29/content",
+            "quote": "the specific date in November is still not identified"
+          }
+        ],
+        "relation": "satisfied",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The known receipt path is used for a content lookup, with the requested date still unresolved."
+      }
+    ],
+    "rationale": "The known receipt path is used for a content lookup, with the requested date still unresolved.",
+    "limitations": "Placeholder-looking name is not proof of a fabricated path. Correct book identity/content and efficiency remain unverified."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Placeholder-looking name is not proof of a fabricated path. Correct book identity/content and efficiency remain unverified.",
+  "adjudication": {
+    "author_label": "Supported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/agenthallu_reviews_whowhen.json",
+        "decision": "Supported"
+      },
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/mast_reviews_whowhen.json",
+        "decision": "supported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "c60a62b435d5732cfc28f0971db2032e9184d79aab6c2f22565c2cd7c6742e20",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

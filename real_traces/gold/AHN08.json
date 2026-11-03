@@ -1,0 +1,123 @@
+{
+  "case_id": "AHN08",
+  "gold_version": "real-trace-core-v1",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "indeterminate",
+  "focal_relation": "Assess the claimed shared-directory location of the saved word-count file.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/004.json",
+  "source": {
+    "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/004.json",
+    "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+    "sha256": "179093e5699be66ad4e831fb9fa287f354e57b4becdd161a216a5189cd5604cd"
+  },
+  "public_input_sha256_before_focal_scope": "041fd41dc0d735ac5241b9d8f5df2dca7bbe624f66bb52093f9aa0faaf9ed1c1",
+  "semantic_components": [
+    {
+      "id": "location_gap",
+      "criterion": "Identifies current-directory/shared-directory mapping as assumed rather than observed.",
+      "evidence_groups": [
+        [
+          "assumption"
+        ],
+        [
+          "file",
+          "target"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "uncertainty",
+      "criterion": "Explains actual directory could be correct or wrong; missing evidence is not confirmed wrong location.",
+      "evidence_groups": [
+        [
+          "assumption"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    },
+    {
+      "id": "normal_value",
+      "criterion": "Recognizes the value9 itself comes from word-count output, not fabricated value.",
+      "evidence_groups": [
+        [
+          "count"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "assumption",
+      "locator": "/input/history/1/content",
+      "quote": "assumed to be the communal folder",
+      "original_locator": "/history/1/content"
+    },
+    {
+      "id": "count",
+      "locator": "/input/history/6/tool_responses/0",
+      "quote": "\"count\": 9",
+      "original_locator": "/history/6/tool_responses/0"
+    },
+    {
+      "id": "file",
+      "locator": "/input/history/8/tool_calls/0/arguments/file_name",
+      "quote": "report_word_count",
+      "original_locator": "/history/8/tool_calls/0/arguments/file_name"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "in the shared directory",
+      "original_locator": "{'json_pointer': '/history/9/content'}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "indeterminate",
+    "issues": [
+      {
+        "field": "save location",
+        "requirement": "Establish that the destination is the requested shared directory.",
+        "evidence": [
+          {
+            "locator": "/input/history/1/content",
+            "quote": "assumed to be the communal folder"
+          },
+          {
+            "locator": "/input/history/6/tool_responses/0",
+            "quote": "\"count\": 9"
+          },
+          {
+            "locator": "/input/history/8/tool_calls/0/arguments/file_name",
+            "quote": "report_word_count"
+          }
+        ],
+        "relation": "unresolved",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "Word-count reuse is supported, but actual destination directory is not established by the published record."
+      }
+    ],
+    "rationale": "Word-count reuse is supported, but actual destination directory is not established by the published record.",
+    "limitations": "Do not infer echo semantics from None or prove file-write success. The focal issue is location only."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Do not infer echo semantics from None or prove file-write success. The focal issue is location only.",
+  "adjudication": {
+    "author_label": "Indeterminate",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/mast_reviews_agenthallu.json",
+        "decision": "indeterminate"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "03f56ffb07f0b0e1d0d160b4ec56a73d58cdb77ad2e23d458e20bc8234969c78",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted"
+}

@@ -1,0 +1,473 @@
+[
+  {
+    "case_id": "MAST-R01",
+    "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+    "source_sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d",
+    "source_git_blob_sha": "160847aec4e64a3c84d9ace3735f115808061820",
+    "public_sha256": "125cc498d8193d7e20890593a9f3f14fec6154312541c53dfd2ea3f7d98a8ef6",
+    "template": {
+      "case_id": "MAST-R01",
+      "source": {
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d"
+      },
+      "dataset": "MAST AppWorld",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_text_lines",
+        "prior_record": null,
+        "target_action": null,
+        "target_locator": {
+          "line_start": 938,
+          "line_end": 942
+        },
+        "actor": "Supervisor",
+        "capture_scope": "Published cross-actor console trace up to this action. Original per-actor serialized context and hidden policies are not verified."
+      },
+      "focal_relation": "Whether the artist selected in the completion call is justified as the most recommended artist by the published recommendation and handoff records."
+    },
+    "line_start": 938,
+    "line_end": 942
+  },
+  {
+    "case_id": "MAST-R02",
+    "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+    "source_sha256": "862dbe83b4502a2328950824226df964612822a98e357b7d331acb6740ab8ff7",
+    "source_git_blob_sha": "b53f6acccd36b7d02076b38d54664e18f056dea1",
+    "public_sha256": "453cbdb37253570541377a3db6fb81db2581b7fb31de099d7ca19e86cd1f38cd",
+    "template": {
+      "case_id": "MAST-R02",
+      "source": {
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "sha256": "862dbe83b4502a2328950824226df964612822a98e357b7d331acb6740ab8ff7"
+      },
+      "dataset": "MAST AppWorld",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_text_lines",
+        "prior_record": null,
+        "target_action": null,
+        "target_locator": {
+          "line_start": 322,
+          "line_end": 322
+        },
+        "actor": "Supervisor",
+        "capture_scope": "Published cross-actor console trace up to this action. Original per-actor serialized context and hidden policies are not verified."
+      },
+      "focal_relation": "Whether the credential characterized and passed in the target handoff is supported as that credential type by its recorded source."
+    },
+    "line_start": 322,
+    "line_end": 322
+  },
+  {
+    "case_id": "MAST-R03",
+    "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/396c5a2_1.txt",
+    "source_sha256": "32481ff452bb1a6b24fd78248323dc3ddbb57418d130b95e1cfc78bada2ef56b",
+    "source_git_blob_sha": "7fedee4e4cd8295911242eb9664a3ea1e2adfd16",
+    "public_sha256": "be3ce37513e6814665d4798586bc08bca24e126021506c097bfbe02f28d07dd0",
+    "template": {
+      "case_id": "MAST-R03",
+      "source": {
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/396c5a2_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "sha256": "32481ff452bb1a6b24fd78248323dc3ddbb57418d130b95e1cfc78bada2ef56b"
+      },
+      "dataset": "MAST AppWorld",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_text_lines",
+        "prior_record": null,
+        "target_action": null,
+        "target_locator": {
+          "line_start": 1545,
+          "line_end": 1548
+        },
+        "actor": "Supervisor",
+        "capture_scope": "Published cross-actor console trace up to this action. Original per-actor serialized context and hidden policies are not verified."
+      },
+      "focal_relation": "Whether the target completion statement about finding the requested songs is justified by the scope of the recorded song retrieval."
+    },
+    "line_start": 1545,
+    "line_end": 1548
+  },
+  {
+    "case_id": "MAST-R04",
+    "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/229360a_1.txt",
+    "source_sha256": "2557b23c73e32d4469909a743cec8acae4a468de0f2593ee3ebd22be8e80594c",
+    "source_git_blob_sha": "cad0671ed80200796d88db3f37efb924dd531d4a",
+    "public_sha256": "6053b171fbdc51e8dbe1d2b618ebd938d5fd9c704ffb69a5798544c08cdc911d",
+    "template": {
+      "case_id": "MAST-R04",
+      "source": {
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/229360a_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "sha256": "2557b23c73e32d4469909a743cec8acae4a468de0f2593ee3ebd22be8e80594c"
+      },
+      "dataset": "MAST AppWorld",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_text_lines",
+        "prior_record": null,
+        "target_action": null,
+        "target_locator": {
+          "line_start": 724,
+          "line_end": 724
+        },
+        "actor": "Spotify Agent",
+        "capture_scope": "Published cross-actor console trace up to this action. Original per-actor serialized context and hidden policies are not verified."
+      },
+      "focal_relation": "Whether the target request for additional login information is a justified next information-gathering action given the available login details."
+    },
+    "line_start": 724,
+    "line_end": 724
+  },
+  {
+    "case_id": "MAST-R05",
+    "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+    "source_sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d",
+    "source_git_blob_sha": "160847aec4e64a3c84d9ace3735f115808061820",
+    "public_sha256": "9b8a551740fb342bb3b62e4b12e43dc4c5e115b14cc47c09caa539c2afb4ec6b",
+    "template": {
+      "case_id": "MAST-R05",
+      "source": {
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d"
+      },
+      "dataset": "MAST AppWorld",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_text_lines",
+        "prior_record": null,
+        "target_action": null,
+        "target_locator": {
+          "line_start": 819,
+          "line_end": 819
+        },
+        "actor": "Spotify Agent",
+        "capture_scope": "Published cross-actor console trace up to this action. Original per-actor serialized context and hidden policies are not verified."
+      },
+      "focal_relation": "Whether the credential used in the target recommendation query is justified by the recorded login result."
+    },
+    "line_start": 819,
+    "line_end": 819
+  },
+  {
+    "case_id": "MAST-R06",
+    "source_url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/ccb4494_1.txt",
+    "source_sha256": "de58c52e15ca345920cbee268b10f717dd915cb4d879c60abeebf445b5ea1937",
+    "source_git_blob_sha": "bbc17fde9a7752ec69822c6a50eadb1267f5b597",
+    "public_sha256": "fbb612c829682340fdf8359c4bb1f86dced353791aad2fe4e0daa05672ddc47f",
+    "template": {
+      "case_id": "MAST-R06",
+      "source": {
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/ccb4494_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "sha256": "de58c52e15ca345920cbee268b10f717dd915cb4d879c60abeebf445b5ea1937"
+      },
+      "dataset": "MAST AppWorld",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_text_lines",
+        "prior_record": null,
+        "target_action": null,
+        "target_locator": {
+          "line_start": 1438,
+          "line_end": 1438
+        },
+        "actor": "Supervisor",
+        "capture_scope": "Published cross-actor console trace up to this action. Original per-actor serialized context and hidden policies are not verified."
+      },
+      "focal_relation": "Whether the target instruction to like song 40 meets the user request concerning songs played so far, given the published queue and playback information."
+    },
+    "line_start": 1438,
+    "line_end": 1438
+  },
+  {
+    "case_id": "WW-new-25-14",
+    "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+    "source_sha256": "6552252eb5b7eb38a25cf01f7a4501d3f961b7ae64a6ce084b278c0453ba2309",
+    "source_git_blob_sha": "1bbdf9ab7f566ddf02f802308fcf0df99a6a6b48",
+    "public_sha256": "20960f26604a7b65adb7db282d83efbc669a0c46b5f953b8919e63ac2ba8cab6",
+    "template": {
+      "case_id": "WW-new-25-14",
+      "source": {
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "sha256": "6552252eb5b7eb38a25cf01f7a4501d3f961b7ae64a6ce084b278c0453ba2309"
+      },
+      "dataset": "Who&When",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/14/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied."
+      },
+      "focal_relation": "Whether the temporal boundary in the target delegated instruction preserves the original user request."
+    },
+    "history_key": "history",
+    "history_count": 14,
+    "target_pointer": "/history/14/content"
+  },
+  {
+    "case_id": "WW-new-43-12",
+    "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+    "source_sha256": "d887b9ef622a3e4e23aa0647cdd837808b91d367ee505f9e25240c82af922f0e",
+    "source_git_blob_sha": "a608cef3a49c70922f529cd346f71dc7c52655fa",
+    "public_sha256": "a87707d52de24f6ba7c3751d3058fb153fed49bdd445ccc5661cc2fab75ec116",
+    "template": {
+      "case_id": "WW-new-43-12",
+      "source": {
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "sha256": "d887b9ef622a3e4e23aa0647cdd837808b91d367ee505f9e25240c82af922f0e"
+      },
+      "dataset": "Who&When",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/12/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied."
+      },
+      "focal_relation": "Whether the target assertion that the listed observations verify the station count is supported by the recorded extraction scope. This is a support-attribution question, not a request for an external true station count."
+    },
+    "history_key": "history",
+    "history_count": 12,
+    "target_pointer": "/history/12/content"
+  },
+  {
+    "case_id": "WW-new-4-14",
+    "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/4.json",
+    "source_sha256": "034fbe1e3c3834734698ea0adcab148dacaadb0582e2cda47acb33ad119d6e61",
+    "source_git_blob_sha": "0035ca1cefbda17bc76b09a1b4c17c57539c5066",
+    "public_sha256": "99dba2a39e5c1122e9fb4a31895820094735b34322d54de00220119c587f7a2e",
+    "template": {
+      "case_id": "WW-new-4-14",
+      "source": {
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/4.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "sha256": "034fbe1e3c3834734698ea0adcab148dacaadb0582e2cda47acb33ad119d6e61"
+      },
+      "dataset": "Who&When",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/14/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied."
+      },
+      "focal_relation": "Whether the target instruction to investigate a candidate is justified as information gathering under the user constraints."
+    },
+    "history_key": "history",
+    "history_count": 14,
+    "target_pointer": "/history/14/content"
+  },
+  {
+    "case_id": "WW-new-26-30",
+    "source_url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+    "source_sha256": "aad3b1ad33d7b668b80820676e164ca6b7bef2f0bf87061b342a529d1c9905ec",
+    "source_git_blob_sha": "56e42a580a4a7491a6ea62298740ef894c33b641",
+    "public_sha256": "c60a62b435d5732cfc28f0971db2032e9184d79aab6c2f22565c2cd7c6742e20",
+    "template": {
+      "case_id": "WW-new-26-30",
+      "source": {
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "sha256": "aad3b1ad33d7b668b80820676e164ca6b7bef2f0bf87061b342a529d1c9905ec"
+      },
+      "dataset": "Who&When",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/30/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied."
+      },
+      "focal_relation": "Whether the target instruction to extract document content is justified by the available file/download records."
+    },
+    "history_key": "history",
+    "history_count": 30,
+    "target_pointer": "/history/30/content"
+  },
+  {
+    "case_id": "AHN01",
+    "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/074.json",
+    "source_sha256": "95d6873dce255a6741f49bcc1ee898d656c15c857214417367429152ad070b2d",
+    "source_git_blob_sha": "7be746a79b217bf014c456c2065aca0a48c4da6c",
+    "public_sha256": "b1ec4d03086d300c8acdb14d320c72ad9c2a85e4aa9b35376358e4a42acb2022",
+    "template": {
+      "case_id": "AHN01",
+      "source": {
+        "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/074.json",
+        "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+        "sha256": "95d6873dce255a6741f49bcc1ee898d656c15c857214417367429152ad070b2d"
+      },
+      "dataset": "AgentHallu",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/4/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied.",
+        "task": null,
+        "task_delivery_note": "question groups ordered in original, exact injection boundaries absent; provided prefix groups are analyst alignment, not verified per-call payload"
+      },
+      "focal_relation": "Whether the target report of the configured navigation destination is supported by the recorded tool calls and responses."
+    },
+    "history_key": "history",
+    "history_count": 4,
+    "target_pointer": "/history/4/content",
+    "question_count": 2
+  },
+  {
+    "case_id": "AHN04",
+    "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/143.json",
+    "source_sha256": "c9169844a9cd66d001d5df54c1d629ff0a0193be5c474c8703a80f13536953b1",
+    "source_git_blob_sha": "ca9390bcb1ad051fbe9ed275842ec588fd190aa4",
+    "public_sha256": "cf085c58558917cf9aefb9374c79b5fc4942467fa179866851e8d62950b6fb10",
+    "template": {
+      "case_id": "AHN04",
+      "source": {
+        "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/143.json",
+        "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+        "sha256": "c9169844a9cd66d001d5df54c1d629ff0a0193be5c474c8703a80f13536953b1"
+      },
+      "dataset": "AgentHallu",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/5/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied.",
+        "task": null,
+        "task_delivery_note": "question groups ordered in original, exact injection boundaries absent; provided prefix groups are analyst alignment, not verified per-call payload"
+      },
+      "focal_relation": "Whether the target attribution of the posting and retweeting to the specified person/account is supported by the recorded user instruction and login/post/retweet evidence."
+    },
+    "history_key": "history",
+    "history_count": 5,
+    "target_pointer": "/history/5/content",
+    "question_count": 2
+  },
+  {
+    "case_id": "AHN07",
+    "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/008.json",
+    "source_sha256": "587cd389d61076b3a1e3079f47a2793e4c9be2a0d01ab5157f6604ac0c951af6",
+    "source_git_blob_sha": "951a801529abbb9a27a0af21cbb98b6347399ede",
+    "public_sha256": "ad1078a6b60d8d10e2cc1aeaac93afeb4499ac2e153b5653ee1d39ebb7c4fda7",
+    "template": {
+      "case_id": "AHN07",
+      "source": {
+        "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/008.json",
+        "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+        "sha256": "587cd389d61076b3a1e3079f47a2793e4c9be2a0d01ab5157f6604ac0c951af6"
+      },
+      "dataset": "AgentHallu",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/3/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied.",
+        "task": null,
+        "task_delivery_note": "ordered question groups retained; exact injection boundaries absent; alignment inferred by target topic"
+      },
+      "focal_relation": "Whether the posting state conveyed to the user by the target response is supported by the recorded tool execution. Evaluate action status, not merely whether the quoted tweet wording matches."
+    },
+    "history_key": "history",
+    "history_count": 3,
+    "target_pointer": "/history/3/content",
+    "question_count": 2
+  },
+  {
+    "case_id": "AHN08",
+    "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/004.json",
+    "source_sha256": "179093e5699be66ad4e831fb9fa287f354e57b4becdd161a216a5189cd5604cd",
+    "source_git_blob_sha": "ff7531d517d3bd75c2ed0100837f705fcf7d8391",
+    "public_sha256": "03f56ffb07f0b0e1d0d160b4ec56a73d58cdb77ad2e23d458e20bc8234969c78",
+    "template": {
+      "case_id": "AHN08",
+      "source": {
+        "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/004.json",
+        "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+        "sha256": "179093e5699be66ad4e831fb9fa287f354e57b4becdd161a216a5189cd5604cd"
+      },
+      "dataset": "AgentHallu",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/9/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied.",
+        "task": null,
+        "task_delivery_note": "ordered question groups retained; exact injection boundaries absent; alignment inferred by target topic"
+      },
+      "focal_relation": "Whether the target statement about the file location is supported by the recorded directory context and operations."
+    },
+    "history_key": "history",
+    "history_count": 9,
+    "target_pointer": "/history/9/content",
+    "question_count": 5
+  },
+  {
+    "case_id": "AHN09",
+    "source_url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/007.json",
+    "source_sha256": "96c4378c4c6a5bad24d47ff8ebf6934ac34a9f6a9d6bebb9106acd3a1888fc18",
+    "source_git_blob_sha": "560e3d85e4787c0d62df3b81c045d93c96a61688",
+    "public_sha256": "a860739c43d540b93f6a44ab4b91d3d10a24ffa32c75e031569aefcb0fb5cce2",
+    "template": {
+      "case_id": "AHN09",
+      "source": {
+        "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/007.json",
+        "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+        "sha256": "96c4378c4c6a5bad24d47ff8ebf6934ac34a9f6a9d6bebb9106acd3a1888fc18"
+      },
+      "dataset": "AgentHallu",
+      "task_scope": "Local justification and information-transfer diagnosis in the published record, not complete hidden-policy compliance.",
+      "input": {
+        "record_format": "literal_json_history",
+        "history": null,
+        "target_action": null,
+        "target_locator": {
+          "json_pointer": "/history/6/content"
+        },
+        "capture_scope": "Published normalized history prefix. Original full actor payload and system prompt are not verified; no future records or upstream answer annotations supplied.",
+        "task": null,
+        "task_delivery_note": "ordered question groups retained; exact injection boundaries absent; alignment inferred by target topic"
+      },
+      "focal_relation": "Whether the target quoted file content is supported by the recorded file-read response."
+    },
+    "history_key": "history",
+    "history_count": 6,
+    "target_pointer": "/history/6/content",
+    "question_count": 3
+  }
+]
