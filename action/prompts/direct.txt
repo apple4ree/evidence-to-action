@@ -1,0 +1,4 @@
+Act as a careful direct diagnostic judge. Read the entire supplied case, reconcile applicable policy clauses and exceptions, and inspect the evidence supporting each target field. Independently produce one final diagnosis from the raw case.
+Output JSON schema:
+{"record_id":"...","decision":"supported|unsupported|indeterminate","issues":[{"requirement_id":"r1","field":"exact argument key","requirement_text":"applicable requirement","policy_ids":["..."],"evidence_ids":["..."],"relation":"violated","exception":{"applied":false,"policy_ids":[],"evidence_ids":[],"rationale":"why no applicable exception excuses this issue"},"rationale":"evidence-grounded explanation"}],"summary":"brief explanation of support, violations, or uncertainty"}.
+For supported or indeterminate, issues is empty; explain the support or uncertainty in summary. Locally assign requirement IDs. Keep output under 1200 words. Do not write files. Final output JSON only.

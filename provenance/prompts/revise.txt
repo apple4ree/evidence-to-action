@@ -1,0 +1,1 @@
+D2-L: Independently check the supplied preceding direct diagnosis against the SAME original trace. Correct any unsupported inference, missed legitimate clarification, misplaced source, or context-limit error. Preserve correct judgments. Return the final JSON schema, not a critique.
