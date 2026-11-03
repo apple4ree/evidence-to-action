@@ -1,0 +1,181 @@
+{
+  "D1": {
+    "decision_accuracy": {
+      "correct": 14,
+      "total": 15,
+      "rate": 0.9333333333333333
+    },
+    "confusion_matrix": {
+      "unsupported -> unsupported": 7,
+      "supported -> supported": 5,
+      "indeterminate -> unsupported": 1,
+      "indeterminate -> indeterminate": 2
+    },
+    "unsupported_recall": {
+      "correct": 7,
+      "total": 7,
+      "rate": 1.0
+    },
+    "supported_false_positive_rate": {
+      "correct": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "indeterminate_accuracy": {
+      "correct": 2,
+      "total": 3,
+      "rate": 0.6666666666666666
+    },
+    "unnecessary_abstention": {
+      "correct": 0,
+      "total": 12,
+      "rate": 0.0
+    },
+    "decision_coverage": {
+      "correct": 13,
+      "total": 15,
+      "rate": 0.8666666666666667
+    },
+    "joint_diagnostic_accuracy": {
+      "correct": 14,
+      "total": 15,
+      "rate": 0.9333333333333333
+    },
+    "semantic_unrated": 0,
+    "valid_reference_format": {
+      "correct": 15,
+      "total": 15,
+      "rate": 1.0
+    },
+    "group_macro_accuracy": 0.9285714285714286,
+    "group_bootstrap_95_interval": [
+      0.7857142857142857,
+      1
+    ],
+    "group_count": 14,
+    "mean_active_session_seconds": 23.0082,
+    "time_cases_observed": 15,
+    "input_tokens": 1070797,
+    "output_tokens": 10845,
+    "raw_output_bytes": 29848
+  },
+  "D2": {
+    "decision_accuracy": {
+      "correct": 15,
+      "total": 15,
+      "rate": 1.0
+    },
+    "confusion_matrix": {
+      "unsupported -> unsupported": 7,
+      "supported -> supported": 5,
+      "indeterminate -> indeterminate": 3
+    },
+    "unsupported_recall": {
+      "correct": 7,
+      "total": 7,
+      "rate": 1.0
+    },
+    "supported_false_positive_rate": {
+      "correct": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "indeterminate_accuracy": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1.0
+    },
+    "unnecessary_abstention": {
+      "correct": 0,
+      "total": 12,
+      "rate": 0.0
+    },
+    "decision_coverage": {
+      "correct": 12,
+      "total": 15,
+      "rate": 0.8
+    },
+    "joint_diagnostic_accuracy": {
+      "correct": 15,
+      "total": 15,
+      "rate": 1.0
+    },
+    "semantic_unrated": 0,
+    "valid_reference_format": {
+      "correct": 15,
+      "total": 15,
+      "rate": 1.0
+    },
+    "group_macro_accuracy": 1,
+    "group_bootstrap_95_interval": [
+      1,
+      1
+    ],
+    "group_count": 14,
+    "mean_active_session_seconds": 45.26453333333333,
+    "time_cases_observed": 15,
+    "input_tokens": 2042649,
+    "output_tokens": 22036,
+    "raw_output_bytes": 62689
+  },
+  "P2": {
+    "decision_accuracy": {
+      "correct": 14,
+      "total": 15,
+      "rate": 0.9333333333333333
+    },
+    "confusion_matrix": {
+      "unsupported -> unsupported": 6,
+      "unsupported -> indeterminate": 1,
+      "supported -> supported": 5,
+      "indeterminate -> indeterminate": 3
+    },
+    "unsupported_recall": {
+      "correct": 6,
+      "total": 7,
+      "rate": 0.8571428571428571
+    },
+    "supported_false_positive_rate": {
+      "correct": 0,
+      "total": 5,
+      "rate": 0.0
+    },
+    "indeterminate_accuracy": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1.0
+    },
+    "unnecessary_abstention": {
+      "correct": 1,
+      "total": 12,
+      "rate": 0.08333333333333333
+    },
+    "decision_coverage": {
+      "correct": 11,
+      "total": 15,
+      "rate": 0.7333333333333333
+    },
+    "joint_diagnostic_accuracy": {
+      "correct": 14,
+      "total": 15,
+      "rate": 0.9333333333333333
+    },
+    "semantic_unrated": 0,
+    "valid_reference_format": {
+      "correct": 15,
+      "total": 15,
+      "rate": 1.0
+    },
+    "group_macro_accuracy": 0.9285714285714286,
+    "group_bootstrap_95_interval": [
+      0.7857142857142857,
+      1
+    ],
+    "group_count": 14,
+    "mean_active_session_seconds": 46.169200000000004,
+    "time_cases_observed": 15,
+    "input_tokens": 2012209,
+    "output_tokens": 21623,
+    "raw_output_bytes": 66060
+  }
+}

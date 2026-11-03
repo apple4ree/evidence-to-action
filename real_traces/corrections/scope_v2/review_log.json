@@ -1,0 +1,185 @@
+[
+  {
+    "case_method": "AHN08_D1",
+    "reviewer": "current assistant, LLM review; not human or blinded independent review",
+    "removed_component": "normal_value",
+    "remaining_component_review": {
+      "location_gap": "The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence.",
+      "uncertainty": "The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+    },
+    "evidence_review": "Stored cited passages were compared with unchanged public input; references support the remaining relation.",
+    "decision": "Indeterminate",
+    "decision_unchanged": true,
+    "exceptions": "No applicable exception asserted; unchanged",
+    "original_rating": {
+      "components": {
+        "location_gap": "pass",
+        "uncertainty": "pass",
+        "normal_value": "fail"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Correctly diagnoses unresolved current/shared-directory mapping without alleging a wrong location. Fails normal_value: does not recognize or connect 9 to the recorded word-count result."
+    },
+    "corrected_rating": {
+      "components": {
+        "location_gap": "pass",
+        "uncertainty": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Post-hoc scope review of saved response: The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence. The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+    }
+  },
+  {
+    "case_method": "AHN08_D2",
+    "reviewer": "current assistant, LLM review; not human or blinded independent review",
+    "removed_component": "normal_value",
+    "remaining_component_review": {
+      "location_gap": "The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence.",
+      "uncertainty": "The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+    },
+    "evidence_review": "Stored cited passages were compared with unchanged public input; references support the remaining relation.",
+    "decision": "Indeterminate",
+    "decision_unchanged": true,
+    "exceptions": "No applicable exception asserted; unchanged",
+    "original_rating": {
+      "components": {
+        "location_gap": "pass",
+        "uncertainty": "pass",
+        "normal_value": "fail"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Correctly explains that the destination is assumed and neither confirmed nor contradicted. Fails normal_value: omits the origin and supported reuse of 9 from the word-count output."
+    },
+    "corrected_rating": {
+      "components": {
+        "location_gap": "pass",
+        "uncertainty": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Post-hoc scope review of saved response: The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence. The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+    }
+  },
+  {
+    "case_method": "AHN08_P2",
+    "reviewer": "current assistant, LLM review; not human or blinded independent review",
+    "removed_component": "normal_value",
+    "remaining_component_review": {
+      "location_gap": "The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence.",
+      "uncertainty": "The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+    },
+    "evidence_review": "Stored cited passages were compared with unchanged public input; references support the remaining relation.",
+    "decision": "Indeterminate",
+    "decision_unchanged": true,
+    "exceptions": "No applicable exception asserted; unchanged",
+    "original_rating": {
+      "components": {
+        "location_gap": "pass",
+        "uncertainty": "pass",
+        "normal_value": "fail"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Correctly identifies assumed directory mapping and absence of evidence for either correct or wrong location. Fails normal_value: quoting the target containing 9 does not recognize its origin in the wc output; no explanation or evidence connects the value to that output."
+    },
+    "corrected_rating": {
+      "components": {
+        "location_gap": "pass",
+        "uncertainty": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Post-hoc scope review of saved response: The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence. The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+    }
+  },
+  {
+    "case_method": "AHN09_D1",
+    "reviewer": "current assistant, LLM review; not human or blinded independent review",
+    "removed_component": "file_link",
+    "remaining_component_review": {
+      "content_preservation": "The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+    },
+    "evidence_review": "Stored cited passages were compared with unchanged public input; references support the remaining relation.",
+    "decision": "Supported",
+    "decision_unchanged": true,
+    "exceptions": "No applicable exception asserted; unchanged",
+    "original_rating": {
+      "components": {
+        "file_link": "fail",
+        "content_preservation": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Correctly compares returned text with the formatted report. Fails file_link: does not identify goals.txt, academic_venture, or the located-file/current-directory chain connecting the file to the read/report."
+    },
+    "corrected_rating": {
+      "components": {
+        "content_preservation": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Post-hoc scope review of saved response: The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+    }
+  },
+  {
+    "case_method": "AHN09_D2",
+    "reviewer": "current assistant, LLM review; not human or blinded independent review",
+    "removed_component": "file_link",
+    "remaining_component_review": {
+      "content_preservation": "The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+    },
+    "evidence_review": "Stored cited passages were compared with unchanged public input; references support the remaining relation.",
+    "decision": "Supported",
+    "decision_unchanged": true,
+    "exceptions": "No applicable exception asserted; unchanged",
+    "original_rating": {
+      "components": {
+        "file_link": "fail",
+        "content_preservation": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Correctly explains that bullets preserve the returned words rather than invent content. Fails file_link: no linkage of located goals.txt in academic_venture to the read/report is described or evidenced."
+    },
+    "corrected_rating": {
+      "components": {
+        "content_preservation": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Post-hoc scope review of saved response: The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+    }
+  },
+  {
+    "case_method": "AHN09_P2",
+    "reviewer": "current assistant, LLM review; not human or blinded independent review",
+    "removed_component": "file_link",
+    "remaining_component_review": {
+      "content_preservation": "The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+    },
+    "evidence_review": "Stored cited passages were compared with unchanged public input; references support the remaining relation.",
+    "decision": "Supported",
+    "decision_unchanged": true,
+    "exceptions": "No applicable exception asserted; unchanged",
+    "original_rating": {
+      "components": {
+        "file_link": "fail",
+        "content_preservation": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Correctly establishes content preservation. Fails file_link: naming academic_venture/goals.txt in the requirement does not explain or evidence how the located file and directory are connected to the read/report."
+    },
+    "corrected_rating": {
+      "components": {
+        "content_preservation": "pass"
+      },
+      "evidence_semantically_correct": true,
+      "contradiction": false,
+      "rationale": "Post-hoc scope review of saved response: The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+    }
+  }
+]

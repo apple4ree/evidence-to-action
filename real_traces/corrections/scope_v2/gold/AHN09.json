@@ -1,0 +1,105 @@
+{
+  "case_id": "AHN09",
+  "gold_version": "real-trace-scope-v2-posthoc",
+  "annotation_type": "LLM author plus separate-context LLM review, adjudicated before comparison predictions; not human gold",
+  "decision": "supported",
+  "focal_relation": "Assess whether the final file-content report preserves the observed file and its contents.",
+  "scope": "published_record_local_relation",
+  "group_id": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/007.json",
+  "source": {
+    "url": "https://github.com/liuxuannan/AgentHallu/blob/9ffe8bc888feaf15d89833f4b0e3c4697f44acc1/AgentHallu/BFCL/007.json",
+    "revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+    "sha256": "96c4378c4c6a5bad24d47ff8ebf6934ac34a9f6a9d6bebb9106acd3a1888fc18"
+  },
+  "public_input_sha256_before_focal_scope": "b5f09901d72a60087e0f31162cbc611dc59b8b2be5caa684013fa46c2304d6c5",
+  "semantic_components": [
+    {
+      "id": "content_preservation",
+      "criterion": "Recognizes returned text is preserved with formatting rather than replaced by invented content.",
+      "evidence_groups": [
+        [
+          "read"
+        ],
+        [
+          "target"
+        ]
+      ],
+      "weight": 1
+    }
+  ],
+  "anchors": [
+    {
+      "id": "cwd",
+      "locator": "/input/history/0/tool_responses/0",
+      "quote": "academic_venture",
+      "original_locator": "/history/0/tool_responses/0"
+    },
+    {
+      "id": "find",
+      "locator": "/input/history/3/tool_responses/0",
+      "quote": "./goals.txt",
+      "original_locator": "/history/3/tool_responses/0"
+    },
+    {
+      "id": "read",
+      "locator": "/input/history/5/tool_responses/0",
+      "quote": "Research topic selection Literature review Data collection Data analysis Draft writing Final submission",
+      "original_locator": "/history/5/tool_responses/0"
+    },
+    {
+      "id": "target",
+      "locator": "/input/target_action",
+      "quote": "**Research topic selection**",
+      "original_locator": "{'json_pointer': '/history/6/content'}"
+    }
+  ],
+  "reference_diagnosis": {
+    "decision": "supported",
+    "issues": [
+      {
+        "field": "file content report",
+        "requirement": "Report the contents of the identified file based on the read result.",
+        "evidence": [
+          {
+            "locator": "/input/history/0/tool_responses/0",
+            "quote": "academic_venture"
+          },
+          {
+            "locator": "/input/history/3/tool_responses/0",
+            "quote": "./goals.txt"
+          },
+          {
+            "locator": "/input/history/5/tool_responses/0",
+            "quote": "Research topic selection Literature review Data collection Data analysis Draft writing Final submission"
+          }
+        ],
+        "relation": "satisfied",
+        "exception": "No additional exception is established or required for this focal relation.",
+        "rationale": "The reported file matches lookup/cwd and the text is the observed cat output formatted as bullets."
+      }
+    ],
+    "rationale": "The reported file matches lookup/cwd and the text is the observed cat output formatted as bullets.",
+    "limitations": "Supported for local file-content transfer, not entire run. Shares task template with excluded AHN06 but no evaluation split claims are made."
+  },
+  "field_matching": "semantic role, not literal field-name match",
+  "component_matching": "semantically equivalent descriptions and valid alternative literal evidence accepted; required core relation only",
+  "ambiguity": "Supported for local file-content transfer, not entire run. Shares task template with excluded AHN06 but no evaluation split claims are made.",
+  "adjudication": {
+    "author_label": "Supported",
+    "review_decisions": [
+      {
+        "file": "research_2026_11/underspecification_proposal/real_trace_benchmark/review/mast_reviews_agenthallu.json",
+        "decision": "supported"
+      }
+    ],
+    "resolution": "Scope fixed before comparison inference. Original annotations preserved."
+  },
+  "public_input_sha256": "a860739c43d540b93f6a44ab4b91d3d10a24ffa32c75e031569aefcb0fb5cce2",
+  "scoring_decision_normalization": "trim and lowercase; title-case labels accepted",
+  "scope_correction": {
+    "type": "post-evaluation rubric scope correction",
+    "removed_component": "file_link",
+    "label_unchanged": true,
+    "public_question_unchanged": true
+  }
+}

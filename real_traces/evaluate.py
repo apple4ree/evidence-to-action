@@ -5,11 +5,14 @@ from collections import Counter,defaultdict
 from harness import ROOT,read,verify
 METHODS={'D1':['direct'],'D2':['direct','revise'],'P2':['extract','relate']}
 def ratio(n,d):return {'correct':n,'total':d,'rate':n/d if d else None}
-def evaluate():
+def evaluate(out_dir=None, gold_overrides=None, semantic_path=None):
  verify();ids=read(ROOT/'case_ids.json');rows=[];semantic={}
- if (ROOT/'semantic_ratings.json').exists():semantic=read(ROOT/'semantic_ratings.json')
+ semantic_file=Path(semantic_path) if semantic_path else ROOT/'semantic_ratings.json'
+ if semantic_file.exists():semantic=read(semantic_file)
  for cid in ids:
-  gold=read(ROOT/'gold'/f'{cid}.json');g=gold['decision'].lower()
+  gold_file=Path(gold_overrides)/f'{cid}.json' if gold_overrides else ROOT/'gold'/f'{cid}.json'
+  if not gold_file.exists():gold_file=ROOT/'gold'/f'{cid}.json'
+  gold=read(gold_file);g=gold['decision'].lower()
   for method,stages in METHODS.items():
    pf=ROOT/'predictions'/f'{cid}_{method}.json';obj=read(pf) if pf.exists() else {};pred=str(obj.get('decision','missing')).lower()
    errors=[]
@@ -33,7 +36,7 @@ def evaluate():
   means=[statistics.mean(x) for x in groups.values()];rng=random.Random(20261103);boot=sorted(statistics.mean(rng.choices(means,k=len(means))) for _ in range(2000))
   times=[r['active_session_seconds'] for r in rs if r['active_session_seconds'] is not None]
   results[method]={'decision_accuracy':ratio(sum(r['decision_correct'] for r in rs),len(rs)),'confusion_matrix':dict(Counter(r['gold']+' -> '+r['prediction'] for r in rs)),'unsupported_recall':ratio(sum(r['prediction']=='unsupported' for r in u),len(u)),'supported_false_positive_rate':ratio(sum(r['prediction']=='unsupported' for r in s),len(s)),'indeterminate_accuracy':ratio(sum(r['prediction']=='indeterminate' for r in i),len(i)),'unnecessary_abstention':ratio(sum(r['prediction']=='indeterminate' for r in u+s),len(u+s)),'decision_coverage':ratio(len(decided),len(rs)),'joint_diagnostic_accuracy':ratio(sum(r['joint_correct'] for r in rated),len(rated)),'semantic_unrated':len(rs)-len(rated),'valid_reference_format':ratio(sum(r['reference_format_valid'] for r in rs),len(rs)),'group_macro_accuracy':statistics.mean(means),'group_bootstrap_95_interval':[boot[49],boot[1949]],'group_count':len(means),'mean_active_session_seconds':statistics.mean(times) if times else None,'time_cases_observed':len(times),'input_tokens':sum(r['input_tokens'] for r in rs) if all(r['input_tokens'] is not None for r in rs) else None,'output_tokens':sum(r['output_tokens'] for r in rs) if all(r['output_tokens'] is not None for r in rs) else None,'raw_output_bytes':sum(r['raw_output_bytes'] for r in rs)}
- out=ROOT/'results';out.mkdir(exist_ok=True);(out/'per_case.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n');(out/'summary.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
+ out=Path(out_dir) if out_dir else ROOT/'results';out.mkdir(parents=True,exist_ok=True);(out/'per_case.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n');(out/'summary.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
  with (out/'per_case.csv').open('w') as f:
   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
  return results

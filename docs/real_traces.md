@@ -31,6 +31,10 @@ python3 real_traces/evaluate.py
 
 `evaluate.py`는 저장 예측과 저장된 의미 채점을 읽고 `results/summary.json`, `per_case.json`, `per_case.csv`를 다시 계산한다. 의미 채점이 없으면 해당 항목은 미채점으로 남는다. 모델을 새로 호출하는 명령은 아니다.
 
+## 2.1 채점 범위 사후 보정
+
+공개 질문 밖의 두 의미 요소를 제외한 재채점은 `python3 real_traces/rescore_scope.py`로 실행합니다. 원점수를 재현하고 원본 hash를 확인한 뒤 별도 `real_traces/corrections/scope_v2/results/`에 저장합니다. 판정 라벨과 사람 검토 불일치는 유지합니다. [변경 기준과 검토 기록](../real_traces/corrections/scope_v2/README.md)
+
 ## 3. 새 모델 추론
 
 기존 결과를 덮어쓰지 않도록 별도 작업 폴더를 만든다.

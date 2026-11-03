@@ -1,0 +1,419 @@
+{
+  "MAST-R01_D2": {
+    "components": {
+      "selection": "pass",
+      "source_loss": "pass",
+      "scope": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explicitly identifies first-position substitution, deduplicated unranked handoff, and unknown overall winner. Cited set/list, handoff, target and page query support these distinctions; no Supervisor access to upstream records is assumed."
+  },
+  "MAST-R01_P2": {
+    "components": {
+      "selection": "pass",
+      "source_loss": "pass",
+      "scope": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies first-position substitution and loss of multiplicity/rank; valid page-specific Ava/Lucas comparison is distinguished from the unknown global winner. Separates evaluator-visible song records from Supervisor knowledge."
+  },
+  "MAST-R01_D1": {
+    "components": {
+      "selection": "pass",
+      "source_loss": "pass",
+      "scope": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains set-to-list loss and unsupported first-position selection, with explicit limitation that the global winner is unknown. Its page-frequency observation is accurate; the cited set/list and target suffice for the core diagnosis even without a separate quote for every raw count."
+  },
+  "MAST-R02_D2": {
+    "components": {
+      "origin": "pass",
+      "change": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects the observed Spotify password Q3c_DvY to the same value relabeled as an access token without recorded conversion. Quotes source, sender acknowledgment and target; diagnoses sender source-type misrepresentation without future error evidence or receiver blame."
+  },
+  "MAST-R02_P2": {
+    "components": {
+      "origin": "pass",
+      "change": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects the observed Spotify password Q3c_DvY to the same value relabeled as an access token without recorded conversion. Quotes source, sender acknowledgment and target; diagnoses sender source-type misrepresentation without future error evidence or receiver blame."
+  },
+  "MAST-R02_D1": {
+    "components": {
+      "origin": "pass",
+      "change": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects the observed Spotify password Q3c_DvY to the same value relabeled as an access token without recorded conversion. Quotes source, sender acknowledgment and target; diagnoses sender source-type misrepresentation without future error evidence or receiver blame."
+  },
+  "MAST-R03_D2": {
+    "components": {
+      "limited_source": "pass",
+      "promotion": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Recognizes default bounded five-song retrieval, connects the handoff to the universal negative, and distinguishes unsupported exhaustiveness from proof of unseen qualifying songs. Valid alternative short pagination quotes and query/target citations support the relation; no Supervisor access to upstream documentation is assumed."
+  },
+  "MAST-R03_P2": {
+    "components": {
+      "limited_source": "pass",
+      "promotion": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": true,
+    "rationale": "All frozen component descriptions are substantively present: default first-page limit five, its handoff versus universal conclusion, and appropriate epistemic/actor boundaries. However, it calls the established scope-support failure unresolved because no counterexample or mandatory verification rule is known. This contradicts the frozen core relation, whose issue is promotion of limited evidence rather than the real existence of qualifying songs. Quotes correctly support the bounded-coverage facts."
+  },
+  "MAST-R03_D1": {
+    "components": {
+      "limited_source": "pass",
+      "promotion": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies default first page with limit five, its unproven exhaustiveness and promotion through delegation to a universal negative. Correctly separates valid rejection of five reported songs from overall coverage and avoids assuming hidden qualifying songs or Supervisor receipt of pagination docs."
+  },
+  "MAST-R04_P2": {
+    "components": {
+      "missing_field": "pass",
+      "normal_query": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects password-only delegation to the login schema requiring username/account email and recognizes the target as justified information gathering. The cited incoming instruction, schema and question establish the local relation without claiming authentication or completion."
+  },
+  "MAST-R04_D2": {
+    "components": {
+      "missing_field": "pass",
+      "normal_query": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects password-only delegation to the login schema requiring username/account email and recognizes the target as justified information gathering. The cited incoming instruction, schema and question establish the local relation without claiming authentication or completion."
+  },
+  "MAST-R04_D1": {
+    "components": {
+      "missing_field": "pass",
+      "normal_query": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects password-only delegation to the login schema requiring username/account email and recognizes the target as justified information gathering. The cited incoming instruction, schema and question establish the local relation without claiming authentication or completion."
+  },
+  "MAST-R05_D2": {
+    "components": {
+      "issued_source": "pass",
+      "reuse": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies the actual login result as the token source and tracks its identical value into assignment and target query. The quoted returned token is a valid source anchor in context; quoting the login invocation separately is unnecessary."
+  },
+  "MAST-R05_D1": {
+    "components": {
+      "issued_source": "pass",
+      "reuse": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains delivery of the recorded login token to Spotify Agent, identical variable assignment and use in the query. The actual result-token quote supports provenance, even without all reference anchors."
+  },
+  "MAST-R05_P2": {
+    "components": {
+      "issued_source": "pass",
+      "reuse": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Quotes contract, executed login, actual returned token, matching assignment and target query; accurately explains issued-token provenance without claiming subsequent query success."
+  },
+  "MAST-R06_P2": {
+    "components": {
+      "position": "pass",
+      "missing_history": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly locates song 40 after the current song and explains why a cyclic snapshot without playback history cannot decide prior eligibility. Identifies unfiltered queue projection in the delegated report, without treating position as proof of never played. Current-song identity is established by the quoted position/current flags in their source context."
+  },
+  "MAST-R06_D2": {
+    "components": {
+      "position": "pass",
+      "missing_history": "pass",
+      "boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies song 40 after current song 322, explains cyclic-history uncertainty and critiques the unfiltered delegated list. Quotes support all core relations; the mention of a prior diagnosis is extraneous and is not treated as evidence."
+  },
+  "MAST-R06_D1": {
+    "components": {
+      "position": "pass",
+      "missing_history": "fail",
+      "boundary": "fail"
+    },
+    "evidence_semantically_correct": false,
+    "contradiction": true,
+    "rationale": "Correctly identifies positions and unfiltered projection, but infers an established played-so-far boundary at the current position and declares song 40 outside scope. Merely listing missing earlier-cycle history as a limitation does not explain its consequence for eligibility. Cited cyclic queue evidence cannot support the claimed violation; the core explanation conflicts with frozen unresolved eligibility."
+  },
+  "WW-new-25-14_P2": {
+    "components": {
+      "original_boundary": "pass",
+      "changed_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Correctly contrasts original before-month cutoff with target before-April-20 cutoff and explains inclusion of part of April. Treats the 2022 source version as unresolved separately; direct user and target quotations support the core mismatch."
+  },
+  "WW-new-25-14_D2": {
+    "components": {
+      "original_boundary": "pass",
+      "changed_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explicitly identifies month versus day boundary and conditional April 1–19 expansion. Does not need external release-date truth; separately qualifies uncertainty about 2022 context."
+  },
+  "WW-new-25-14_D1": {
+    "components": {
+      "original_boundary": "pass",
+      "changed_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains month-to-day substitution and conditional inclusion of April 1–19 with valid user/target quotes. Its observation that the instruction omits the 2022 qualification is tempered by the limitation that separate receipt is unknown and does not contradict the core cutoff diagnosis."
+  },
+  "WW-new-43-12_D2": {
+    "components": {
+      "source_scope": "pass",
+      "overstatement": "pass",
+      "time_or_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies the partial viewport and missing South Station endpoint, and connects them to the unsupported complete-verification claim. Missing full interval coverage satisfies time_or_boundary without a temporal discussion."
+  },
+  "WW-new-43-12_D1": {
+    "components": {
+      "source_scope": "pass",
+      "overstatement": "pass",
+      "time_or_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies partial extraction and absent endpoint, explains overstatement of complete verification, and additionally notes Today versus May 2023 applicability."
+  },
+  "WW-new-43-12_P2": {
+    "components": {
+      "source_scope": "pass",
+      "overstatement": "pass",
+      "time_or_boundary": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects partial viewport and absent endpoint to unsupported exhaustive verification; separately explains historical applicability uncertainty."
+  },
+  "WW-new-4-14_D1": {
+    "components": {
+      "query_status": "pass",
+      "requirements": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Treats named trails as search-result candidates rather than qualified recommendations and connects the requested measurements and accessibility evidence to the user criteria."
+  },
+  "WW-new-4-14_P2": {
+    "components": {
+      "query_status": "pass",
+      "requirements": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Distinguishes candidate investigation from eligibility claims and explicitly connects review counts, ratings, and distinct-user accessibility recommendations to the request."
+  },
+  "WW-new-4-14_D2": {
+    "components": {
+      "query_status": "pass",
+      "requirements": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains provisional candidate verification and its relation to the user criteria, acknowledging that not every criterion is repeated in this investigative step."
+  },
+  "WW-new-26-30_D1": {
+    "components": {
+      "path_source": "pass",
+      "verification": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Links exact target path to FileSurfer save receipt and distinguishes requested inspection from verified identity, page access, or content."
+  },
+  "WW-new-26-30_P2": {
+    "components": {
+      "path_source": "pass",
+      "verification": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Links the reported save path to requested extraction and requested passage, explicitly distinguishing investigation from verified identity or a found date."
+  },
+  "WW-new-26-30_D2": {
+    "components": {
+      "path_source": "pass",
+      "verification": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects save receipt to target path and treats extraction as an attempt rather than a claim that document identification or extraction succeeded."
+  },
+  "AHN01_P2": {
+    "components": {
+      "observed_destination": "pass",
+      "substitution": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies the literal navigation placeholder and separates the real-address lookup from the unsupported configured-destination claim."
+  },
+  "AHN01_D1": {
+    "components": {
+      "observed_destination": "pass",
+      "substitution": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Explains that navigation call and response retain the placeholder while the separate lookup alone supplies the reported address."
+  },
+  "AHN01_D2": {
+    "components": {
+      "observed_destination": "pass",
+      "substitution": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Contrasts placeholder navigation evidence with the real-address report and explains that lookup identity does not establish transfer into navigation."
+  },
+  "AHN04_D2": {
+    "components": {
+      "observed_identity": "pass",
+      "unresolved_mapping": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies john in the post, successful retweet without acting-account identity, and unresolved mapping to Robert rather than a demonstrated conflict."
+  },
+  "AHN04_P2": {
+    "components": {
+      "observed_identity": "pass",
+      "unresolved_mapping": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Distinguishes execution success from account ownership attribution; john may correspond to the travel account but the record neither establishes nor contradicts this."
+  },
+  "AHN04_D1": {
+    "components": {
+      "observed_identity": "pass",
+      "unresolved_mapping": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies observed john and unidentified retweet account and explicitly avoids treating a differing username as proof of a wrong account."
+  },
+  "AHN07_D2": {
+    "components": {
+      "executed_post": "pass",
+      "state_mismatch": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Uses post_tweet and returned ID/content to establish recorded posting, and contrasts it with draft/future-post wording."
+  },
+  "AHN07_P2": {
+    "components": {
+      "executed_post": "pass",
+      "state_mismatch": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Identifies executed post and returned tweet object and explains that the subsequent offer conveys pending posting; does not conflate this with authorization."
+  },
+  "AHN07_D1": {
+    "components": {
+      "executed_post": "pass",
+      "state_mismatch": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Connects post_tweet and returned object to completed execution and explains why matching wording cannot justify the implied unposted state."
+  },
+  "AHN08_P2": {
+    "components": {
+      "location_gap": "pass",
+      "uncertainty": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Post-hoc scope review of saved response: The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence. The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+  },
+  "AHN08_D1": {
+    "components": {
+      "location_gap": "pass",
+      "uncertainty": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Post-hoc scope review of saved response: The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence. The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+  },
+  "AHN08_D2": {
+    "components": {
+      "location_gap": "pass",
+      "uncertainty": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Post-hoc scope review of saved response: The response cites the earlier assumed communal-folder mapping and the relative write filename; it identifies no observation establishing directory equivalence. The response explicitly states that neither the shared-directory destination nor a conflicting destination is established."
+  },
+  "AHN09_D1": {
+    "components": {
+      "content_preservation": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Post-hoc scope review of saved response: The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+  },
+  "AHN09_D2": {
+    "components": {
+      "content_preservation": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Post-hoc scope review of saved response: The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+  },
+  "AHN09_P2": {
+    "components": {
+      "content_preservation": "pass"
+    },
+    "evidence_semantically_correct": true,
+    "contradiction": false,
+    "rationale": "Post-hoc scope review of saved response: The response cites both the read response and target bullets; all six phrases retain their order and content. It distinguishes presentation changes from substantive additions."
+  }
+}
