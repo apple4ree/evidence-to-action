@@ -1,3 +1,5 @@
+> **과거 실험 안내:** 현재 공개 실행 벤치마크는 [실행 안내](real_traces.md)를 참고하세요. 이 문서는 이전 자료와 코드의 재현을 위해 보존합니다.
+
 # Expanded scoring specification v1
 
 All model outputs are scored against adjudicated gold frozen before test predictions. Scope is the annotated core violation relationships, not exhaustive recall of every normal policy requirement. No family/condition/variant metadata or gold is available to predictors.

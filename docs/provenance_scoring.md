@@ -1,3 +1,5 @@
+> **과거 실험 안내:** 현재 공개 실행 벤치마크는 [실행 안내](real_traces.md)를 참고하세요. 이 문서는 이전 자료와 코드의 재현을 위해 보존합니다.
+
 # Scoring specification
 
 Root supplies case-level gold before freeze. Evaluate only visible-record evidential support and localization of initial source, transformation and reuse. Gold must distinguish supported factual reuse, legitimate search/clarification, unsupported changes, and indeterminate missing evidence. Full hidden policy compliance is outside the available record.
