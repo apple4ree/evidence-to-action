@@ -1,0 +1,466 @@
+{
+  "mast_audit.json": {
+    "retrieved_new_runs": 10,
+    "selection": "Pinned AppWorld directory, initially chose six previously unreviewed short/medium logs then four task-diverse logs; purposive, not random or prevalence sample. No method predictions used.",
+    "sources": [
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/229360a_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/229360a_1.txt",
+        "sha256": "2557b23c73e32d4469909a743cec8acae4a468de0f2593ee3ebd22be8e80594c",
+        "git_blob_sha": "cad0671ed80200796d88db3f37efb924dd531d4a",
+        "bytes": 32102,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/287e338_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+        "sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d",
+        "git_blob_sha": "160847aec4e64a3c84d9ace3735f115808061820",
+        "bytes": 28650,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/396c5a2_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/396c5a2_1.txt",
+        "sha256": "32481ff452bb1a6b24fd78248323dc3ddbb57418d130b95e1cfc78bada2ef56b",
+        "git_blob_sha": "7fedee4e4cd8295911242eb9664a3ea1e2adfd16",
+        "bytes": 50722,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/50e1ac9_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/50e1ac9_1.txt",
+        "sha256": "7933ab8e1c2436b8caf5f786e01a6d075ae13b5d7a051ff04c4b850d2b9beb4e",
+        "git_blob_sha": "a5d7f465d1063394712e9afd751bd05deeb52271",
+        "bytes": 24025,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/57c3486_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/57c3486_1.txt",
+        "sha256": "fe21494d13edbe561fb9a3147056f790fc8c98dad48f0295d6167a6cdebd9506",
+        "git_blob_sha": "a8c081f2aebf72525efb6dab04f748bef490ebdb",
+        "bytes": 28070,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/6171bbc_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/6171bbc_1.txt",
+        "sha256": "0697b6e410f6d083f7ee80970e8073ae4bbcd2388aebe7a110a87f71d37b4d55",
+        "git_blob_sha": "9b5ec027c0028355a65abb794560816549ff303a",
+        "bytes": 33039,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/82e2fac_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/82e2fac_1.txt",
+        "sha256": "9a6237f202f09ef7c1b02404bcdbf3a303e5dae59aacd1a549c98a3846c3728c",
+        "git_blob_sha": "cdb416bc30949828596ec5e7cba9e9b72d105cde",
+        "bytes": 35337,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/aa8502b_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+        "sha256": "862dbe83b4502a2328950824226df964612822a98e357b7d331acb6740ab8ff7",
+        "git_blob_sha": "b53f6acccd36b7d02076b38d54664e18f056dea1",
+        "bytes": 13967,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/b7a9ee9_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/b7a9ee9_1.txt",
+        "sha256": "0faf38fd7e3120f1ea891d6ec8a0680781ddd6c64e5bf8c302d6e822b95130e6",
+        "git_blob_sha": "a98874165359aaebb0af523f6dbe3c2e11eb4f6c",
+        "bytes": 24463,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      },
+      {
+        "dataset": "MAST AppWorld",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/ccb4494_1.txt",
+        "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+        "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/ccb4494_1.txt",
+        "sha256": "de58c52e15ca345920cbee268b10f717dd915cb4d879c60abeebf445b5ea1937",
+        "git_blob_sha": "bbc17fde9a7752ec69822c6a50eadb1267f5b597",
+        "bytes": 52472,
+        "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+      }
+    ],
+    "screening_ledger": [
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/229360a_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/229360a_1.txt",
+          "sha256": "2557b23c73e32d4469909a743cec8acae4a468de0f2593ee3ebd22be8e80594c",
+          "git_blob_sha": "cad0671ed80200796d88db3f37efb924dd531d4a",
+          "bytes": 32102,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "selected",
+        "reason": "Selected provisional local episode(s)"
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/287e338_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/287e338_1.txt",
+          "sha256": "e64aa70a265c2e627f9300e95123efb113ebaa6a5d50bb54bf83d5b09efe552d",
+          "git_blob_sha": "160847aec4e64a3c84d9ace3735f115808061820",
+          "bytes": 28650,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "selected",
+        "reason": "Selected provisional local episode(s)"
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/396c5a2_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/396c5a2_1.txt",
+          "sha256": "32481ff452bb1a6b24fd78248323dc3ddbb57418d130b95e1cfc78bada2ef56b",
+          "git_blob_sha": "7fedee4e4cd8295911242eb9664a3ea1e2adfd16",
+          "bytes": 50722,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "selected",
+        "reason": "Selected provisional local episode(s)"
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/50e1ac9_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/50e1ac9_1.txt",
+          "sha256": "7933ab8e1c2436b8caf5f786e01a6d075ae13b5d7a051ff04c4b850d2b9beb4e",
+          "git_blob_sha": "a5d7f465d1063394712e9afd751bd05deeb52271",
+          "bytes": 24025,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "held_or_excluded",
+        "reason": "Password/token attempt stops at send_message signature error; no transmitted reuse, duplicate mechanism, not admitted."
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/57c3486_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/57c3486_1.txt",
+          "sha256": "fe21494d13edbe561fb9a3147056f790fc8c98dad48f0295d6167a6cdebd9506",
+          "git_blob_sha": "a8c081f2aebf72525efb6dab04f748bef490ebdb",
+          "bytes": 28070,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "held_or_excluded",
+        "reason": "Repeated clarification/authentication stall; no new confirmed unsupported reuse in focused scan."
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/6171bbc_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/6171bbc_1.txt",
+          "sha256": "0697b6e410f6d083f7ee80970e8073ae4bbcd2388aebe7a110a87f71d37b4d55",
+          "git_blob_sha": "9b5ec027c0028355a65abb794560816549ff303a",
+          "bytes": 33039,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "held_or_excluded",
+        "reason": "OAuth instructions copied into local environment despite login API listed; insufficient retrieved login specification to establish an exact API incompatibility boundary, held for deeper review."
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/82e2fac_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/82e2fac_1.txt",
+          "sha256": "9a6237f202f09ef7c1b02404bcdbf3a303e5dae59aacd1a549c98a3846c3728c",
+          "git_blob_sha": "cdb416bc30949828596ec5e7cba9e9b72d105cde",
+          "bytes": 35337,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "held_or_excluded",
+        "reason": "Potential first-page most-liked answer, but completeness and target scope need fuller review; not admitted."
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/aa8502b_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/aa8502b_1.txt",
+          "sha256": "862dbe83b4502a2328950824226df964612822a98e357b7d331acb6740ab8ff7",
+          "git_blob_sha": "b53f6acccd36b7d02076b38d54664e18f056dea1",
+          "bytes": 13967,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "selected",
+        "reason": "Selected provisional local episode(s)"
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/b7a9ee9_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/b7a9ee9_1.txt",
+          "sha256": "0faf38fd7e3120f1ea891d6ec8a0680781ddd6c64e5bf8c302d6e822b95130e6",
+          "git_blob_sha": "a98874165359aaebb0af523f6dbe3c2e11eb4f6c",
+          "bytes": 24463,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "held_or_excluded",
+        "reason": "Password/token attempt stops at send_message signature error; duplicate mechanism, not admitted."
+      },
+      {
+        "source": {
+          "dataset": "MAST AppWorld",
+          "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/mast_raw/ccb4494_1.txt",
+          "revision": "a70542e541b2104ef8fcd785778179e173fb8d70",
+          "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST/blob/a70542e541b2104ef8fcd785778179e173fb8d70/traces/AppWorld/ccb4494_1.txt",
+          "sha256": "de58c52e15ca345920cbee268b10f717dd915cb4d879c60abeebf445b5ea1937",
+          "git_blob_sha": "bbc17fde9a7752ec69822c6a50eadb1267f5b597",
+          "bytes": 52472,
+          "source_type": "published benchmark execution trace, not edited/synthesized by this study"
+        },
+        "screening": "focused relevant-action scan, not exhaustive annotation of all events",
+        "decision": "selected",
+        "reason": "Selected provisional local episode(s)"
+      }
+    ]
+  },
+  "whowhen_audit.json": {
+    "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+    "new_raw_count": 13,
+    "selection": "One exploratory long file (2), then smallest unreviewed files from fixed 58-file Hand-Crafted listing; 13 new sources. Convenience sampling for audit feasibility, not random or prevalence representative. Existing 11 files excluded from new-source pool.",
+    "raw_sources": [
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/2",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_2.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/2.json",
+        "git_blob_sha": "bfdeb663d2646b86550208c0c592e4a9f3c5a50a",
+        "sha256": "d883c9f5e437b2881e8658c4411a2cec220a456c09c74b8b3630ec4172b7f043",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/25",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_25.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/25.json",
+        "git_blob_sha": "1bbdf9ab7f566ddf02f802308fcf0df99a6a6b48",
+        "sha256": "6552252eb5b7eb38a25cf01f7a4501d3f961b7ae64a6ce084b278c0453ba2309",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/26",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_26.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/26.json",
+        "git_blob_sha": "56e42a580a4a7491a6ea62298740ef894c33b641",
+        "sha256": "aad3b1ad33d7b668b80820676e164ca6b7bef2f0bf87061b342a529d1c9905ec",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/29",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_29.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/29.json",
+        "git_blob_sha": "21e1133509595386c12607d8fbdb87d9b808a344",
+        "sha256": "9ffab9392ae1f74d69f24a7d51b89a44a90a7be956c074ee85b5881773279255",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/32",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_32.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/32.json",
+        "git_blob_sha": "242a5118f6de676233b575b7fd13e9691ea6abbb",
+        "sha256": "a9153a356ef18a6bec30c25d233bd25c57c32c4f4cb3602b7dc6399ee8afc88c",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/33",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_33.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/33.json",
+        "git_blob_sha": "91fdaadc1c7fbef59c3e04ba20060d21d76046f3",
+        "sha256": "27519a4febb06c0fd7969da7ea4255f45edcac524d0627bafc1fb03ed085baf3",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/34",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_34.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/34.json",
+        "git_blob_sha": "1dfeb9233dcc5b7a977a6345697594dbda255ce0",
+        "sha256": "34a2c21deefb96fa19f8ef53993796c97a016bb2b1e79e3a948bb9069875a408",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/4",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_4.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/4.json",
+        "git_blob_sha": "0035ca1cefbda17bc76b09a1b4c17c57539c5066",
+        "sha256": "034fbe1e3c3834734698ea0adcab148dacaadb0582e2cda47acb33ad119d6e61",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/40",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_40.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/40.json",
+        "git_blob_sha": "f80e07efeb5d3e95ce54c016d71a2dec56518caf",
+        "sha256": "b79692d54dc692611d74981d1f54983c983869394d2bb64a0abdc0ff0a184037",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/43",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_43.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/43.json",
+        "git_blob_sha": "a608cef3a49c70922f529cd346f71dc7c52655fa",
+        "sha256": "d887b9ef622a3e4e23aa0647cdd837808b91d367ee505f9e25240c82af922f0e",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/45",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_45.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/45.json",
+        "git_blob_sha": "0d1116ebf2bf18436cb995e8fb45994b4fa640b1",
+        "sha256": "387f925ec0636a7f6cc34f00529eb583b060d32491af683302a27c328d76b9a1",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/52",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_52.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/52.json",
+        "git_blob_sha": "5709dc14eacb7a1186a789c45fc125c7845f7d73",
+        "sha256": "d514e4a0f086a25f836e28145300da3cc6849d456cf40c9f04a1527b9ecc89a9",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      },
+      {
+        "dataset": "Who&When",
+        "source_id": "Hand-Crafted/53",
+        "local_path": "research_2026_11/underspecification_proposal/real_trace_benchmark/raw_whowhen/hand_53.json",
+        "revision": "b2bae5c5b06d681d04ea5e9b63b7a30525c04925",
+        "url": "https://github.com/mingyin1/Agents_Failure_Attribution/blob/b2bae5c5b06d681d04ea5e9b63b7a30525c04925/Who%26When/Hand-Crafted/53.json",
+        "git_blob_sha": "d51744ab5ae2052ea42f4cc0c3fbaf66b5d4bd6f",
+        "sha256": "a5aaa884aec4818ee1ceaf0ea4bb68361bf86712fef873fc36a8ffbd6e9a077b",
+        "classification": "publisher-collected Magentic-One console history; Hand-Crafted names system construction, not an annotation authored by this project",
+        "prior_use": false
+      }
+    ],
+    "not_curated": [
+      {
+        "source_id": "Hand-Crafted/2",
+        "reason": "Long trace ends with runtime error and fallback answer. Full actor inputs for fallback not established; no new target curated."
+      },
+      {
+        "source_id": "Hand-Crafted/34",
+        "reason": "Only initial search and error-tail, no adequately isolated downstream reuse chosen."
+      },
+      {
+        "source_id": "Hand-Crafted/33",
+        "reason": "Initial navigation only; no new unsupported commitment selected."
+      },
+      {
+        "source_id": "Hand-Crafted/29",
+        "reason": "Further source exploration without sufficiently isolated downstream commitment selected."
+      },
+      {
+        "source_id": "Hand-Crafted/45",
+        "reason": "Classification verification and fallback to internal knowledge; internal knowledge not prohibited by user, so not error by itself."
+      },
+      {
+        "source_id": "Hand-Crafted/52",
+        "reason": "Nearby search result scope candidate, but downstream queries still ask verification and final fallback follows runtime error; precise actor boundary not isolated."
+      },
+      {
+        "source_id": "Hand-Crafted/40",
+        "reason": "Filters not fully set before runtime error; later fallback answer lacks isolated actor boundary. No scoreable failure inferred from incomplete task alone."
+      }
+    ]
+  },
+  "agenthallu_new_audit.json": {
+    "scope": "new-source local relation candidates",
+    "reviewed_originals": [
+      "BFCL/000.json",
+      "BFCL/001.json",
+      "BFCL/003.json",
+      "BFCL/004.json",
+      "BFCL/005.json",
+      "BFCL/006.json",
+      "BFCL/007.json",
+      "BFCL/008.json"
+    ],
+    "selection_rule": "first 8 lexicographic BFCL paths outside previously selected30, fixed before reading content",
+    "source_revision": "9ffe8bc888feaf15d89833f4b0e3c4697f44acc1",
+    "screening": {
+      "000": "directory recovery with observed commands; not prioritized",
+      "001": "grep shortened line but meaning preserved; not prioritized",
+      "003": "sorted_content reformat/reorder; tool output newline ambiguity, do not force error",
+      "004": "selected location-assumption reuse, Indeterminate",
+      "005": "selected arbitrary-content write instead of read, Unsupported local task",
+      "006": "diff content largely preserved, wording/verbatim ambiguity; not prioritized",
+      "007": "selected normal retrieval and reuse, same family as005",
+      "008": "selected posted-versus-draft claim conflict, Unsupported local claim"
+    }
+  },
+  "note": "Collection-time screening records; not diagnostic predictions. Local original paths are provenance pointers, not required execution paths. Final inclusion and results are collection_ledger.json and results/."
+}

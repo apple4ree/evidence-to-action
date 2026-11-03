@@ -10,7 +10,7 @@ def put(p,x):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def publishable(p):
  rel=p.relative_to(ROOT)
- return p.is_file() and not set(rel.parts)&{'__pycache__','public','requests','source_cache'} and rel.as_posix() not in {'review/cases.js','review/review.html','review/build_check.json'}
+ return p.is_file() and p.name!='publish_batch_paths.json' and not set(rel.parts)&{'__pycache__','public','requests','source_cache'} and rel.as_posix() not in {'review/cases.js','review/review.html','review/build_check.json'}
 def main():
  recipes=[]
  for cid in read(EXPERIMENT/'case_ids.json'):
