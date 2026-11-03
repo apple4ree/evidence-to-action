@@ -1,0 +1,9 @@
+{
+  "review_process": "single_human_review",
+  "human_judgment_confirmed": true,
+  "confirmation": "원문을 읽고 판단 후, 답변 작성 후 문장 수정. 그냥 사실상 내가 한 거임",
+  "interpretation": "Reviewer personally read original inputs, made judgments and drafted answers; subsequent wording edits. No claim that wording edits replace human judgment.",
+  "blindness": "Page hid gold and predictions; case-level prior exposure and procedure independence are not established by metadata. Earlier conversation included some case/results discussion.",
+  "adjudication": "Three disagreements remain unresolved. Frozen gold, predictions and submitted answers remain unchanged.",
+  "duration": "Not inferred from export timestamps."
+}

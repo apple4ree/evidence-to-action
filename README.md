@@ -16,7 +16,7 @@
 
 직접 진단은 현재 큐를 과거 재생 이력처럼 해석했고, 재검토는 이를 바로잡았습니다. 반대로 단계 분해는 부분 목록을 전체 결과로 확정한 주장을 판단 불가로 처리했습니다. **직접 진단을 기본으로 유지하며 기록 결손과 위반의 경계를 후속 검증 대상으로 삼습니다.**
 
-정답과 의미 채점은 별도 문맥 LLM 검수이며 사람 검증은 아직 없습니다. 두 사례에서 공개 질문보다 넓은 설명을 정답이 요구해 모든 방법이 공통 감점됐습니다. 원점수는 유지하고 이 문제를 [결과 분석](real_traces/results/analysis.md)에 구분했습니다. [전체 수치](real_traces/results/summary.json), [사례와 출처별 결과](real_traces/results/breakdowns.json), [원본 수집 목록](real_traces/collection_ledger.json).
+고정 정답과 의미 채점은 별도 문맥 LLM 검수입니다. 이후 원문을 직접 읽은 단일 사람 검토 15건을 수집했고, 기존 라벨과 12/15건 일치했습니다. 불일치 3건은 미조정 상태이며 기존 점수는 유지합니다. [사람 검토 분석](real_traces/human_review/analysis.md). 두 사례에서 공개 질문보다 넓은 설명을 정답이 요구해 모든 방법이 공통 감점됐습니다. 원점수는 유지하고 이 문제를 [결과 분석](real_traces/results/analysis.md)에 구분했습니다. [전체 수치](real_traces/results/summary.json), [사례와 출처별 결과](real_traces/results/breakdowns.json), [원본 수집 목록](real_traces/collection_ledger.json).
 
 **원본 복원과 재채점:** [실제 기록 실행 안내](docs/real_traces.md). 정답을 숨긴 [사람 검토 페이지 생성](real_traces/review/README.md)도 제공합니다.
 
