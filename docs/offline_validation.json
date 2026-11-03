@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "python": "Python 3.14.4",
+  "setup": "New temporary directory and venv without pip; published-file manifest copied; generated public inputs and requests absent at start; only 14 SHA-256-verified original source cache files supplied. Network socket connection and DNS resolution blocked by Python audit hook. No site packages loaded (-S).",
+  "inputs_restored": 15,
+  "requests_restored": 60,
+  "source_files": 14,
+  "original_and_corrected_summary_match": true,
+  "commands": [
+    {
+      "command": [
+        "real_traces/restore_inputs.py",
+        "--cache",
+        "/var/folders/y9/7fgtlv05431420bnvfythmxh0000gn/T/eta-clean-offline-ldelc3i1/source-cache",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "stdout": "Restored 15 exact inputs and 60 archived requests\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "real_traces/harness.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "stdout": "Verified\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "real_traces/evaluate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"D1\": {\n    \"decision_accuracy\": {\n      \"correct\": 14,\n      \"total\": 15,\n      \"rate\": 0.9333333333333333\n    },\n    \"confusion_matrix\": {\n      \"unsupported -> unsupported\": 7,\n      \"supported -> supported\": 5,\n      \"indeterminate -> unsupported\": 1,\n      \"indeterminate -> indeterminate\": 2\n    },\n    \"unsupported_recall\": {\n      \"correct\": 7,\n      \"total\": 7,\n      \"rate\": 1.0\n    },\n    \"supported_false_positive_rate\": {\n      \"correct\": 0,\n      \"total\": 5,\n      \"rate\": 0.0\n    },\n    \"indeterminate_accuracy\": {\n      \"correct\": 2,\n      \"total\": 3,\n      \"rate\": 0.6666666666666666\n    },\n    \"unnecessary_abstention\": {\n      \"correct\": 0,\n      \"total\": 12,\n      \"rate\": 0.0\n    },\n    \"decision_coverage\": {\n      \"correct\": 13,\n      \"total\": 15,\n      \"rate\": 0.8666666666666667\n    },\n    \"joint_diagnostic_accuracy\": {\n      \"correct\": 12,\n      \"total\": 15,\n      \"rate\": 0.8\n    },\n    \"semantic_unrated\": 0,\n    \"valid_reference_format\": {\n      \"correct\": 15,\n      \"total\": 15,\n      \"rate\": 1.0\n    },\n    \"group_macro_accuracy\": 0.9285714285714286,\n    \"group_bootstrap_95_interval\": [\n      0.7857142857142857,\n      1\n    ],\n    \"group_count\": 14,\n    \"mean_active_session_seconds\": 23.0082,\n    \"time_cases_observed\": 15,\n    \"input_tokens\": 1070797,\n    \"output_tokens\": 10845,\n    \"raw_output_bytes\": 29848\n  },\n  \"D2\": {\n    \"decision_accuracy\": {\n      \"correct\": 15,\n      \"total\": 15,\n      \"rate\": 1.0\n    },\n    \"confusion_matrix\": {\n      \"unsupported -> unsupported\": 7,\n      \"supported -> supported\": 5,\n      \"indeterminate -> indeterminate\": 3\n    },\n    \"unsupported_recall\": {\n      \"correct\": 7,\n      \"total\": 7,\n      \"rate\": 1.0\n    },\n    \"supported_false_positive_rate\": {\n      \"correct\": 0,\n      \"total\": 5,\n      \"rate\": 0.0\n    },\n    \"indeterminate_accuracy\": {\n      \"correct\": 3,\n      \"total\": 3,\n      \"rate\": 1.0\n    },\n    \"unnecessary_abstention\": {\n      \"correct\": 0,\n      \"total\": 12,\n      \"rate\": 0.0\n    },\n    \"decision_coverage\": {\n      \"correct\": 12,\n      \"total\": 15,\n      \"rate\": 0.8\n    },\n    \"joint_diagnostic_accuracy\": {\n      \"correct\": 13,\n      \"total\": 15,\n      \"rate\": 0.8666666666666667\n    },\n    \"semantic_unrated\": 0,\n    \"valid_reference_format\": {\n      \"correct\": 15,\n      \"total\": 15,\n      \"rate\": 1.0\n    },\n    \"group_macro_accuracy\": 1,\n    \"group_bootstrap_95_interval\": [\n      1,\n      1\n    ],\n    \"group_count\": 14,\n    \"mean_active_session_seconds\": 45.26453333333333,\n    \"time_cases_observed\": 15,\n    \"input_tokens\": 2042649,\n    \"output_tokens\": 22036,\n    \"raw_output_bytes\": 62689\n  },\n  \"P2\": {\n    \"decision_accuracy\": {\n      \"correct\": 14,\n      \"total\": 15,\n      \"rate\": 0.9333333333333333\n    },\n    \"confusion_matrix\": {\n      \"unsupported -> unsupported\": 6,\n      \"unsupported -> indeterminate\": 1,\n      \"supported -> supported\": 5,\n      \"indeterminate -> indeterminate\": 3\n    },\n    \"unsupported_recall\": {\n      \"correct\": 6,\n      \"total\": 7,\n      \"rate\": 0.8571428571428571\n    },\n    \"supported_false_positive_rate\": {\n      \"correct\": 0,\n      \"total\": 5,\n      \"rate\": 0.0\n    },\n    \"indeterminate_accuracy\": {\n      \"correct\": 3,\n      \"total\": 3,\n      \"rate\": 1.0\n    },\n    \"unnecessary_abstention\": {\n      \"correct\": 1,\n      \"total\": 12,\n      \"rate\": 0.08333333333333333\n    },\n    \"decision_coverage\": {\n      \"correct\": 11,\n      \"total\": 15,\n      \"rate\": 0.7333333333333333\n    },\n    \"joint_diagnostic_accuracy\": {\n      \"correct\": 12,\n      \"total\": 15,\n      \"rate\": 0.8\n    },\n    \"semantic_unrated\": 0,\n    \"valid_reference_format\": {\n      \"correct\": 15,\n      \"total\": 15,\n      \"rate\": 1.0\n    },\n    \"group_macro_accuracy\": 0.9285714285714286,\n    \"group_bootstrap_95_interval\": [\n      0.7857142857142857,\n      1\n    ],\n    \"group_count\": 14,\n    \"mean_active_session_seconds\": 46.169200000000004,\n    \"time_cases_observed\": 15,\n    \"input_tokens\": 2012209,\n    \"output_tokens\": 21623,\n    \"raw_output_bytes\": 66060\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "real_traces/rescore_scope.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"D1\": {\n    \"decision\": {\n      \"correct\": 14,\n      \"total\": 15,\n      \"rate\": 0.9333333333333333\n    },\n    \"joint_before\": {\n      \"correct\": 12,\n      \"total\": 15,\n      \"rate\": 0.8\n    },\n    \"joint_after\": {\n      \"correct\": 14,\n      \"total\": 15,\n      \"rate\": 0.9333333333333333\n    }\n  },\n  \"D2\": {\n    \"decision\": {\n      \"correct\": 15,\n      \"total\": 15,\n      \"rate\": 1.0\n    },\n    \"joint_before\": {\n      \"correct\": 13,\n      \"total\": 15,\n      \"rate\": 0.8666666666666667\n    },\n    \"joint_after\": {\n      \"correct\": 15,\n      \"total\": 15,\n      \"rate\": 1.0\n    }\n  },\n  \"P2\": {\n    \"decision\": {\n      \"correct\": 14,\n      \"total\": 15,\n      \"rate\": 0.9333333333333333\n    },\n    \"joint_before\": {\n      \"correct\": 12,\n      \"total\": 15,\n      \"rate\": 0.8\n    },\n    \"joint_after\": {\n      \"correct\": 14,\n      \"total\": 15,\n      \"rate\": 0.9333333333333333\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "real_traces/test_harness.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "command": [
+        "real_traces/test_restore.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "command": [
+        "real_traces/test_scope_correction.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.046s\n\nOK\n"
+    }
+  ],
+  "limits": [
+    "Local published-file export used, not a fresh network git clone.",
+    "Source cache is required and is not bundled in the repository.",
+    "No new model inference or online download tested."
+  ]
+}
