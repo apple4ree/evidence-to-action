@@ -91,6 +91,72 @@ python3 real_traces/rescore_scope.py
 
 새 추론은 [실행 안내](docs/real_traces.md#3-새-모델-추론)의 별도 작업 폴더에서 시작합니다. 요청 준비와 출력 검사는 구현되어 있으며 모델 호출에는 별도 실행 환경이 필요합니다. API provider adapter는 포함하지 않습니다.
 
+## 제출 코드 바로가기
+
+| 제출 항목 | 핵심 파일 | 확인할 내용 |
+|---|---|---|
+| **방법론 코드** | [진단 실행 도구](real_traces/harness.py), [평가 코드](real_traces/evaluate.py) | 요청 준비, 출력 검사, 단계 분해의 판정 합성, 저장 예측 채점 |
+| **평가 데이터 수집 및 구축 스크립트** | [원본 수집 및 입력 복원](real_traces/restore_inputs.py), [추출 규칙](real_traces/input_recipes.json) | 고정 원본 다운로드, hash 확인, 행동 이전 기록과 대상 행동 추출 |
+| **프롬프트 파이프라인 구조** | [공통 규격](real_traces/prompts/common.txt), [단계별 프롬프트](real_traces/prompts/) | 직접 진단, 재검토, 단계 분해의 입력과 출력 연결 |
+
+### 1. 방법론 코드
+
+[real_traces/harness.py](real_traces/harness.py)가 진단 실행의 핵심이다.
+
+- `verify()`: 평가 전에 고정한 파일의 hash를 확인한다.
+- `prepare()`: 공통 규격, 단계별 프롬프트, 해당 사례의 공개 입력을 결합한다. 재검토와 관계 판단 단계에는 각각 이전 직접 진단 또는 요구사항 추출 응답을 덧붙인다. 정답 파일은 요청에 넣지 않는다.
+- `validate()`: 출력 항목과 관계 라벨을 검사하고, 근거 인용이 지정한 원문 위치에 실제로 존재하는지 확인한다. 요구사항 추출 단계에서는 요구사항 목록의 존재를 검사한다.
+- `aggregate()`: 단계 분해의 관계 판단에서 `violated`가 있으면 근거 불충족, 그렇지 않고 `unresolved`가 있으면 판단 불가, 나머지는 근거 충족으로 합성한다.
+- `collect()`: 저장 응답을 읽어 검사 기록과 최종 진단 파일을 만든다. 직접 진단과 재검토는 모델이 출력한 판정을 사용한다.
+
+요구사항의 적용 여부와 근거의 의미 관계는 모델이 판단한다. 코드의 인용 검사는 원문 대응을 확인하며, 의미적 정답 여부는 [채점 규격](real_traces/scoring_spec.md)에 따른 [저장 의미 채점](real_traces/semantic_ratings.json)과 함께 평가한다. [evaluate.py](real_traces/evaluate.py)는 판정, 전체 진단, 그룹별 결과와 실행 부담을 집계하고, [rescore_scope.py](real_traces/rescore_scope.py)는 두 채점 범위 보정의 사후 결과를 별도로 계산한다.
+
+### 2. 평가 데이터 수집 및 구축
+
+현재 제출 데이터는 **공개 실행 기록에서 추출한 행동 사례**다. [restore_inputs.py](real_traces/restore_inputs.py)는 선정된 고정 원본을 수집하고 평가 입력을 재구성한다.
+
+1. [input_recipes.json](real_traces/input_recipes.json)의 원본 URL, revision, hash와 추출 위치를 읽는다.
+2. 원본을 다운로드하거나 로컬 캐시에서 읽고 SHA-256 및 명시된 Git blob hash를 확인한다.
+3. 텍스트 기록은 줄번호, JSON 기록은 기록 개수와 JSON pointer를 사용해 행동 이전 기록과 대상 행동을 분리한다.
+4. 사례 템플릿과 결합해 `real_traces/public/`에 입력 15개를 생성하고, 고정 입력의 hash와 비교한다.
+5. 저장된 이전 단계 응답을 이용해 기존 요청 60개를 `real_traces/requests/`에 복원한다. 새 실행은 자체 이전 단계 응답으로 요청을 구성한다.
+
+선정과 주석 자료는 별도로 제공한다.
+
+| 자료 | 역할 |
+|---|---|
+| [수집 목록](real_traces/collection_ledger.json), [원본 선정 기록](real_traces/source_screening.json) | 후보 원본, 포함 및 보류 판단을 추적 |
+| [고정 정답](real_traces/gold/), [주석 조정 기록](real_traces/gold_adjudication.json) | 판정, 필수 근거 관계와 주석 검토 결과 |
+| [고정 파일 목록](real_traces/freeze_manifest.json) | 평가 입력, 정답, 프롬프트와 설정의 버전 확인 |
+| [검토 페이지 생성기](real_traces/review/build_page.py) | 정답과 예측을 숨긴 별도 검토 화면 생성 |
+
+원본 선정과 의미 주석은 검토 과정에서 수행했고, 복원 스크립트가 새로운 사례를 자동 선정하거나 정답을 자동 생성하지는 않는다. 현재 수집 범위는 MAST, Who&When, AgentHallu이며, 14개 원본 실행에서 15개 행동을 구성했다.
+
+```sh
+# 저장소 루트에서 원본 수집과 기존 평가 입력 복원
+python3 real_traces/restore_inputs.py
+python3 real_traces/harness.py verify
+
+# 원본 캐시가 준비된 환경에서 오프라인 복원
+python3 real_traces/restore_inputs.py --cache ./eta-source-cache --offline
+```
+
+캐시 준비와 검증 결과는 [오프라인 실행 안내](docs/offline_reproduction.md)에 있다.
+
+### 3. 프롬프트 파이프라인 구조
+
+모든 단계는 [common.txt](real_traces/prompts/common.txt)의 판정 기준, 평가 범위, 인용 방식과 공통 출력 규격을 사용한다. 공통 출력은 판정, 문제 필드, 요구사항, 근거 위치와 인용, 관계, 예외, 판단 이유를 포함한다.
+
+| 방법 | 프롬프트와 처리 순서 | 최종 출력 |
+|---|---|---|
+| 직접 진단 D1 | 공개 입력 → [direct.txt](real_traces/prompts/direct.txt) | 모델이 한 번에 판정과 근거를 출력 |
+| 재검토 D2 | 동일 공개 입력 + D1 응답 → [revise.txt](real_traces/prompts/revise.txt) | 이전 판정, 근거와 범위를 검토한 완전한 진단 출력 |
+| 단계 분해 P2 | 공개 입력 → [extract.txt](real_traces/prompts/extract.txt) → 동일 공개 입력 + 추출 결과 → [relate.txt](real_traces/prompts/relate.txt) → 코드 합성 | 요구사항과 예외 추출, 관측 관계 판단, 최종 판정 합성 |
+
+재검토의 이전 진단과 단계 분해의 추출 결과는 수정 가능한 중간 출력으로 전달한다. D2는 D1 응답을 재사용하므로 세 방법을 함께 실행할 때 사례당 단계는 `direct`, `revise`, `extract`, `relate`의 네 개다.
+
+새 추론에는 [create_run.py](real_traces/create_run.py)로 별도 작업 폴더를 만들고, `harness.py prepare`로 요청을 구성한 뒤 모델 응답을 저장하고 `collect`로 검사한다. 모델 API 호출 adapter는 포함하지 않으며, 실행 환경에서 요청 전체를 모델에 전달해야 한다. 단계별 명령과 응답 저장 위치는 [새 모델 추론 안내](docs/real_traces.md#3-새-모델-추론)에 정리했다.
+
 ## 구현을 읽는 순서
 
 | 파일 | 역할 |
@@ -111,6 +177,6 @@ python3 real_traces/rescore_scope.py
 
 ## 연구 이력
 
-[커밋별 변경 이유와 결과 영향](docs/history/commits.md)에서 구현, 공개 실행 평가, 채점 보정, Gemini 출처 정정의 흐름을 확인할 수 있습니다.
+[전체 커밋 메시지 한국어 번역](docs/history/commits_ko.md)과 [커밋별 변경 이유와 결과 영향](docs/history/commits.md)에서 구현, 공개 실행 평가, 채점 보정, Gemini 출처 정정의 흐름을 확인할 수 있습니다.
 
 이전 합성 벤치마크와 전체 전달 경로 복원 실험은 [과거 실험 안내](docs/history/README.md)에 분리했습니다. 기존 코드, 원점수와 실행 기록의 경로는 유지하며 현재 결과와 합산하지 않습니다. [커밋 이력](https://github.com/apple4ree/evidence-to-action/commits/main/)은 실제 저장소 변경을 기록합니다.
