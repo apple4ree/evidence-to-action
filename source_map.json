@@ -1,0 +1,136 @@
+{
+  "action/workflow.py": {
+    "source": "expanded_natural_language_experiment/workflow.py",
+    "sha256": "c50af5f49b6bfd91bfc3c4614c15a0aa2494d327ad61f7a37e059f1e885a17b4",
+    "modified": false
+  },
+  "action/harness.py": {
+    "source": "expanded_natural_language_experiment/harness.py",
+    "sha256": "173e73a49a2b08eb2ffff6ec95e2f98cbc8753981c0af2f59051174c13f87891",
+    "modified": false
+  },
+  "action/evaluate.py": {
+    "source": "expanded_natural_language_experiment/evaluate.py",
+    "sha256": "659f482fe5acabb7ca023648ee5673ee92dadc18371ebbf233e624db199e1a2a",
+    "modified": false
+  },
+  "action/test_expanded.py": {
+    "source": "expanded_natural_language_experiment/test_expanded.py",
+    "sha256": "d25c53aa670a7e1af28a1345facba406b8241ccb5a5d4b1e229835c3d77ca773",
+    "modified": false
+  },
+  "action/export_tables.py": {
+    "source": "expanded_natural_language_experiment/export_tables.py",
+    "sha256": "4ce07cd31ef048e5f0f8c8414087ca179b6738a455cdd552a503c06550817a11",
+    "modified": false
+  },
+  "action/prompts/relate.txt": {
+    "source": "expanded_natural_language_experiment/prompts/relate.txt",
+    "sha256": "66384202d2fe17dd7deec58ffbe735a275a296e188a98bfe88e8087a10fde6fa",
+    "modified": false
+  },
+  "action/prompts/extract.txt": {
+    "source": "expanded_natural_language_experiment/prompts/extract.txt",
+    "sha256": "fbe6b5155fa4228b2751b1acd3f469458a80948aee46c9603880813edee350a5",
+    "modified": false
+  },
+  "action/prompts/common.txt": {
+    "source": "expanded_natural_language_experiment/prompts/common.txt",
+    "sha256": "886dae6d0033f24310b9e8ab00ae185ee0d45962173e3a66348c6b5bc0c5802e",
+    "modified": false
+  },
+  "action/prompts/direct.txt": {
+    "source": "expanded_natural_language_experiment/prompts/direct.txt",
+    "sha256": "127519851a68b83f166b5a965d62e2043ee6948b9ca910f563a0a050f5d7a919",
+    "modified": false
+  },
+  "action/prompts/revise.txt": {
+    "source": "expanded_natural_language_experiment/prompts/revise.txt",
+    "sha256": "275f1f9644892dd204331aa9a0a2e4e079412801194efbb51c11c7a53052dbca",
+    "modified": false
+  },
+  "provenance/workflow.py": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/workflow.py",
+    "sha256": "97192dcc9333d558849ec995524f9b860e70ea9f2549214e5f8f851e057eb551",
+    "modified": false
+  },
+  "provenance/harness.py": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/harness.py",
+    "sha256": "51f62a4249699a4cb1230f9dea71b0e7cbcf67cb5aff2d16075f4f853a6821f1",
+    "modified": false
+  },
+  "provenance/test_comparison.py": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/test_comparison.py",
+    "sha256": "d03bc7c991c39c6e9e4607c98f178f4dab7a20e85530d5265d9ec8bde1b99593",
+    "modified": false
+  },
+  "provenance/prompts/relate.txt": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/prompts/relate.txt",
+    "sha256": "832b44ca5e432b6ff0974b6d9383a2bec5fbe9a0e946e61cb2ff5a24da114480",
+    "modified": false
+  },
+  "provenance/prompts/extract.txt": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/prompts/extract.txt",
+    "sha256": "8783387d4f7cabe89a208175efd25e04fa4559beb93af087a9042aca0b6b3806",
+    "modified": false
+  },
+  "provenance/prompts/common.txt": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/prompts/common.txt",
+    "sha256": "57c9812af67067e2ba28912bbf3a1e923d775231288c22dc85b79cf47c12aede",
+    "modified": false
+  },
+  "provenance/prompts/direct.txt": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/prompts/direct.txt",
+    "sha256": "8c411d8f079126d1d52a381218ea34293375cac418d1e6c9a196058bbd8620aa",
+    "modified": false
+  },
+  "provenance/prompts/revise.txt": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/prompts/revise.txt",
+    "sha256": "ae66d517a75b110708ed65369f4e0fcdb9c685661741d799fdb130a6c0f11f81",
+    "modified": false
+  },
+  "docs/action_scoring.md": {
+    "source": "expanded_natural_language_experiment/scoring_spec.md",
+    "sha256": "4ad3764b4510f5991e6271e317cd2bc46f99ef7f113d2d3df6157b8469dea928",
+    "modified": false
+  },
+  "docs/action_protocol.md": {
+    "source": "expanded_natural_language_experiment/protocol.md",
+    "sha256": "ae799533ba32d23260c4c5a41e0d0e27404e83a0a08005466c35165643ad3888",
+    "modified": false
+  },
+  "docs/provenance_scoring.md": {
+    "source": "provenance_reuse_exploration/comparison_delivery_v2/scoring_spec.md",
+    "sha256": "4d615f028e79de12b474639ff0ce515d21e766c99f8f205952fb7325ac50c0a9",
+    "modified": false
+  },
+  "results/expanded_original.json": {
+    "source": "expanded_natural_language_experiment/test_results.json",
+    "sha256": "d9194c7920fb513adfc626f512368201961cbf48912d8d6ca3e406ce2512d47f",
+    "modified": false
+  },
+  "results/expanded_sensitivity.json": {
+    "source": "expanded_natural_language_experiment/analysis/post_evaluation_gold_review.json",
+    "sha256": "74d011bc2dc97a8e95f3e6b6a52dc1a25c65aa73985e618f4eb76c2d3f80a0ea",
+    "modified": false
+  },
+  "results/provenance_summary.json": {
+    "source": "provenance_reuse_exploration/comparison_summary.json",
+    "sha256": "cf40ab7597dd0eaa2a3fd196327490585f2f770d9cabf949ff28888b7c77dd2c",
+    "modified": false
+  },
+  "results/provenance_components.csv": {
+    "source": "provenance_reuse_exploration/result_components.csv",
+    "sha256": "2db4af8350d1799c8618c163959f1973d1435b1d14c629a5fcac84002baf7830",
+    "modified": false
+  },
+  "data/example_public.json": {
+    "source": "expanded_natural_language_experiment/data/public_cases/00eb91a9.json",
+    "sha256": "ad3e8f99d37dea47adfe5ffa5d40b4245149a0b760dafa78dcefd8c785475713",
+    "modified": false
+  },
+  "scripts/generate.py": {
+    "source": "expanded_natural_language_experiment/data/private_authoring/build_author_cases.py",
+    "modified": "Output CLI + refuse existing directory; generation logic unchanged"
+  }
+}
